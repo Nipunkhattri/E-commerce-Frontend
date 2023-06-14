@@ -1,0 +1,33 @@
+.order1{
+    height: 700px;
+    width: 100%;
+    /* background-color: rgb(31, 59, 124); */
+}
+.containorder{
+    height: 700px;
+    width: 95%;
+    /* padding-top: 30px; */
+    margin: auto;
+    /* border: 2px solid red; */
+}
+.orderr{
+    height: 100px;
+    width: 90%;
+    /* margin-top: 20px; */
+    margin-left: 90px;
+    /* background-color: aqua; */
+}
+.thh{
+    width: 20%;
+    border-bottom: 1px solid black;
+    height: 90px;
+}
+.orderr tr th{
+    width: 20%;
+    height: 90px;
+}
+
+.ul{
+    text-decoration: underline;
+    color: rgb(72, 72, 207);
+}

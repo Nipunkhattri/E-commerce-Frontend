@@ -1,0 +1,22 @@
+  <Button
+          sx={{
+            fontFamily: "julius sans one",
+            fontSize: "18px",
+            backgroundColor: "#89A963",
+            color: "white",
+            "&:hover": {
+              backgroundColor: "#89A963",
+            },
+            height: "3rem",
+            width: "13rem",
+            borderRadius: "8px",
+            marginRight: "0.7rem",
+            position: "absolute",
+
+            top: "4rem",
+          }}
+          size="small"
+        
+        >
+          Read More
+        </Button>

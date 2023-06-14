@@ -1,0 +1,60 @@
+.contain{
+    height: 650px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.button1admin{
+    height: 40px;
+    width: 190px;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    /* background-color: black; */
+    cursor: pointer;
+}
+.dropdownmenu{
+    display: none;
+}
+.dropdownmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdownmenu li {
+    padding: 5px 8px;
+    margin-top: 7px;
+  }
+  
+  .dropdownmenu li:hover {
+    background-color: #e3e3e3;
+  }
+  
+.hidden{
+    display: block;
+}
+.deleteadmin{
+    position: relative;
+    top: -330px;
+    left: 300px;
+    height: 30px;
+    width: 60px;
+    font-size: 16px;    
+    border: none;
+}
+.deleteadmin:hover{
+    color: red;
+    cursor: pointer;
+}
+.addbtnpage{
+    height: 40px;
+    width:160px;
+    font-size: 17px;
+    position: absolute;
+    cursor: pointer;
+    right: 50px;
+}

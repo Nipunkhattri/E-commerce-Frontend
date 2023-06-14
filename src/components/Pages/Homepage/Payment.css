@@ -1,0 +1,186 @@
+.container{
+    height: 1000px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.section{
+    width: 80%;
+    height: 900px;
+    display: flex;
+    /* border: 2px solid red; */
+    /* margin-top: 30px; */
+    margin: auto;
+    /* display: flex; */
+    /* margin: 50px 50px; */
+    /* padding-top: 50px; */
+}
+.leftp{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(138, 87, 87); */
+}
+.leftp h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.a{
+    width: 100%;
+    height: 50px;
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding-top: 10px;
+    /* border: 2px solid black; */
+}
+.a ul{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.aa{
+    height: 107px;
+    width: 100%;
+    /* background-color: antiquewhite */
+    display: flex;
+    /* margin-bottom: 15px; */
+    flex-direction: column;
+}
+.hhhh{
+    padding: 5px 45px;
+    font-size: 20px;
+}
+
+.a ul li{
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+.aa input{
+    width: 80%;
+    height: 42px;
+    align-items: center;
+    display: block;
+    margin: 0px 40px;
+    background: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.ip{
+    display: flex;
+    margin-left: 50px;
+}
+
+#vehicle1{
+    height: 15px;
+    margin: 7px 0px;
+    width: 15px;
+}
+
+.hh{
+    font-size: 15px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+
+.ship{
+    height: 400px;
+    width: 90%;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+form {
+    /* max-width: 400px */
+    width: 90%;
+    margin-left: 10px;
+    /* margin: 0 auto; */
+  }
+
+  #firstName{
+    width: 245px;
+    margin: 1px;
+    /* padding-left: 5px; */
+}
+#lastName{
+    width: 245px;
+    margin: 1px;
+  }
+  
+   .dvv{
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btnp {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: end;
+    margin-left: 344px;
+    font-size:13px;
+  }
+  
+  .btnp:hover {
+    background-color: #45a049;
+  }
+  
+  .rightp{
+    height: 500px;
+    width: 50%;
+    /* background-color: #45a049; */
+  }
+  .cont{
+    height: 200px;
+    width: 90%;
+    /* border: 2px solid     black; */
+    display: block;
+    margin: 40px auto;
+    overflow: auto;
+}
+.divpay{
+    height: 100px;
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    /* margin-left: 20px; */
+    /* justify-content: space-around; */
+    width: 100%;
+}
+.imgpay{
+      margin-left: 20px;
+      height: 100px;
+      width: 100px;
+    }
+    
+    .divpay h3{
+        margin-top: 30px;
+        margin-left: 30px;
+  }
+  .Checkpay{
+    align-items: end;
+    text-align: end;
+    line-height: 1.6;
+    /* background-color: #45a049; */
+  }

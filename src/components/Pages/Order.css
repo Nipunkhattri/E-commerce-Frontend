@@ -1,0 +1,46 @@
+.dataorder{
+    height: 900px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    overflow: auto;
+}
+.datacontainer{
+    height: 390px;
+    width: 90%;
+    /* padding-top: 20px; */
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 4.5%;
+}
+
+.dataimage{
+    height: 240px;
+    width: 240px;
+    /* background-color: gray; */
+}
+.datamid{
+    height: 340px;
+    width:400px;
+    /* background-color: rgb(156, 92, 92); */
+}
+.dataend{
+    height: 340px;
+    width:500px;
+    /* background-color: rgb(156, 92, 92); */
+}
+
+.datamid h3{
+    line-height: 1.1;
+    /* text-align: end; */
+    padding: 10px 30px; 
+}
+.dataend h3{
+    line-height: 1.1;
+    /* text-align: end; */
+    padding: 10px 30px; 
+}
+.headq{
+    margin: 20px 30px;
+}

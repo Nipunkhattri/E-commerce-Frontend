@@ -1,0 +1,8 @@
+.your-wrapper {
+    padding: 20px;
+  }
+  
+  .your-wrapper.clicked {
+    border: 4px solid white;
+  }
+  
