@@ -9,10 +9,16 @@ export const setCartItem = createAsyncThunk(
     try{
       toast.success("Loading...")
       const response = await api.CartProd(cartdata);
-        console.log(response)
-        // navigate("/cart")
+      console.log(response)
+      if(response != ""){
+        var existingData = localStorage.getItem('myArray');
+        var dataArray = existingData ? JSON.parse(existingData) : [];
+        dataArray.push(response.data);
+        var updatedData = JSON.stringify(dataArray);
+        localStorage.setItem('myArray', updatedData);
         toast.success("Item Added To Cart ...");
-        return response.data;
+      }
+      return response.data;
     }catch(e){
       console.log(e);
     }
@@ -23,9 +29,9 @@ export const GetCardItem = createAsyncThunk(
   'auth/GetCardItem',
   async ()=>{
    try{
-     const response = await api.getCartProd();
-       console.log(response)
-       return response.data;
+    const response = await api.getCartProd();
+    console.log(response)
+    return response.data;
    }catch(e){
      console.log(e);
    }
@@ -38,10 +44,26 @@ export const deleteById = createAsyncThunk(
   async ({id,navigate})=>{
    try{
     console.log(id);
-     const response = await api.deleteCart(id);
-       console.log(response);
-       toast.success("Item removed successfully");
-       return response.data;
+    const storedData = localStorage.getItem('myArray');
+    let dataArray = [];
+    if (storedData) {
+      // Parse the stored JSON data into an array
+      dataArray = JSON.parse(storedData);
+    }
+    
+    // Step 2: Iterate over the array and find the object with the matching ID
+    const idToDelete = id; // Specify the ID you want to delete
+    
+    console.log(dataArray);
+    console.log(idToDelete);
+
+    const updatedArray = dataArray.filter(obj => obj._id !== idToDelete);
+    console.log(updatedArray);
+    // Step 4: Store the modified array back into localStorage
+    localStorage.setItem('myArray', JSON.stringify(updatedArray));
+    navigate('/cart');
+    toast.success("Item removed successfully");
+     return "deleted";
    }catch(e){
      console.log(e);
    }

@@ -4,10 +4,18 @@ import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { singleIdProduct } from '../../redux/features/BuySlice';
+import { useNavigate } from 'react-router-dom';
 
 const Orderdata = () => {
+  const navigate = useNavigate();
     const location = useLocation();
     const id = location?.state?.id;
+    const { isAuthenticated } = useSelector((state)=> ({...state.auth}));
+    useEffect(()=>{
+      if(isAuthenticated == false){
+        navigate('/adminlogin');
+      }
+    })
     const dispatch  = useDispatch();
     const [data,setdata] = useState([]);
     console.log(id);

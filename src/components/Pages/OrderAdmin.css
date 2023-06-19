@@ -11,7 +11,7 @@
     /* border: 2px solid red; */
 }
 .orderr{
-    height: 100px;
+    /* height: 100px; */
     width: 90%;
     /* margin-top: 20px; */
     margin-left: 90px;
@@ -22,6 +22,24 @@
     border-bottom: 1px solid black;
     height: 90px;
 }
+.thh1{
+    width: 20%;
+    border-bottom: 1px solid black;
+    height: 90px;
+    /* display: block; */
+}
+.thh2{
+    width: 20%;
+    border-bottom: 1px solid black;
+    height: 90px;
+    /* display: block; */
+}
+.thh3{
+    width: 20%;
+    border-bottom: 1px solid black;
+    height: 90px;
+    /* display: block; */
+}
 .orderr tr th{
     width: 20%;
     height: 90px;
@@ -30,4 +48,29 @@
 .ul{
     text-decoration: underline;
     color: rgb(72, 72, 207);
+}
+
+@media screen and (max-width: 500px) {
+    .orderr{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    .email{
+        display: none;
+    }
+    .pay{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .thh1{
+        display: none;
+    }
+    .thh2{
+        display: none;
+    }
+    .thh3{
+        display: none;
+    }
 }

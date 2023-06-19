@@ -26,6 +26,7 @@ const loadScript = (src) =>{
 
 const Cardimage = ({route}) => {
     const [item , setitem] = useState();
+    const [loading , setloading] = useState(false);
     const location = useLocation();
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -41,6 +42,8 @@ const Cardimage = ({route}) => {
             // setError(error);
         });
     },[])
+
+    console.log(item)
     
     const [resdata,setresdata] = useState(null);
 
@@ -98,13 +101,20 @@ const Cardimage = ({route}) => {
     const [size , setsize] = useState('');
     // console.log(size);
 
+    const name = item?.headline;
+
     const handleCartItem = async () =>{
         // console.log(id);
         if(size == ''){
             toast.error("Size Not selected");
         }
         else{
-            await dispatch(setCartItem({id,index,size}));
+            setloading(true);
+            console.log("hii")
+            await dispatch(setCartItem({id,index,size}))
+            .then((res)=>{
+                setloading(false);
+            });
         }
     }
 
@@ -118,8 +128,6 @@ const Cardimage = ({route}) => {
       {/* {location.state.id} */}
       {/* {console.log(item?.Price)}
       <button onClick={()=>handlePayment(item?.Price)} >BuyNow</button> */}
-
-
       <div className='card'>
         <div className="left">
             <div className='one'>
@@ -151,7 +159,7 @@ const Cardimage = ({route}) => {
         <div className="right">
             <h1 className='head'>{item?.headline}</h1>
             <img src={star} className='img' alt="" /><br />
-            <p className='para'><del className='dell'>RS. 330</del> <ins className='inss'>RS. {item?.Price}</ins></p>
+            <p className='para'> <ins className='inss'>RS. {item?.Price}</ins></p>
             <p className='para1'>
                 {item?.headline1}
             {/* A classic t-shirt never goes out of style. This is our most premium collection of shirt. This plain white shirt is made up of pure cotton and has a premium finish. */}
@@ -165,19 +173,25 @@ const Cardimage = ({route}) => {
             <option>L</option>
             </select>
             <br />
-            <button onClick={handleCartItem}  className='btn'>Add to Cart</button>
-            <button onClick={handleCartItem}  className='btn'>Buy Now</button>
+            {
+                loading?
+                <>
+                <button disabled onClick={handleCartItem}  className='btn'>Add to Cart</button>
+                <button disabled onClick={handleCartItem}  className='btn'>Buy Now</button>
+                </>
+                :
+                <>
+                <button onClick={handleCartItem}  className='btn'>Add to Cart</button>
+                <button onClick={handleCartItem}  className='btn'>Buy Now</button>
+                </>
+            }
+            
             <br />
             <div className='dv'>
                 <p className='para2'><span>Category</span>: Men, Polo, Casual</p>
                 <p className='para2'><span>Tags</span>: Modern, Design, cotton</p>
             </div>
             <br />
-            <div className='btcolor'>
-                <button className='btnci'></button>
-                <button className='btnc1i'></button>
-                <button className='btnc2i'></button>
-            </div><br />
             <ul className='ull'>
                 <li>Dress length: 50 inches</li>
                 <li> Handmade in India</li>

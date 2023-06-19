@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import img1 from "./assets/p2g1.png";
 import img2 from "./assets/p2g2.png";
 import img3 from "./assets/p2g3.png";
+import './Product2.css'
 import img4 from "./assets/p2g4.png";
 
 import ProductCard from "../../cards/ProductCard";
@@ -77,7 +78,7 @@ const ProductGrid1 = () => {
 
 
   return (
-    <div className={classes.root}>
+    <div >
       <div className={classes.headingDiv}>
         <Typography
           style={{ fontFamily: "inter !important" }}
@@ -87,16 +88,9 @@ const ProductGrid1 = () => {
         </Typography>
       </div>
 
-      <Grid container spacing={1} >
-        <div style={{
-        display:"flex",
-        flexDirection:"column !important",
-        overflowX:"scroll",
-        
-       
-      }}>
+      <Grid  spacing={1}  >
+        <div className="effort">
 
-          
         <Grid item xs={12} sm={6} md={3}>
         <ProductCard
         imageSrc={img1}
@@ -126,12 +120,7 @@ const ProductGrid1 = () => {
         text2="RS . 186.00"
       />
         </Grid>
-
-
-
         </div>
-     
-       
       </Grid>
     </div>
   );

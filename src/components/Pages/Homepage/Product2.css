@@ -1,0 +1,16 @@
+.effort{
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+}
+.root{
+    /* width: 100% !important; */
+}
+@media screen and (max-width: 600px) {
+    .effort{
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        width: 100%;
+    }
+}

@@ -48,9 +48,18 @@ import { deleteitem } from '../../redux/features/BuySlice';
   }));
 
 const Admincollect = () => {
+
+  const navigate = useNavigate();
+  const { isAuthenticated } = useSelector((state)=> ({...state.auth}));
+
+  useEffect(()=>{
+    if(isAuthenticated == false){
+      navigate('/adminlogin');
+    }
+  })
+
     const dispatch = useDispatch();
     const classes = useStyles(); 
-    const navigate = useNavigate();
     let value;
     const { Product1 } = useSelector((state) => ({ ...state.Prod }));
   console.log(Product1);
@@ -92,6 +101,9 @@ const Admincollect = () => {
   const handlenavigate = () =>{
     navigate('/admin')
   }
+  const handlenavigate1 = () =>{
+    navigate('/adminorder')
+  }
 
   const handleclick = () =>{
     let doc = document.querySelector('.dropdownmenu');
@@ -116,7 +128,8 @@ const Admincollect = () => {
 
   return (
     <div className='contain'>
-        <button className='addbtnpage' onClick={handlenavigate}>---Add Product---</button>
+        <button className='addbtnpage' onClick={handlenavigate}>Add Product </button>
+        <button className='addbtnpage1' onClick={handlenavigate1}>Order Details</button>
     <div
                 component="a"
                 className="button1admin"
@@ -142,49 +155,45 @@ const Admincollect = () => {
         "margin":"40px 40px"
       }
      }>{value1?value1:''} Collection</h3>
-    <card
-        className="grid-container"
-        container
-        // sx={{ display: 'flex' }}
-        spacing={0}
-        style={{
-          marginTop: "50px",
-          padding: "0px 50px 50px 50px",
-        }}
+    <div
+        className="flex-container"
       >
        
          {
           Array.isArray(collection) && loading == false ?
         collection?.map((ele, index) => {
           return (
+            <>
+            <button className='deleteadmin' onClick={() => handledeletecollect(ele._id)}>Delete</button>
             <div className="itemdiv" key={index} onClick={()=>handleupdateproduct(ele._id)}>
               {/* <div
                 className={classes.media}
                 style={{ backgroundImage: `url(${item.Image})` }}
             /> */}
-            <button className='deleteadmin' onClick={() => handledeletecollect(ele._id)}>Delete</button>
-              <Box
+              <img
         component="img"
         className="imgg"
         alt="The house from the offer."
         src={ele.images[0]}
       />
               {/* <img src={imgg1} className="imgg" alt="Product Image" /> */}
-              <CardContent>
-                <Typography variant="h6" className={classes.text}>
+              <div className='text-store'>
+                <div variant="h6" className={classes.text}>
                   {ele.headline}
-                </Typography>
-                <Typography variant="body1" className={classes.text}>
+                </div>
+                <div variant="body1" className={classes.text}>
                   RS. {ele.Price} 
-                </Typography>
-              </CardContent>
+                </div>
+              </div>
             </div>
+            </>
           );
         })
+        // :<>Loading..</>
         :<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         } 
       
-    </card>
+    </div>
     </div>
   )
 }

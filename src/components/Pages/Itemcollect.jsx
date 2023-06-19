@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Item.css'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { getBycollection } from '../../redux/features/ProductSlice';
 import Box from '@mui/material/Box';
@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Itemcollect = ({route}) => {
   const classes = useStyles();
+  const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useDispatch();
   const data = location.state.data;
@@ -61,22 +62,20 @@ const Itemcollect = ({route}) => {
 
   console.log(collection);
 
+  const handleclick = (_id) =>{
+    navigate("/card",{state:{id:_id}})
+  }
+
   return (
     <>
+    <div class="storecontainer"><div class="rev-homestore"><h3 class="h11">A world of sunlit peaks and white clouds</h3><h2 class="h22">Heart In the Highlands</h2><button class="btn11">SHOP NOW</button></div></div>
      <h3 style={
       {
         "margin":"40px 40px"
       }
-     }>{data} Collection</h3>
+     }>Collections/{data} Collection</h3>
     <card
-        className="grid-container"
-        container
-        // sx={{ display: 'flex' }}
-        spacing={0}
-        style={{
-          marginTop: "50px",
-          padding: "0px 50px 50px 50px",
-        }}
+        className="flex-container"
       >
        
          {
@@ -88,21 +87,21 @@ const Itemcollect = ({route}) => {
                 className={classes.media}
                 style={{ backgroundImage: `url(${item.Image})` }}
               /> */}
-              <Box
+              <img
         component="img"
         className="imgg"
         alt="The house from the offer."
         src={item.images[0]}
       />
               {/* <img src={imgg1} className="imgg" alt="Product Image" /> */}
-              <CardContent>
-                <Typography variant="h6" className={classes.text}>
+              <div className='text-store'>
+                <div variant="h6" className={classes.text}>
                   {item.headline}
-                </Typography>
-                <Typography variant="body1" className={classes.text}>
+                </div>
+                <div variant="body1" className={classes.text}>
                   RS. {item.Price} 
-                </Typography>
-              </CardContent>
+                </div>
+              </div>
             </div>
           );
         })

@@ -117,13 +117,12 @@ const VideoPlayer = ({ src, title, subtitle, buttonLabel }) => {
           {muted ? <VolumeOffIcon /> : <VolumeUpIcon />}
         </IconButton>
         <div>
-          <Typography variant="body1" className={classes.description}>
+          <Typography className='description'>
             {title}
           </Typography>
           <Typography
-            variant="subtitle1"
-            className={classes.description1}
-            gutterBottom
+            className='description1'
+            
           >
             {subtitle}
           </Typography>

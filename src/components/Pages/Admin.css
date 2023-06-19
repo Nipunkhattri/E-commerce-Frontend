@@ -115,6 +115,7 @@ background-color: rgb(231, 228, 228);
 padding: 20px;
 padding-top: 50px;
 font-size: 30px;
+margin: 1px;
 text-align: center;
 }
 
@@ -169,3 +170,61 @@ textarea::placeholder{
     margin: 10px 70px;
     border: none;
 }
+
+  @media screen and (max-width: 500px) {
+    .admin{
+        height: 1500px;
+        width: 100%;
+        /* background-color: aqua; */
+    }
+    .grid-item{
+        margin: 1px 1px;
+    }
+    .mid{
+        flex-direction: column;
+        height: 900px;
+    }
+    .grid-container{
+        width: 92%;
+        grid-template-columns: auto auto;
+    }
+    .midleft{
+        width: 100%;
+    }
+    .prdiv label{
+        padding-left:29px;
+    }
+    .prdiv1 label{
+        padding-left:29px;
+    }
+    .prdiv2 label{
+        padding-left:29px;
+    }
+    .prname{
+        margin-left: 29px;
+    }
+    .midright{
+        margin: 30px 20px;
+    }
+    .newcolect{
+        /* margin: 10px 33px; */
+        width: 100%; 
+        margin-top: 67px;
+        margin-left: 30px;
+    }
+    .down{
+        width: 100%;
+        flex-direction: column;
+    }
+    .pricediv{
+        margin: 10px 30px;
+        width: 70%;
+    }
+    .collecdiv{
+        margin: 10px 30px;
+        width: 70%;
+    }
+    .prtextarea{
+        margin-left: 29px;
+    }
+  }

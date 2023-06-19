@@ -70,15 +70,8 @@ const StoreGrid = () => {
   return (
     <>
 
-      <Card
-        className="grid-container"
-        container
-        // sx={{ display: 'flex' }}
-        spacing={0}
-        style={{
-          marginTop: "50px",
-          padding: "0px 50px 50px 50px",
-        }}
+      <div
+        className="flex-container"
       >
         {
           Array.isArray(Product1) ?
@@ -89,21 +82,21 @@ const StoreGrid = () => {
                 className={classes.media}
                 style={{ backgroundImage: `url(${item.Image})` }}
               /> */}
-              <Box
+              <img
         component="img"
         className="imgg"
         alt="The house from the offer."
         src={item.images[0]}
       />
               {/* <img src={imgg1} className="imgg" alt="Product Image" /> */}
-              <CardContent>
-                <Typography variant="h6" className={classes.text}>
+              <div className="text-store">
+                <div variant="h6" className={classes.text}>
                   {item.headline}
-                </Typography>
-                <Typography variant="body1" className={classes.text}>
+                </div>
+                <div variant="body1" className={classes.text}>
                   RS. {item.Price} 
-                </Typography>
-              </CardContent>
+                </div>
+              </div>
             </div>
           );
         })
@@ -208,7 +201,7 @@ const StoreGrid = () => {
 
 
       </Grid> */}
-      </Card>
+      </div>
     </>
   );
 };

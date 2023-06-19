@@ -7,26 +7,37 @@ import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faDeleteLeft ,faDesktopAlt , faRemove } from '@fortawesome/free-solid-svg-icons'
 import {GetCardItem, deleteById } from "../../../redux/features/CartSlice.js"
+import { toast } from 'react-toastify';
+import carty from './cartempty.png'
 const Cart = ({route}) => {
   const location = useLocation();
-
+  const [loading , setloading] = useState(false);
   const navigate = useNavigate();
-  const { CartData } = useSelector((state) => ({ ...state.Cart }));
+  // const { CartData } = useSelector((state) => ({ ...state.Cart }));
+  // console.log(CartData);
+  const [res,setres] = useState("");
+  let CartData = null
+  useEffect(()=>{
+    CartData = JSON.parse(localStorage.getItem('myArray'));
+  },[res])
   // console.log(CartData);
   // useEffect(()[0]
     const [cartdata1,setcartdata1] = useState([]);
   // },[CartData])
-
+  const lenght = cartdata1?.length;
+  console.log(lenght)
   useEffect(()=>{
     setcartdata1(CartData)
   },[CartData])
+
+
   const data = location?.state?.data;
   // console.log(data);
   const dispatch = useDispatch();
 
-  useState(()=>{
-    dispatch(GetCardItem());
-  },[CartData])
+  // useState(()=>{
+  //   dispatch(GetCardItem());
+  // },[CartData])
 
   // if(data != null){
   //   const doc = document.querySelector(".cart-container1");
@@ -76,24 +87,40 @@ const Cart = ({route}) => {
       setcartdata1(updatedItems);
     };
 
+    let value = 0;
+  const calculateTotalPrice = () => {
+    return Array.isArray(cartdata1) && cartdata1?.reduce((total, item) => {
+      // setTotal(total + item?.Quantity * item?.Price);
+      console.log(item?.Quantity * item?.Price);
+      value = value + (item?.Quantity * item?.Price);
+      return total + item?.Quantity * item?.Price;
+    }, 0)
+  };
+  // calculateTotalPrice();
+  console.log(value);
     // console.log(cartdata1);
 
-  const itemIds = Array.isArray(CartData) && CartData?.map((item) => item.Id);
-  const sizes = Array.isArray(CartData) && CartData?.map((item) => item.size);
+  const itemIds = Array.isArray(cartdata1) && cartdata1?.map((item) => item.Id);
+  const sizes = Array.isArray(cartdata1) && cartdata1?.map((item) => item.size);
   const quantities = Array.isArray(cartdata1) && cartdata1?.map((item) => item.Quantity);
-  // console.log(itemIds);
+  console.log(itemIds);
     console.log(sizes)
+    console.log(quantities)
   const handlePayment = () =>{
-    navigate("/PayCart",{state:{Items:itemIds,sizes:sizes,quantities:quantities}});
+    console.log(value)
+    if(value > 0){
+      navigate("/PayCart",{state:{Items:itemIds,sizes:sizes,quantities:quantities,value}})
+    }
   }
-
 
   const handledelete = (id) =>{
     console.log(id)
     dispatch(deleteById({id,navigate}))
     .then((response) => {
       console.log(response);
-      dispatch(GetCardItem());
+      setres(response);
+      let CartDatanew = JSON.parse(localStorage.getItem('myArray'));
+      setcartdata1(CartDatanew);
   })  
   .catch((err) => {
       console.log(err);
@@ -101,15 +128,15 @@ const Cart = ({route}) => {
   });
   }
   
-  const calculateTotalPrice = () => {
-    return Array.isArray(cartdata1) && cartdata1?.reduce((total, item) => {
-      // console.log(item.Price);
-      return total + item?.Quantity * item?.Price;
-    }, 0)
-  };
+  // const [total,setTotal] = useState(null)
+
+  console.log(CartData);
+  console.log(value);
 
   return (
 <div class="cart-container1">
+  {
+    (lenght != 0)?
   <div class="slider">
     <h2 className='hd'>My Cart</h2>
     {
@@ -117,13 +144,19 @@ const Cart = ({route}) => {
       cartdata1?.map((ele,index)=>{
       return(
     <div class="card1" key={index}>
-      <img src={ele.Image} alt="Item 1"/>
       <div className='all'>
-        <div className='one'>
-        <h3>{ele.Name}</h3>
-        <p>Size: {ele.size}</p>
-        <h4>RS. {ele.Price}</h4>
-        <p>Color: Red</p>
+        <div className='one1'>
+          <div className='divcardd'>
+            <div >
+      <img src={ele.Image} alt="Item 1" />
+            </div>
+          <div className='one2'>
+            <h3>{ele.Name}</h3>
+            <p>Size: {ele.size}</p>
+            <h4>RS. {ele.Price}</h4>
+            <p>Color: Red</p>
+          </div>
+          </div>
         </div>
         <div class="quantity-container">
       <button class="decrement" className='btnd' onClick={() => decrement(ele._id,ele.Quantity)}>-</button>
@@ -134,26 +167,34 @@ const Cart = ({route}) => {
           {/* {console.log(quantityInput?.value)} */}
           <p>Price : RS. {ele.Price * ele.Quantity}</p>
         </div>
-        <FontAwesomeIcon onClick={()=>handledelete(ele._id)} icon={faRemove} />
           {/* <button>Delete</button> */}
       </div>
+        <FontAwesomeIcon onClick={()=>handledelete(ele._id)} className='cross' icon={faRemove} />
     </div>
     // <></>
       )
      }) 
      :
-     <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+     <></>
+    //  <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     }
     <div className='Checkout'>
     <div className='chk'>
       <h3>ToTal : Rs. {calculateTotalPrice()}</h3>
       <p>Price includes all charges</p>
-      <button className='chbtn' onClick={handlePayment}>Checkout</button>
+        <button className='chbtn' onClick={handlePayment}>Checkout</button>
     </div>
     </div>
   </div>
+  :
+  <>
+  <div className='items'>
+    <img className='cartimg' src={carty} alt="" />
+    <h3>No Item In Cart</h3>
+  </div>
+  </>
+  }
 </div>
-
   )
 }
 

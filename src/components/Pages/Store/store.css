@@ -1,9 +1,13 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
+.flex-container {
+    display: flex;
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-gap: 10px; */
     /* background-color: #2196F3; */
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 30px 30px;  
+  }
+  .text-store{
+    margin-top: 20px;
   }
 
   .imgg{
@@ -11,12 +15,19 @@
     width: 302px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px;
+    /* border: 2px solid black; */
     /* background: url("./assets/Rectangle.png"); */
   }
-
-.itemdiv{
+  
+  .itemdiv{
+    /* box-shadow: 0px 0px 2px 2px; */
     height: 400px;
-    width: 85%;
+    width: 25%;
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid black; */
 }
 .loader {
@@ -39,7 +50,7 @@
   position: relative;
   width: 80px;
   height: 80px;
-  left: 700px;
+  left: 700px  ;
 }
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -118,5 +129,40 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.storecontainer{
+  height: 100vh;
+  width: 100%;
+  /* background-color: #3498db; */
+  background: url('./women.png') no-repeat center center/cover;
+}
+.rev-homestore{
+  position: absolute;
+  top: 90vh;
+  left: 155vh;
+  line-height: 1.8;
+  align-items: end;
+  text-align: end;
+}
+
+@media screen and (max-width: 500px) {
+  .flex-container{
+    flex-direction: column !important;
+  }
+  .itemdiv{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* .rev-homestore{ 
+    position: relative;
+    top: 70%;
+    line-height: 1.5;
+    left: 10%;
+    width: 330px;
+  } */
+  .lds-roller{
+    left: 10px !important;
   }
 }

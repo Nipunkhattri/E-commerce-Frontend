@@ -1,15 +1,16 @@
 .cart-container1 {
     width: 100%;
-    height: 650px;
+    height: 690px;
+    overflow: auto;
     /* background-color: #f74a4a; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    z-index: 10;
-}
-
-.slider{
-  height: 550px;
-  overflow: auto;
+    /* overflow: hidden; */
+  }
+  
+  .slider{
+    height: 570px;
+    /* overflow: auto; */
+    z-index: 0;
   width: 92%;
   margin: 40px auto;
   /* border: 2px solid black; */
@@ -23,10 +24,10 @@
 }
 
 .card1{
-  height: 230px;
+  height: 201px;
   width: 80%;
   border-top: 2px solid rgb(185,185,185);
-  border-bottom: 2px solid rgb(185, 185, 185);
+  border-bottom: 1px solid rgb(185, 185, 185);
   display: flex;
   margin: auto;
   margin-left: 130px;
@@ -34,21 +35,29 @@
 }
 
 .card1 img{
-  height: 150px;
-  width: 180px;
+  height: 130px;
+  width: 130px;
 }
 .all{
   height: 93px;
   line-height: 1.6;
-  width: 100%;
+  width: 93%;
   /* background-color: aqua; */
   display: flex;
+  /* z-index: 10; */
 }
-.one{
+.one1{
   height: 100%;
-  width: 33%;
+  width: 50%;
   padding:0px 30px;
+  display: flex;
   /* background-color: #f74a4a; */
+}
+.one2{
+  margin-left: 17px;
+  margin-top: 10px;
+  /* background-color: #000000; */
+  width: 70%;
 }
 .two{
   height: 100%;
@@ -57,7 +66,7 @@
 }
 .three{
   height: 100%;
-  width:43%;
+  width:26%;
   /* background-color: aqua; */
 }
 .three p{
@@ -120,7 +129,7 @@ span{
 
 .Checkout{
   height: 120px;
-  width: 100%;
+  width: 96%;
   /* background-color: #333; */
   line-height: 1.6;
   /* -top: 50px; */
@@ -224,5 +233,89 @@ span{
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.divcardd{
+  display: flex;
+}
+.items{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cartimg{
+  height: 30vh;
+  width: 30vh;
+}
+
+@media screen and (max-width: 500px) {
+  .hd{
+    text-align: center;
+  }
+  .divcardd{
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .all{
+    flex-direction: column;
+  }
+  .card1{
+    margin: 0px 0px;
+  }
+  .one1{
+    width: 100%;
+    padding: 0px 0px;
+  }
+  .three{
+    display: none;
+  }
+  .quantity-container{
+    margin: 42px 1px;
+    
+  }
+  .card1{
+    width: 100%;
+  }
+  .slider{
+    height: 550px;
+    /* overflow: auto; */
+    width: 100%;
+    margin: 40px auto;
+    /* border: 2px solid black; */
+  }
+  
+  .hd{
+    /* margin: 20px 10px; */
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  
+  .card1{
+    height: 230px;
+    width: 100%;
+    border-top: 2px solid rgb(185,185,185);
+    border-bottom: 2px solid rgb(185, 185, 185);
+    display: flex;
+    margin: auto;
+    margin-left: 0px;
+    padding: 40px 10px;
+  }
+  
+  .card1 img{
+    height: 130px;
+    width: 130px;
+  }
+  .all{
+    height:  100px;
+    line-height: 1.6;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+  }
+  .chk{
+    margin-right: 1%;
   }
 }

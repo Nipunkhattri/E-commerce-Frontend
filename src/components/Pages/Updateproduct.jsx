@@ -4,10 +4,20 @@ import { useLocation } from 'react-router-dom'
 import { SingleProduct, UpdateProductById } from '../../redux/features/ProductSlice.js';
 import './Admin.css'
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Updateproduct = () => {
+  const navigate = useNavigate();
+  const [loading ,setloading ] = useState(false);
   const dispatch = useDispatch();
   const location = useLocation();
+  const { isAuthenticated } = useSelector((state)=> ({...state.auth}));
+  useEffect(()=>{
+    if(isAuthenticated == false){
+      navigate('/adminlogin');
+    }
+  },[isAuthenticated])
   const { SingleId } = useSelector((state) => ({ ...state.Prod }));
   console.log(SingleId)
   const _id = location.state._id;
@@ -17,6 +27,7 @@ const Updateproduct = () => {
 
 
   useEffect(async ()=>{
+    // setloading(true)
     await dispatch(SingleProduct(_id))
     // .then((response) => {
     //     // console.log();
@@ -60,7 +71,10 @@ const handleInputChange = (e) => {
 console.log(form);
 const handleupdate = () =>{
   console.log(form);
-   dispatch(UpdateProductById(form))
+  setloading(true)
+   dispatch(UpdateProductById(form)).then((res)=>{
+    setloading(false);
+   })
 }
 
 const handleImageChange = (e, index) => {
@@ -83,9 +97,19 @@ const handleImageChange = (e, index) => {
 
   return (
     <div className='admin'>
+      {
+        loading?
+        toast.success("Loading...")
+        :<></>
+      }
       <div className='up'>
         <p className='pa'>DIFFUSE / ADD PRODUCT</p>
-        <button className='addbtn1' onClick={handleupdate}>Update Product</button>
+        {
+          loading?
+          <button disabled className='addbtn1' onClick={handleupdate}>Update Product</button>
+          :
+          <button className='addbtn1' onClick={handleupdate}>Update Product</button>
+        }
       </div>
       <div className='mid'>
         <div className='midleft'>

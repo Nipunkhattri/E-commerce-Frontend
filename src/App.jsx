@@ -12,6 +12,8 @@ import { useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import Header from "./components/header/Header";
 import MainHeader from "./components/header/MainHeader";
+import HeaderTop from "./components/header/HeaderTop";
+import Navbar from "./components/header/Navbar";
 // import Cart from "./components/Pages/Homepage/Cart";
 
 function App() {
@@ -19,13 +21,12 @@ function App() {
   const isScreenSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const location = useLocation();
 
-
   return (
-
-
     <>
     <Header></Header>
-    <MainHeader></MainHeader>
+    {/* <HeaderTop/> */}
+    <Navbar/>
+    {/* <MainHeader></MainHeader> */}
     {/* <Cart/> */}
     <ToastContainer/>
       <RoutesFunc />

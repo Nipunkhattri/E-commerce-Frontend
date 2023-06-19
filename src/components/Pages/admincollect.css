@@ -4,6 +4,10 @@
     /* background-color: aqua; */
 }
 
+.flex1-container{
+    display: flex;
+}
+
 .button1admin{
     height: 40px;
     width: 190px;
@@ -39,8 +43,8 @@
 }
 .deleteadmin{
     position: relative;
-    top: -330px;
-    left: 300px;
+    top: 8px;
+    left: 23%;
     height: 30px;
     width: 60px;
     font-size: 16px;    
@@ -57,4 +61,57 @@
     position: absolute;
     cursor: pointer;
     right: 50px;
+}
+.addbtnpage1{
+    height: 40px;
+    width:160px;
+    font-size: 17px;
+    position: absolute;
+    cursor: pointer;
+    right: 220px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .flex1-container{
+        flex-direction: column;
+    }
+    .deleteadmin{
+        position: relative;
+        top: 39px;
+        /* right: 300px; */
+        left: 76.4%;  
+        height: 30px;
+        width: 60px;
+        font-size: 16px;    
+        border: none;
+    }
+    .addbtnpage1{
+        height: 40px;
+        width: 160px;
+        font-size: 17px;
+        position:inherit;
+        margin: 10px auto;
+        cursor: pointer;
+        right: 220px;
+        display: block;
+    }
+    .button1admin{
+        height: 40px;
+        width: 190px;
+        display: block;
+        margin: auto;
+        border: 2px solid black;
+        text-align: center;
+        margin-top: 17px;
+        padding-top: 10px;
+        /* background-color: black; */
+        cursor: pointer;
+    }
+    .addbtnpage{
+        margin: auto;
+        display: block;
+        position:initial;
+        margin-top: 20px;
+    }
 }

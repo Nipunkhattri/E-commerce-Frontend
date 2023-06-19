@@ -29,15 +29,18 @@ const loadScript = (src) =>{
 const PaymentPage = ({route}) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const { CartData } = useSelector((state) => ({ ...state.Cart }));
+    // const { CartData } = useSelector((state) => ({ ...state.Cart }));
+    const CartData = JSON.parse(localStorage.getItem('myArray'));
     const location = useLocation();
     console.log(location);
     const Items = location.state.Items;
     const sizes = location.state.sizes;
     const quantities = location.state.quantities;
+    const value = location.state.value;
+    const [loading , setloading] = useState(false);
     console.log(Items);
     console.log(sizes);
-    console.log(quantities);
+    console.log(value);
 
     const [formData, setFormData] = useState({
       email:'',
@@ -78,10 +81,12 @@ const PaymentPage = ({route}) => {
       if (formData.razorpay_order_id !== '' && formData.razorpay_payment_id !== '') {
         console.log(formData);
         console.log('hii');
+        setloading(true);
         dispatch(buyItem(formData)).
         then((response) => {
           console.log(response);
           // dispatch(GetCardItem());
+          setloading(false);
           navigate('/email',{state:{form:formData}})
       })  
       .catch((err) => {
@@ -129,9 +134,9 @@ const PaymentPage = ({route}) => {
       }
       // await dispatch(buyItem(formData));
       
-      const _data = {amount:price}
+      const _data = {amount:value}
       console.log(_data);
-      axios.post('http://localhost:5000/api/orders',_data)
+      axios.post('https://sore-plum-perch-hem.cyclic.app/api/orders',_data)
       .then(res=>{
           console.log(res.data);
           handleOpenRayzorpay(res.data.data)
@@ -158,8 +163,14 @@ const PaymentPage = ({route}) => {
 
   return (
     <div className='container'>
+      {
+        loading?
+        toast.success("Loading...")
+        :null
+      }
       <div className='section'>
-        <div className='leftp'>
+        <div className='cardpayment'>
+        <div className='uppay'>
         <h2>SHIMONA AGRAWAL</h2>
         <div className='a'>
             <ul>
@@ -168,9 +179,11 @@ const PaymentPage = ({route}) => {
                 <li>Payment </li>
             </ul>
         </div>
+        </div>
+        <div className='leftp'>
         <div  className='aa'>
             <label htmlFor="" className='hhhh'>Contact</label>
-            <input type="email"  name="email"  value={formData.email} onChange={handleInputChange}/>
+            <input type="email" placeholder='Email or mobile phone number'  name="email"  value={formData.email} onChange={handleInputChange}/>
             <div className='ip'>
                 <input type="checkbox" id="vehicle1"/>
                 <label for="vehicle1"  className='hh'> Email me with news and offers</label><br></br>
@@ -199,26 +212,26 @@ const PaymentPage = ({route}) => {
             "display":"flex"
         }
       }>
-      <div>
+      <div className='fn'>
         <label htmlFor="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} />
+        <input type="text" placeholder='FirstName' id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} />
       </div>
-      <div>
+      <div className='ln'>
         <label htmlFor="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} />
+        <input type="text"placeholder='LastName' id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} />
       </div>
       </div>
       <div className='dvv'>
         <label htmlFor="address">Address:</label>
-        <input type="text" id="address" name="address" value={formData.address} onChange={handleInputChange} />
+        <input type="text" placeholder='Address' id="address" name="address" value={formData.address} onChange={handleInputChange} />
       </div>
       <div className='dvv'>
         <label htmlFor="city">City:</label>
-        <input type="text" id="city" name="city" value={formData.city} onChange={handleInputChange} />
+        <input type="text" id="city" placeholder='City' name="city" value={formData.city} onChange={handleInputChange} />
       </div>
       <div className='dvv'>
         <label htmlFor="pincode">Pin Code:</label>
-        <input type="text" id="pincode" name="pincode" value={formData.pincode} onChange={handleInputChange} />
+        <input type="text" id="pincode" placeholder='Pincode' name="pincode" value={formData.pincode} onChange={handleInputChange} />
       </div>
       <div className='dvv'>
         <label htmlFor="state">State:</label>
@@ -231,10 +244,11 @@ const PaymentPage = ({route}) => {
       </div>
       <div className='dvv'>
         <label htmlFor="phoneNumber">Phone Number:</label>
-        <input type="text" id="phoneNumber" name="phoneNumber" value={formData.phoneNumber} onChange={handleInputChange} />
+        <input type="text" id="phoneNumber" placeholder='PhoneNumber' name="phoneNumber" value={formData.phoneNumber} onChange={handleInputChange} />
       </div>
       <button type="button" className='btnp'  onClick={()=>handleSubmit(price)}>Continue to Payment</button>
     </form>
+        </div>
         </div>
         </div>
         <div className='rightp'>
@@ -256,7 +270,7 @@ const PaymentPage = ({route}) => {
             </div>
             <div className='Checkpay'>
     <div className='Totalpay'>
-      <h3>ToTal : Rs. {calculateTotalPrice()}</h3>
+      <h3>ToTal : Rs. {value}</h3>
       <p>Price includes all charges</p>
       {/* <button className='chbtn'>Checkout</button> */}
     </div>

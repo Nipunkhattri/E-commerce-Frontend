@@ -3,6 +3,7 @@ import { Grid, Typography } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
 import img from "./assets/p3g1.png";
 import { useMediaQuery } from "@material-ui/core";
+import './Product3.css'
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: "center",
@@ -52,7 +53,7 @@ const isMobile = useMediaQuery('(max-width: 600px)');
       <Typography variant="h5" className={classes.heading}>
         EFFORTLESS ELEGANCE
       </Typography>
-      <Grid container className={classes.subgrid}>
+      <Grid container className='subgrid' >
         <Grid item md={6} xs={12}>
           <img src={img} alt="Image 1" className={classes.image} />
         </Grid>
@@ -65,12 +66,12 @@ const isMobile = useMediaQuery('(max-width: 600px)');
             height="100%"
           >
             <Grid item>
-              <Typography variant="h5" className={classes.subheading}>
+              <Typography variant="h5" className='subheading'>
                 OUR AESTHETIC
               </Typography>
             </Grid>
             <Grid item>
-              <Typography variant="body1" className={classes.paragraph} style={{
+              <Typography variant="body1" className='paragraph' style={{
                 width: isMobile ? "200px" : "500px"
               }}>
                 Buna embodies a slow way of life that is rooted in culture,

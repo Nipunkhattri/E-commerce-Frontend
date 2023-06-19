@@ -1,3 +1,4 @@
+
 .dataorder{
     height: 900px;
     width: 100%;
@@ -18,6 +19,12 @@
 .dataimage{
     height: 240px;
     width: 240px;
+    /* background-color: gray; */
+}
+.dataimage img{
+    /* height: 240px; */
+    /* width: 240px; */
+    height: 100%;
     /* background-color: gray; */
 }
 .datamid{
@@ -43,4 +50,27 @@
 }
 .headq{
     margin: 20px 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .datacontainer{
+        height: 930px;
+        display: block;
+        /* flex-direction: column; */
+    }   
+    .dataimage{
+        display: flex;
+        width: 342px;
+    }
+    .dataimage img{
+    width: 57%;
+    height: 77%;
+    margin-top: 23px;
+    /* height: 77%; */
+    }
+    .headq{
+        width: 50%;
+        margin: 50px 10px;
+    }
+
 }

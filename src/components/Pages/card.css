@@ -10,13 +10,15 @@
     width: 50%;
     /* background-color: blue; */
     display: flex;
+    margin-top: 32px;
 }
 
 .one{
-    height: 101%;
+    height: 96.4% !important;
     margin-top: 9px;
-    width: 23%;
-    background-color: white;
+    width: 24%;
+    /* background-color: rgb(187, 59, 59); */
+    margin-top: 1px;
 }
 
 .main{
@@ -27,22 +29,10 @@
 }
 .divcon{
     height: 23.95%;
-    width: 100%;
+    width:90%;
     /* border: 2px solid blanchedalmond; */
     /* background: url("./Store/assets/Rectangle.png") no-repeat center center/cover; */
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .right{
     height: 100%;
@@ -61,13 +51,8 @@
     width: 100px;
     margin-left: 30px;
 }
-.dell{
-    margin-left: 30px;
-    font-size: 25px;
-    color: gray;
-}
 .inss{
-    /* margin-left: 30px; */
+    margin-left: 30px;
     font-size: 25px;
     text-decoration: none;
 }
@@ -78,13 +63,13 @@
 .para1{
     margin: 10px 30px;
     font-size: 19px;
-    color: grey;
+    color: #555555;
 }
 .styleSelect {
     /* position: absolute; */
     /* z-index: 10; */
     width: 168px;
-    height: 34px;
+    height: 44px;
     background: none;
     margin-left: 30px;
     margin-top: 10px;
@@ -142,10 +127,10 @@ span{
 }
 
 .mainimg{
-    height: 100%;
+    height: 90%;
     width: 100%;
-    /* margin-top: 20   px */
-    /* padding-top:px; */
+    /* margin-top: 20px */
+    /* padding-top:20px; */
     /* margin-top: 12px; */
 }
 .loader {
@@ -250,4 +235,75 @@ span{
       transform: rotate(360deg);
     }
   }
-  
+  @media screen and (max-width: 500px) {
+    .card{
+      flex-direction: column;
+      height: 1100px;
+      margin: 26px 0px;
+      width: 100%;
+    }
+    .left{
+      width: 100%;
+      margin-top: 1px;
+      height: 650px;
+      padding: 0px 10px;
+    }
+    .right{
+      width: 100%;
+      /* height: 700px */
+      padding: 0px 17px;
+    }
+    .btn{
+      height: 40px;
+      margin: 19px 12px;
+      /* margin: 24px 27px; */
+      width: 155px;
+      background-color: black;
+      color: aliceblue;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    .one{
+      width: 30% !important;
+      padding: 0px 8px !important;
+      margin-top: 0px;
+    }
+    .divcon{
+      height: 26%;
+      /* width: 100%; */
+    }
+    .head{
+      margin-left: 1px;
+      font-size: 20px;
+    }
+    .img{
+      margin-left: 1px;
+    }
+    .dell{
+      margin-left: 1px;
+    }
+    .inss{
+      margin-left: 0px;
+    }
+    .para1{
+      margin-left: 1px;
+    }
+    .styleSelect{
+      margin-left: 2px;
+    }
+    .btn{
+      margin-left: 1px;
+    }
+    .dv{
+      margin: 0px 0px;
+    }
+    .btcolor{
+      margin-left: 1px;
+    }
+    .ull{
+      margin-left: 13px;
+    }
+    .mainimg{
+      height: 100%;
+    }
+  }

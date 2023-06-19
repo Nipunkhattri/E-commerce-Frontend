@@ -1,0 +1,56 @@
+.login{
+    height: 700px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center; /* Horizontally center the inner div */
+    align-items: center; 
+}
+.box{
+    height: 350px;
+    /* display: block; */
+    /* margin: auto; */
+    /* padding-top: 40px; */
+    /* margin: 40px 40px; */
+    padding-top: 30px;
+    width: 350px;
+    /* background-color: rgb(88, 88, 88); */
+    /* border: 2px solid rgb(0, 0, 0); */
+    box-shadow: 0px 0px 3px 2px ;
+}
+
+.box h2{
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.inputU{
+    width: 80%;
+    height: 40px;
+    margin: 20px 30px;
+    background: none;
+}
+.inputU::placeholder{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.inputP{
+    width: 80%;
+    height: 40px;
+    margin: 0px 30px;
+    background: none;
+}
+.inputP::placeholder{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.Login-btn{
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 21px;
+    margin: 20px 30px;
+    cursor: pointer;    
+}

@@ -1,10 +1,21 @@
-import React,{useState} from 'react'
+import React,{useState ,useEffect} from 'react'
 import "./Admin.css"
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../redux/features/ProductSlice';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { toast } from 'react-toastify';
 
 const AdminPage = () => {
     const dispatch = useDispatch();
+    const[loading , setloading ] = useState(false);
+    const navigate = useNavigate();
+    const { isAuthenticated } = useSelector((state)=> ({...state.auth}));
+    useEffect(()=>{
+      if(isAuthenticated == false){
+        navigate('/adminlogin');
+      }
+    })
     const [form, setForm] = useState({
         headline: '',
         heading1: '',
@@ -43,16 +54,30 @@ const AdminPage = () => {
     console.log(form);
       const handleSubmit = () => {
         // e.preventDefault();
-        dispatch(addProduct(form))
+        setloading(true);
+        dispatch(addProduct(form)).then(()=>{
+          setloading(false);
+        })
         // Perform further actions with the form data
       };
 
 
   return (
     <div className='admin'>
+      {
+        loading?
+        toast.success("Loading...")
+        :
+        <></>
+      }
       <div className='up'>
         <p className='pa'>DIFFUSE / ADD PRODUCT</p>
-        <button className='addbtn1' onClick={handleSubmit}>Add Product</button>
+        {
+          loading?
+          <button disabled  className='addbtn1' onClick={handleSubmit}>Add Product</button>
+          :
+          <button className='addbtn1' onClick={handleSubmit}>Add Product</button>
+        }
       </div>
       <div className='mid'>
         <div className='midleft'>

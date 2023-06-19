@@ -26,12 +26,13 @@ export default function Store() {
   const isScreenSmall = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
-      <VideoPlayer
-        src={video}
-        title="A WORLD OF SUNLIT PEAKS AND WHITE CLOUDS"
-        subtitle="HEART IN THE HIGHLANDS"
-        buttonLabel="Shop Now"
-      />
+    <div className="storecontainer">
+    <div className='rev-homestore'>
+      <h3 className='h11'>A world of sunlit peaks and white clouds</h3>
+      <h2 className='h22'>Heart In the Highlands</h2>
+      <button className='btn11'>SHOP NOW</button>
+        </div>
+    </div>
       <StoreGrid></StoreGrid>
       
     </>

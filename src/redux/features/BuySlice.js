@@ -6,6 +6,7 @@ export const buyItem = createAsyncThunk(
     'auth/buy',
     async (formdata)=>{
     try{
+      // toast.success("loading...");
         console.log(formdata);
       const response = await api.buyItemP(formdata);
         console.log(response)
@@ -17,6 +18,8 @@ export const buyItem = createAsyncThunk(
     }
     }
 );
+
+
 
 export const GetBuyProduct = createAsyncThunk(
     'auth/buyItem',
