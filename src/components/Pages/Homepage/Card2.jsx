@@ -19,7 +19,7 @@ const Card2 = () => {
         <div className='card2div2up'>
             <div>
             <h1>Our Aesthetic</h1>
-            <p>Buna embodies a slow way of life that is rooted in culture, craft and of breath-ability, light and airiness that it wants its wearers to be part of. of breath-ability,</p>
+            <p>Buna embodies a <span>slow way</span> of life that is rooted in culture, craft and of breath-ability, light and airiness that it wants its wearers to be part of. of breath-ability,</p>
             </div>
         </div>
         <div className='card2div2down'></div>

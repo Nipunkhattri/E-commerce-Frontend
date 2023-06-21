@@ -10,7 +10,7 @@ import VideoPlayer2 from "./Homepage/VideoPlayer2";
 import ProductGrid1 from "./Homepage/ProductGrid1";
 import ProductGrid2 from "./Homepage/ProductGrid2";
 import ProductGrid3 from "./Homepage/ProductGrid3";
-import Carousel from "./Homepage/Carousel";
+
 import StoreGrid from "./Store/StoreGrid";
 
 const scrollToTop = () => {
