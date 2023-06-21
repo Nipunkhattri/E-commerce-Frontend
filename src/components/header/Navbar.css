@@ -37,7 +37,7 @@
 .dropdown-menu{
   display: none;
   position: absolute;
-  top: 100%;
+  top: 150%;
   left: 0;
   background-color: white;
   min-width: 120px;
@@ -59,6 +59,13 @@
 }
 
 
+.logotxt{
+  font-size: 16px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
 .navbar-items{
   padding: 10px 10px;
 }
@@ -69,7 +76,10 @@
 .navbar-link{
   text-decoration: none;
   color: black;
-  font-size: 16px; 
+  font-size: 13px; 
+  font-family: "Inter";
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 .navbar-link:hover{
   color: red;
@@ -85,8 +95,13 @@
 .navbar-link1{
   text-decoration: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
   color: black;
+  font-family: "Inter";
+  letter-spacing: 1px;
+  font-weight: 500;
+
+
 }
 .navbar-link2{
   display: none;
@@ -111,8 +126,11 @@
 }
 
 .logoimg{
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 .cartimg{
   height: 30px;
@@ -227,6 +245,7 @@
     font-size: 18px !important;
     position: relative;
     top:13px;
+    
   }
 
   .cartimg{
@@ -263,7 +282,7 @@
   }
   .navbar-link1{
     color: #555555;
-    font-size: 21px;
+    font-size: 22px;
   }
   .rg{
     margin: 10px 10px;

@@ -11,6 +11,7 @@ import { useTheme, useMediaQuery, Paper, Typography, Box, MobileStepper} from '@
 
 
 import MobileCard2 from './MobileCard2'
+import MobileCard1 from './MobileCard1'
 
 const Homescreen = () => {
   const theme = useTheme();
@@ -24,8 +25,9 @@ const Homescreen = () => {
       <button className='btn11'>SHOP NOW</button>
         </div>
     </div>
-    <Card1/>
 
+    {isScreenSmall ? <MobileCard1/> :  <Card1></Card1> }
+   
     {isScreenSmall ? <MobileCard2/> :  <Card2></Card2> }
     
     <Card3/>
