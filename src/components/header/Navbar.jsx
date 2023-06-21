@@ -132,7 +132,7 @@ const Navbar = () => {
       </button>
       <div className='rg'>
       <img src={lg} className='logoimg' alt="" />
-      <h1 className='absolute  top-5 left-4 text-2xl text-white text font-semibold' >SHIMONA AGARWAL</h1>
+      <h1 className='absolute top-5 left-4 text-2xl text-white text font-semibold logotxt' >SHIMONA AGARWAL</h1>
       <div  className="navbar-link2" >
                 <img onClick={handlenavigate3} src={cartIcon} alt="" style={{ height: '20px'}} />
               </div>
