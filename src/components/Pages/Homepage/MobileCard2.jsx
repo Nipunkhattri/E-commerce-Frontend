@@ -41,17 +41,18 @@ const MobileCard2 = () => {
   const classes = useStyles();
 
   return (
-    <div style={{ display: isMobile ? 'block' : 'none' }}>
+    <div style={{ display: isMobile ? 'block' : 'none'  }}>
+          <h2 className='mobcard2h2'>OUR SCARF COLLECTION</h2>
+
       <AutoPlaySwipeableViews
         index={activeStep}
         onChangeIndex={setActiveStep}
         enableMouseEvents
         interval={5000}
-        style={{ overflow: 'hidden' }}
+        style={{ overflow: 'hidden'  }}
       >
         {backgrounds.map((background, index) => (
-          <div className='card2'>
-          <h2 className='card2h2'>OUR SCARF COLLECTION</h2>
+          <div className='card2' >
           <div className='Card2-container'>
       <div className='card2div1'>
           <div className='insidecard2'>
