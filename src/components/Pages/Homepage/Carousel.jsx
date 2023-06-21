@@ -7,6 +7,7 @@ import rightIcon from "./assets/rightIcon.png";
 import leftIcon from "./assets/leftIcon.png";
 import { useMediaQuery } from "@material-ui/core";
 
+
 const useStyles = makeStyles((theme) => ({
   carousel: {
     width: "100%",

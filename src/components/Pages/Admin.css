@@ -3,6 +3,9 @@
     width: 100%;
     /* background-color: aqua; */
 }
+.btndiv{
+    width: 29%;
+}
 
 .line-preview{
     width: 80%;
@@ -29,6 +32,16 @@
     height: 40px;
     width: 150px;
     margin: 19px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+}
+.addbtn2{
+    height: 40px;
+    width: 150px;
+    margin: 19px 10px;
     border-radius: 5px;
     font-size: 20px;
     cursor: pointer;

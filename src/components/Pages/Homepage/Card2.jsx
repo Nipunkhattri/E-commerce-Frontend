@@ -5,7 +5,7 @@ const Card2 = () => {
     <div className='card2'>
         <h2 className='card2h2'>OUR SCARF COLLECTION</h2>
         <div className='Card2-container'>
-    <div className='card2div1'>
+        <div className='card2div1'>
         <div className='insidecard2'>
             <div className='insidecard2inside'>
             <h2>The Grey collection</h2>

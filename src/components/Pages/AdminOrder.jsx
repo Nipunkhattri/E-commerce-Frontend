@@ -24,9 +24,14 @@ const AdminOrder = () => {
   const handleLink = (id) => {
     navigate("/orderdata", { state: { id: id } });
   };
+  const handlenavigate2 = () =>{
+    navigate('/admincollect')
+  }
 
   return (
     <div className="order1">
+      
+      {/* <button className='addbtn2' onClick={handlenavigate2}>collection Product </button> */}
       <div className="containorder">
         <table className="orderr">
           <tr className="trr">

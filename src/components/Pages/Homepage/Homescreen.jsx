@@ -2,6 +2,7 @@ import React from 'react'
 import './Homescreen.css'
 import Card1 from './Card1.jsx'
 import Card2 from './Card2'
+import Caucard from './Caucard.jsx'
 import Card3 from './Card3'
 import Card4 from './Card4'
 import Card5 from './Card5'
@@ -18,6 +19,7 @@ const Homescreen = () => {
         </div>
     </div>
     <Card1/>
+    <Caucard/>
     <Card2/>
     <Card3/>
     <Card4/>

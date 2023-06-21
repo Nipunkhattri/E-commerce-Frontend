@@ -119,6 +119,53 @@
   width: 30px;
 }
 
+.card1Right1 {
+  /* Common styles for both desktop and mobile */
+  margin: 0 10px;
+}
+
+.cardimgp1 {
+  /* Common styles for both desktop and mobile */
+  text-align: center;
+  padding: 20px;
+}
+
+.cardimgp1 h2 {
+  /* Styles for heading */
+  font-size: 24px;
+}
+
+.cardimgp1 h3 {
+  /* Styles for subheading */
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cardimgp1 img {
+  /* Styles for image */
+  width: 100%;
+  height: auto;
+}
+
+.cardimgp1 h4 {
+  /* Styles for price */
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.cardbtn1 {
+  /* Styles for button */
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: 20px auto;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
 @media screen and (max-width: 500px) {
 .navbar{
   height: 80px;
@@ -290,8 +337,12 @@
     background-color: #f0f0f0;
     color: #666;
   }
-  
-
-
-
+  .card1Right1 {
+    width: 25%;
+    float: left;
   }
+  .card1Right1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

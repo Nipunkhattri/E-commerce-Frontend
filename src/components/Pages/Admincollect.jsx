@@ -104,7 +104,6 @@ const Admincollect = () => {
   const handlenavigate1 = () =>{
     navigate('/adminorder')
   }
-
   const handleclick = () =>{
     let doc = document.querySelector('.dropdownmenu');
     doc.classList.toggle('hidden')
@@ -128,7 +127,7 @@ const Admincollect = () => {
 
   return (
     <div className='contain'>
-        <button className='addbtnpage' onClick={handlenavigate}>Add Product </button>
+      <button className='addbtnpage' onClick={handlenavigate}>Add Product </button>
         <button className='addbtnpage1' onClick={handlenavigate1}>Order Details</button>
     <div
                 component="a"

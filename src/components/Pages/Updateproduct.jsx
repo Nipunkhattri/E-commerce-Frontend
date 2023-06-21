@@ -94,6 +94,9 @@ const handleImageChange = (e, index) => {
   }
 }
 
+const handlenavigate2 = () =>{
+  navigate('/admincollect')
+}
 
   return (
     <div className='admin'>
@@ -106,9 +109,15 @@ const handleImageChange = (e, index) => {
         <p className='pa'>DIFFUSE / ADD PRODUCT</p>
         {
           loading?
+          <div  className='btndiv'>
           <button disabled className='addbtn1' onClick={handleupdate}>Update Product</button>
+          <button className='addbtn2' onClick={handlenavigate2}>collection Product </button>
+          </div>
           :
+          <div  className='btndiv'>
           <button className='addbtn1' onClick={handleupdate}>Update Product</button>
+          <button className='addbtn2' onClick={handlenavigate2}>collection Product </button>
+          </div>
         }
       </div>
       <div className='mid'>

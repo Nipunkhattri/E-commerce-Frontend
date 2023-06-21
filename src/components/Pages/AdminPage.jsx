@@ -71,7 +71,9 @@ const AdminPage = () => {
     }
   };
   // console.log(lines)
-
+  const handlenavigate2 = () =>{
+    navigate('/admincollect')
+  }
 
     console.log(form);
       const handleSubmit = () => {
@@ -96,7 +98,7 @@ const AdminPage = () => {
         <p className='pa'>DIFFUSE / ADD PRODUCT</p>
         {
           loading?
-          <button disabled  className='addbtn1' onClick={handleSubmit}>Add Product</button>
+          <button className='addbtn1' onClick={handleSubmit}>Add Product</button>
           :
           <button className='addbtn1' onClick={handleSubmit}>Add Product</button>
         }

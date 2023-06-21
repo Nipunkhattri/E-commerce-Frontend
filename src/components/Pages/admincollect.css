@@ -68,6 +68,14 @@
     cursor: pointer;
     right: 220px;
 }
+.addbtnpage2{
+    height: 40px;
+    width:160px;
+    font-size: 17px;
+    position: absolute;
+    cursor: pointer;
+    right: 390px;
+}
 
 
 @media screen and (max-width: 500px) {
