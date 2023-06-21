@@ -40,16 +40,19 @@
         grid-template-columns: repeat(2, 1fr);
 }
 .headstore1{
-        font-size: 26px;
+        font-size: 22px;
     font-weight: 700;
 }
 .headstore2{
-    font-size: 25px;
+    font-size: 20px;
 }
 .itemdiv1{
     width: auto;
-  margin: 20px;
-  padding: 10px;
+  margin: 3px;
+  padding: 5px;
   border: 1px solid #ccc;
+}
+.imgg1{
+    height: 180px;
 }
 }

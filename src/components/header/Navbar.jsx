@@ -47,11 +47,11 @@ const Navbar = () => {
     setIsOpen(false);
   }
   const handlenavigate2 = ()=>{
-    console.log("HII")
     navigate('/About');
     setIsOpen(false);
   }
   const handlenavigate3 = ()=>{
+    console.log("HII")
     navigate('/cart');
     setIsOpen(false);
   }
@@ -133,25 +133,28 @@ const Navbar = () => {
       <div className='rg'>
       <img src={lg} className='logoimg' alt="" />
       <h1 className='absolute  top-5 left-4 text-2xl text-white text font-semibold' >SHIMONA AGARWAL</h1>
+      <div  className="navbar-link2" >
+                <img onClick={handlenavigate3} src={cartIcon} alt="" style={{ height: '20px'}} />
+              </div>
       </div>
     </div>
     <div className={isOpen ? "sidebar open" : "sidebar"}>
      <nav className='nav'>
      <ul className="navbar-items">
-             <li className="navbar-item">
-               <Link to="/" className="navbar-link" >
+             <li onClick={handlenavigate1} className="navbar-item">
+               <Link  className="navbar-link" >
                  HOME
                </Link>
              </li>
-             <li className="navbar-item">
-               <Link to="/store" className="navbar-link" >
+             <li onClick={handlenavigate} className="navbar-item">
+               <Link  className="navbar-link" >
                  STORE
                </Link>
              </li>
              <li className="navbar-item1">
-               <Link className="navbar-link1" >
+               <li className="navbar-link1" >
                  COLLECTION
-               </Link>
+               </li>
                <div className="dropdown-menu">
                      {
                       Array.isArray(name) ?
@@ -167,14 +170,9 @@ const Navbar = () => {
                     }
                   </div>
             </li>
-            <li className="navbar-item">
-              <Link to="/About" className="navbar-link">
+            <li  onClick={handlenavigate2} className="navbar-item">
+              <Link className="navbar-link">
                 ABOUT US
-              </Link>
-            </li>
-            <li onClick={handlenavigate3} className="navbar-item">
-              <Link  className="navbar-link2" >
-                <img src={cartIcon} alt="" style={{ height: '20px'}} />
               </Link>
             </li>
           </ul>

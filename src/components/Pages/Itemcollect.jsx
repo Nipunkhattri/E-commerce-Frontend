@@ -104,6 +104,7 @@ const Itemcollect = ({route}) => {
                 </div>
               </div>
             </div>
+      // <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           );
         })
         :<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>

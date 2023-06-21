@@ -195,7 +195,7 @@ align-items: flex-end;
     width: 330px;
   } */
   .lds-roller{
-    left: 10px !important;
+    left: 68% !important;
   }
   .storecontainer{
     height: 43vh;
