@@ -9,8 +9,8 @@ const Aminlogin = ({ setIsAuthenticated }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [data,setdata] = useState({
-    User:"",
-    Pass:""
+    User:'Admin#6543',
+    Pass:'Abc908X765'
   })
 
   const handlelogin = (e) =>{

@@ -38,7 +38,7 @@ const authSlice = createSlice({
     },
     [authlogin.fulfilled]: (state, action) => {
       state.loading = false;
-      // localStorage.setItem("item", JSON.stringify({ ...action.payload }));
+      localStorage.setItem("auth", JSON.stringify(state.isAuthenticated ));
       state.isAuthenticated = true;
     },
     [authlogin.rejected]: (state, action) => {

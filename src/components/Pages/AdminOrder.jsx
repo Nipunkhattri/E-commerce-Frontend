@@ -33,6 +33,7 @@ const AdminOrder = () => {
       
       {/* <button className='addbtn2' onClick={handlenavigate2}>collection Product </button> */}
       <div className="containorder">
+        
         <table className="orderr">
           <tr className="trr">
             <th className="thh">razorpay_order_id</th>

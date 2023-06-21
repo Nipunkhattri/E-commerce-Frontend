@@ -49,6 +49,7 @@ import { deleteitem } from '../../redux/features/BuySlice';
 
 const Admincollect = () => {
 
+
   const navigate = useNavigate();
   const { isAuthenticated } = useSelector((state)=> ({...state.auth}));
 
@@ -64,13 +65,18 @@ const Admincollect = () => {
     const { Product1 } = useSelector((state) => ({ ...state.Prod }));
   console.log(Product1);
   const [ name,setname] = useState(null)
-  useEffect(()=>{
-    value = Product1?.map((element) => element.collect);
+  const handleproduct = async ()=>{
+    value = await Product1?.map((element) => element.collect);
     console.log(value)
     setname(value);
+  }
+  useEffect(()=>{
+      handleproduct()
+
   },[Product1])
 
-  const [value1,setvalue] = useState("");
+  console.log(name)
+  const [value1,setvalue] = useState(null);
   const [loading, setloading] = useState(true);
   const [collection , setcollection] = useState(null);
 
@@ -109,24 +115,41 @@ const Admincollect = () => {
     doc.classList.toggle('hidden')
   }
 
-  useEffect(()=>{
+
+  const handlevalue  = () =>{
     setloading(true);
-    dispatch(getBycollection(value1))
-    .then((response) => {
-      setcollection(response.payload);
-      setloading(false);
-    })  
-    .catch((err) => {
-        console.log(err);
-    });
+    console.log(value1);
+      dispatch(getBycollection(value1))
+      .then((response) => {
+        setcollection(response.payload);
+        setloading(false);
+      })  
+      .catch((err) => {
+          console.log(err);
+      });
+  }
+
+  useEffect(()=>{
+    handlevalue();
   },[value1])
 
+  console.log(collection);
+  console.log(name)
+
   const handleupdateproduct = (id) =>{
+    console.log(id);
     navigate('/updateproduct',{state:{_id:id}})
   }
 
+
   return (
-    <div className='contain'>
+    <>
+      <>
+      {
+        (name !== null )
+        ?
+        <>
+          <div className='contain'>
       <button className='addbtnpage' onClick={handlenavigate}>Add Product </button>
         <button className='addbtnpage1' onClick={handlenavigate1}>Order Details</button>
     <div
@@ -194,6 +217,14 @@ const Admincollect = () => {
       
     </div>
     </div>
+        </>
+        :<>
+        <h2>hii</h2>
+        </>
+      }
+
+      </>
+    </>
   )
 }
 
