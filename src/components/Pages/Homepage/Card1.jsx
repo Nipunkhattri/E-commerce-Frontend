@@ -1,6 +1,6 @@
 import React from 'react'
 import suit from './suit.png' 
-import Slider from 'react-slick';
+
 // import Carousel1 from './Carousel1.jsx'
 const Card1 = () => {
   return (
