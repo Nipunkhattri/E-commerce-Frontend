@@ -154,7 +154,6 @@ const Cart = ({route}) => {
             <h3>{ele.Name}</h3>
             <p>Size: {ele.size}</p>
             <h4>RS. {ele.Price}</h4>
-            <p>Color: Red</p>
           </div>
           </div>
         </div>
@@ -190,7 +189,8 @@ const Cart = ({route}) => {
   <>
   <div className='items'>
     <img className='cartimg' src={carty} alt="" />
-    <h3>No Item In Cart</h3>
+    <h3 className='textcart'>Your Cart Is Empty</h3>
+    <button className='rtbtn'>Return To Shop</button>
   </div>
   </>
   }

@@ -71,29 +71,29 @@ const StoreGrid = () => {
     <>
 
       <div
-        className="flex-container"
+        className="flex-container1"
       >
         {
           Array.isArray(Product1) ?
         Product1?.map((item, index) => {
           return (
-            <div className="itemdiv" key={index} onClick={()=>handleclick(item._id)}>
+            <div className="itemdiv1" key={index} onClick={()=>handleclick(item._id)}>
               {/* <div
                 className={classes.media}
                 style={{ backgroundImage: `url(${item.Image})` }}
               /> */}
               <img
         component="img"
-        className="imgg"
+        className="imgg1"
         alt="The house from the offer."
         src={item.images[0]}
       />
               {/* <img src={imgg1} className="imgg" alt="Product Image" /> */}
-              <div className="text-store">
-                <div variant="h6" className={classes.text}>
+              <div className="text-store1">
+                <div variant="h6" className='headstore1'>
                   {item.headline}
                 </div>
-                <div variant="body1" className={classes.text}>
+                <div variant="body1" className='headstore2'>
                   RS. {item.Price} 
                 </div>
               </div>

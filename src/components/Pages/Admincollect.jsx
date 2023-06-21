@@ -156,7 +156,7 @@ const Admincollect = () => {
       }
      }>{value1?value1:''} Collection</h3>
     <div
-        className="flex-container"
+        className="flex-container1"
       >
        
          {
@@ -164,24 +164,24 @@ const Admincollect = () => {
         collection?.map((ele, index) => {
           return (
             <>
+            <div className="itemdiv1" key={index} onClick={()=>handleupdateproduct(ele._id)}>
             <button className='deleteadmin' onClick={() => handledeletecollect(ele._id)}>Delete</button>
-            <div className="itemdiv" key={index} onClick={()=>handleupdateproduct(ele._id)}>
               {/* <div
                 className={classes.media}
                 style={{ backgroundImage: `url(${item.Image})` }}
             /> */}
               <img
         component="img"
-        className="imgg"
+        className="imgg1"
         alt="The house from the offer."
         src={ele.images[0]}
       />
               {/* <img src={imgg1} className="imgg" alt="Product Image" /> */}
-              <div className='text-store'>
-                <div variant="h6" className={classes.text}>
+              <div className='text-store1'>
+                <div variant="h6" className="headstore1">
                   {ele.headline}
                 </div>
-                <div variant="body1" className={classes.text}>
+                <div variant="body1" className="headstore2">
                   RS. {ele.Price} 
                 </div>
               </div>

@@ -16,10 +16,13 @@ const AdminPage = () => {
         navigate('/adminlogin');
       }
     })
+
+    const [currentLine, setCurrentLine] = useState('');
+
     const [form, setForm] = useState({
         headline: '',
         heading1: '',
-        heading2: '',
+        heading2: [],
         price: '',
         collection: '',
         images: [],
@@ -50,6 +53,25 @@ const AdminPage = () => {
       };
     }
   };
+
+  const handleInputChange1 = (event) => {
+    setCurrentLine(event.target.value);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      if (currentLine.trim() !== '') {
+        setForm((prevForm) => ({
+          ...prevForm,
+          heading2: [...prevForm.heading2, currentLine],
+        }));
+        setCurrentLine('');
+      }
+    }
+  };
+  // console.log(lines)
+
 
     console.log(form);
       const handleSubmit = () => {
@@ -83,22 +105,28 @@ const AdminPage = () => {
         <div className='midleft'>
             <div className='prdiv'>
                 <label htmlFor="">ENTER PRODUCT NAME HERE</label>
-                <input type="text" placeholder='Hello Text 1' className='prname' name="headline" value={form.headline}
+                <input type="text" placeholder='Product Name' className='prname' name="headline" value={form.headline}
           onChange={handleInputChange} />
             </div>
             <div className='prdiv1'>
                 <label htmlFor="">ENTER PRODUCT DESCRIPTION</label>
-                <input type='text' placeholder='Hello Text 2' id="" className='prtextarea'
+                <input type='text' placeholder='Product Description' id="" className='prtextarea'
                  name="heading1"
                  value={form.heading1}
                  onChange={handleInputChange}></input>
             </div>
             <div className='prdiv2'>
                 <label htmlFor="">ENTER PRODUCT DESCRIPTION</label>
-                <input type='text' placeholder='Hello Text 2' id="" className='prtextarea'
+                <input type='text' placeholder='Bullet Points' id="" className='prtextarea'
                 name="heading2"
-                value={form.heading2}
-                onChange={handleInputChange}></input>
+                onChange={handleInputChange1}
+                onKeyPress={handleKeyPress}
+                value={currentLine}></input>
+            <div className="line-preview">
+        {form.heading2.map((line, index) => (
+          <div key={index} className="line-item"> {index+1}.{line} </div>
+        ))}
+             </div>
             </div>
         </div>
         <div className='midright grid-container'>
@@ -145,7 +173,7 @@ const AdminPage = () => {
       </div>
       <div className='newcolect'>
             <label htmlFor="">ADD NEW COLLECTION NAME</label>
-            <input type="text" placeholder="" className='priceinput' 
+            <input type="text" placeholder="Collection Name" className='priceinput' 
             name="collection"
             value={form.collection}
             onChange={handleInputChange}/>
@@ -153,7 +181,7 @@ const AdminPage = () => {
       <div className='down'>  
         <div className='pricediv'>
             <label htmlFor="">ENTER PRICE HERE</label>
-            <input type="text" placeholder="220$" className='priceinput' 
+            <input type="text" placeholder="Price" className='priceinput' 
             name="price"
             value={form.price}
             onChange={handleInputChange}/>

@@ -71,34 +71,35 @@ const Itemcollect = ({route}) => {
     <div class="storecontainer"><div class="rev-homestore"><h3 class="h11">A world of sunlit peaks and white clouds</h3><h2 class="h22">Heart In the Highlands</h2><button class="btn11">SHOP NOW</button></div></div>
      <h3 style={
       {
-        "margin":"40px 40px"
+        "margin":"40px 40px",
+        "fontSize":"22px"
       }
      }>Collections/{data} Collection</h3>
-    <card
-        className="flex-container"
+    <div
+        className="flex-container1"
       >
        
          {
           Array.isArray(collection) && loading == false ?
         collection?.map((item, index) => {
           return (
-            <div className="itemdiv" key={index} onClick={()=>handleclick(item._id)}>
+            <div className="itemdiv1" key={index} onClick={()=>handleclick(item._id)}>
               {/* <div
                 className={classes.media}
                 style={{ backgroundImage: `url(${item.Image})` }}
               /> */}
               <img
         component="img"
-        className="imgg"
+        className="imgg1"
         alt="The house from the offer."
         src={item.images[0]}
       />
               {/* <img src={imgg1} className="imgg" alt="Product Image" /> */}
-              <div className='text-store'>
-                <div variant="h6" className={classes.text}>
+              <div className='text-store1'>
+                <div variant="h6" className='headstore1'>
                   {item.headline}
                 </div>
-                <div variant="body1" className={classes.text}>
+                <div variant="body1" className='headstore2'>
                   RS. {item.Price} 
                 </div>
               </div>
@@ -108,7 +109,7 @@ const Itemcollect = ({route}) => {
         :<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         } 
       
-    </card>
+    </div>
     </>
   )
 }

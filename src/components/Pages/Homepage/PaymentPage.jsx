@@ -52,7 +52,7 @@ const PaymentPage = ({route}) => {
       pincode: '',
       state: '',
       phoneNumber: '',
-      ItemsArray:Items,
+      ItemsArray:CartData,
       SizeArray:sizes,
       QuantityArray:quantities,
       razorpay_order_id:'',
@@ -60,7 +60,6 @@ const PaymentPage = ({route}) => {
     });
 
     console.log(formData)
-  
     const handleInputChange = (e) => {
       const { name, value } = e.target;
       setFormData((prevFormData) => ({
@@ -78,7 +77,7 @@ const PaymentPage = ({route}) => {
     },[res])
 
     useEffect(() => {
-      if (formData.razorpay_order_id !== '' && formData.razorpay_payment_id !== '') {
+      if (formData.razorpay_order_id !== '' && formData.razorpay_payment_id !== '' ) {
         console.log(formData);
         console.log('hii');
         setloading(true);
@@ -128,8 +127,8 @@ const PaymentPage = ({route}) => {
     const handleSubmit = async (price) => {
     //   e.preventDefault();
       console.log(formData);
-      if(formData.phoneNumber.length != 10){
-        toast.error("Phone number invalid");
+      if(formData.phoneNumber.length != 10 || formData.email == '' || formData.country == '' || formData.firstName == '' || formData.address == '' || formData.city == '' || formData.pincode == '' || formData.state == '' || formData.ItemsArray == ''  || formData.phoneNumber == '' || formData.QuantityArray == '' || formData.SizeArray == ''){
+        toast.error("Please Check Again");
         return;
       }
       // await dispatch(buyItem(formData));
@@ -191,12 +190,7 @@ const PaymentPage = ({route}) => {
         </div>
 
         <div className='ship'>
-        <h3 style={
-            {
-                "margin":"20px 8px",
-                "fontSize":"22px"
-            }
-        }>Shipping Address</h3>
+        <h3 className='shiphead'>Shipping Address</h3>
         <form>
       <div className='dvv'>
         <label htmlFor="country">Country:</label>
@@ -261,7 +255,7 @@ const PaymentPage = ({route}) => {
                             <div className='divpay'>
                                 <img src={ele.Image} className='imgpay' alt="Item 1"/>
                                 <h3>{ele.Name}</h3>
-                                <h3>Rs. {ele.Price}</h3>
+                                <h2>Rs. {ele.Price}</h2>
                             </div>
                             </>
                         )

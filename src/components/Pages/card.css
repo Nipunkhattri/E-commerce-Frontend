@@ -1,4 +1,6 @@
-    .card{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+.card{
     height: 700px;
     width: 90%;
     display: flex;
@@ -38,13 +40,16 @@
     height: 100%;
     width: 50%;
     /* background-color:black; */
+    padding: 26px;
 }
 .head{
     text-align: left;
     margin-left: 30px;
     margin-top: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 300;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 .img{
     height: 30px;
@@ -62,26 +67,49 @@
 
 .para1{
     margin: 10px 30px;
-    font-size: 19px;
+    font-size: 18px;
     color: #555555;
-}
-.styleSelect {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .styleSelect {
     /* position: absolute; */
+    font-family: 'Inter', sans-serif;
     /* z-index: 10; */
     width: 168px;
     height: 44px;
     background: none;
+    font-size: 15px;
     margin-left: 30px;
     margin-top: 10px;
     /* border: 1px solid #000; */
 }
 .btn{
     height: 40px;
-    margin: 40px 30px;
-    width: 160px;
+    margin: 26px 10px;
+    font-family: 'Inter', sans-serif;
+    width: 180px;
+    border: none;
     background-color: black;
     color: aliceblue;
-    font-size: 17px;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+  }
+  .btn1{
+    height: 40px;
+    /* letter-spacing: 1px; */
+    margin-left: 32px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    /* margin:0px 0px; */
+    width: 180px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -92,7 +120,7 @@
     color: grey;
 }
 span{
-    color: black;
+    color: black !important;
 }
 .btnci{
     height: 30px;
@@ -122,8 +150,14 @@ span{
 .ull{
     margin-left: 50px;
     line-height: 1.6;
-    font-size: 16px;
     color: #555555;
+    font-size: 17px;
+  }
+  
+  .ull li{
+    font-weight: 600;
+    line-height: 1.9;
+    font-family: 'Inter', sans-serif;
 }
 
 .mainimg{
@@ -245,7 +279,7 @@ span{
     .left{
       width: 100%;
       margin-top: 1px;
-      height: 650px;
+      height: 393px;
       padding: 0px 10px;
     }
     .right{
@@ -253,15 +287,16 @@ span{
       /* height: 700px */
       padding: 0px 17px;
     }
-    .btn{
-      height: 40px;
-      margin: 19px 12px;
-      /* margin: 24px 27px; */
-      width: 155px;
-      background-color: black;
-      color: aliceblue;
+    .btn1{
+      margin-left: 1px;
+      margin-top: 20px;
       font-size: 17px;
-      cursor: pointer;
+      width: 153px;
+    }
+    .btn{
+      margin-left: 6px;
+      margin-top: 20px;
+      font-size: 17px;
     }
     .one{
       width: 30% !important;
@@ -270,11 +305,12 @@ span{
     }
     .divcon{
       height: 26%;
-      /* width: 100%; */
+      width: 99%;
     }
     .head{
       margin-left: 1px;
-      font-size: 20px;
+      font-size: 18px;
+      letter-spacing: 2px;
     }
     .img{
       margin-left: 1px;
@@ -287,12 +323,22 @@ span{
     }
     .para1{
       margin-left: 1px;
+    line-height: 1.4;
+    width: 100%;
+    font-weight: 600;
+    font-size: 17px;
     }
     .styleSelect{
       margin-left: 2px;
+      color:#000000;
+      font-size: 17px;
+    }
+    .ull li{
+      font-size: 18px;
+      font-weight: 700;
     }
     .btn{
-      margin-left: 1px;
+      /* margin-left: 1px; */
     }
     .dv{
       margin: 0px 0px;

@@ -113,7 +113,7 @@ const ProductSlice = createSlice({
       },
       [SingleProduct.fulfilled]: (state, action) => {
         state.loading = false;
-        localStorage.setItem("SProduct", JSON.stringify(action.payload));
+        // localStorage.setItem("SProduct", JSON.stringify(action.payload));
         state.SingleId = action.payload;
       },
       [SingleProduct.rejected]: (state, action) => {

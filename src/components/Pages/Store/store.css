@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 .flex-container {
     display: flex;
     /* grid-template-columns: auto auto auto auto; */
@@ -8,6 +10,21 @@
   }
   .text-store{
     margin-top: 20px;
+  }
+
+  .textt{
+    font-size: 20px;
+    font-weight: 800;
+    color: #474747;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+  }
+  .textp{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
   }
 
   .imgg{
@@ -133,21 +150,36 @@
 }
 
 .storecontainer{
+  /* background-color: aqua; */
   height: 100vh;
   width: 100%;
-  /* background-color: #3498db; */
-  background: url('./women.png') no-repeat center center/cover;
+  /* border: 2px solid black; */
+  display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+  background: url(./women.png)no-repeat center center/cover;
 }
 .rev-homestore{
-  position: absolute;
-  top: 90vh;
-  left: 155vh;
-  line-height: 1.8;
-  align-items: end;
-  text-align: end;
+  margin-bottom: 5vh;
+    margin-right: 5vh;
+    line-height: 1.8;
+    align-items: end;
+    text-align: end;
 }
 
 @media screen and (max-width: 500px) {
+  .textt{
+    font-size: 17px;
+  }
+  .textp{
+    font-size: 15px;
+  }
+  .imgg{
+    height: 309px;
+    width: 276px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px;
+  }
   .flex-container{
     flex-direction: column !important;
   }
@@ -164,5 +196,18 @@
   } */
   .lds-roller{
     left: 10px !important;
+  }
+  .storecontainer{
+    height: 43vh;
+    background: url(./chef.png)no-repeat center center/cover;
+  }
+  .rev-homestore{
+    margin: 8px 8px;
+  }
+  .h11{
+    margin-bottom: 1%;
+  }
+  .h22{
+    font-size: 13px;
   }
 }

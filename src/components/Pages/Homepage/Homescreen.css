@@ -27,7 +27,7 @@
     margin-bottom: 3%;
     text-transform:uppercase;
     letter-spacing: 2px;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
 }
 .h22{
     font-size: 18px;
@@ -166,7 +166,7 @@
     /* color: gray; */
     /* bottom: 20px; */
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 23px;
 }
 .card2div1{
     height: 97%;
@@ -195,7 +195,7 @@
     width: 90%;
     background-color: #000000;
     box-shadow: 0px 0px 3px 1px;
-    opacity: 0.6;
+    opacity: 0.7;
     /* background:transparent; */
     margin: 5% 5%;
     /* border: 2px solid black; */
@@ -203,28 +203,33 @@
 .insidecard2inside{
     height: 400px;
     margin: auto;
-    padding-top: 35%;
-    width: 70%;
-    color: #FFFFFF;
+    padding-top: 20%;
+    width: 80%;
+    font-size: 20px;
+    color: white;
     text-align: center;
     /* margin: 30% 15%; */
     line-height: 1.5;
 }
 .insidecard2inside h2{
-    font-size: 33px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     font-weight: 300;
 }
 .insidecard2inside p {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 24px;
 }
 .card2-btn{
     height: 40px;
-    width: 200px;
+    width: 255px;
     background-color: #f1ecec;
     color: #0b0a0a;
+    text-transform: uppercase;
     border: none;
-    font-size: 20px;
+    font-size: 21px;
 }
 .card2div3up{
     height: 47%;
@@ -342,6 +347,8 @@
     /* background-color: rgba(48, 16, 143, 0.527); */
 }
 .onecard4{
+    overflow: hidden;
+    position: relative;
     width: 30%;
     height: 100%;
     background-color: aquamarine;
@@ -350,6 +357,8 @@
 }
 .twocard4{
     width: 30%;
+    overflow: hidden;
+    position: relative;
     height: 100%;
     background-color: aquamarine;
     margin: 10px 8px;
@@ -357,6 +366,8 @@
 }
 .threecard4{
     width: 30%;
+    overflow: hidden;
+    position: relative;
     height: 100%;
     background-color: aquamarine;
     background: url('./pseudo3.png') no-repeat center center/cover;
@@ -365,6 +376,8 @@
 .fourcard4{
     width: 30%;
     height: 100%;
+    overflow: hidden;
+    position: relative;
     background-color: aquamarine;
     margin: 10px 8px;
     background: url('./pseudo4.png') no-repeat center center/cover;
@@ -372,6 +385,8 @@
 .fivecard4{
     width: 30%;
     height: 100%;
+    overflow: hidden;
+    position: relative;
     background-color: aquamarine;
     margin: 10px 8px;
     background: url('./pseudo5.png') no-repeat center center/cover;
@@ -379,6 +394,8 @@
 .sixcard4{
     width: 30%;
     height: 100%;
+    overflow: hidden;
+    position: relative;
     background-color: aquamarine;
     background: url('./pseudo6.png') no-repeat center center/cover;
     margin: 10px 8px;
@@ -388,22 +405,26 @@
     width: 100%;
 }
 .h2card4{
-    position: relative;
-    top: 72%;
     font-family: 'Inter', sans-serif;;
     font-weight: 500;
+    /* margin-bottom: 4%; */
     letter-spacing: 3px;
-    left: 6%;
-    margin-bottom: 3px;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    transform: translate(4%, -221%);
     font-size: 20px;
     color: #FFFFFF;
 }
 .btn-card4{
-    position: relative;
     border: none;
     font-family: 'Inter', sans-serif;;
-    top: 75%;
-    left: 5%;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 200px;
+    font-size:16px;
+    transform: translate(5%, -52%);
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -484,15 +505,17 @@
 }
 
 .card6{
-    height: 700px;
+    height: 100vh;
     width: 100%;
     /* background-color: aqua; */
 }
 .card6h2{
     text-align: center;
     /* margin-bottom: 10px; */
+    font-family: 'Inter', sans-serif;
     padding-top: 28px;
-    font-weight: 200;
+    letter-spacing: 4px;
+    font-weight: 600;
 }
 .card6-container{
     height: 600px;
@@ -548,22 +571,28 @@
 
 .center{
     height: 200px;
-    width: 500px;
+    /* width: 500px; */
     line-height: 1.5;
     /* border: 2px solid red; */
 }
 .center h2{
     /* color: white; */
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Inter', sans-serif;
     color: #4E4E4E;
-    font-size: 26px;
+    font-size: 28px;
+    
 }
 
 .center p{
+    font-family: 'Inter', sans-serif;
     line-height: 1.7;
+    letter-spacing: 1px;
     color: #4E4E4E;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 500px) {
@@ -622,18 +651,27 @@
         width: 76%;
     }
     .card2{
-        height: 90vh;
+        height: auto;
         /* background-color: aqua; */
+    }
+    .card2div2up div h1{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .card2div2up div p{
+        font-size: 19px;
+        color: black;
     }
     .center h2{
         display: none;
     }
     .center p{
         margin-top: 30px;
+        font-size: 17px;
     }
     .Card2-container{
         display: flex;
-        height: 100vh;
+        height: auto;
         flex-direction: column;
         /* height: 3200px; */
         margin-top: 38px;
@@ -645,6 +683,9 @@
     }
     .card5-container h2{
         color: #000000;
+        font-size: 14px;
+        font-weight: 1000;
+        /* font: bold; */
     }
     .insidecard2{
         background: none;
@@ -665,6 +706,9 @@
     }
     .downcard4{
         flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
     }
     .insidecard2inside h2{
         display: none;
@@ -704,7 +748,7 @@
         margin: 0px 0px;
     }
     .card4{
-        height: 1720px; 
+        height: 1789px; 
     }
     .upcard4{
         flex-direction: column;
@@ -715,7 +759,7 @@
         flex-direction: column;
         height: 100%;
         justify-content: center;
-        width: 94%;
+        width: 100%;
     }
     .cardimgp h2{
         font-size: 18px;
@@ -732,70 +776,95 @@
     .cardbtn{
         width: 64%;
     }
+    .btn-card4{
+        position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 200px;
+  font-size:16px;
+  transform: translate(0, -50%);
+    }
+    .card5 h3{
+        font-size: 17px;
+        color: black;
+        font-weight: 900
+    }
     .card4card{
 
         height: 819px;
     }
     .onecard4{
-        height: 100%;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-        margin-left:14px ;
+        width: 97%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    /* margin-right: 0px; */
+    height: 155vh;
+    /* margin-left: 14px; */
+    overflow: hidden;
+    position: relative;
     }
     .twocard4{
-        height: 100%;
-        width: 100%;
+        width:97%;
         margin-top: 10px;
         margin-bottom: 0px;
-        margin-right: 0px;
-        margin-left:14px ;
+        /* margin-right: 0px; */
+        height: 155vh;
+        /* margin-left: 14px; */
+        overflow: hidden;
+        position: relative;
     }
     .threecard4{
-        height: 100%;
-        width: 100%;
+        width: 97%;
         margin-top: 10px;
         margin-bottom: 0px;
-        margin-right: 0px;
-        margin-left:14px ;
+        /* margin-right: 0px; */
+        height: 155vh;
+        /* margin-left: 14px; */
+        overflow: hidden;
+        position: relative;
     }
     .fourcard4{
-        height: 100%;
-        width: 100%;
+        width: 97%;
         margin-top: 10px;
         margin-bottom: 0px;
-        margin-right: 0px;
-        margin-left:14px ;
+        /* margin-right: 0px; */
+        height: 155vh;
+        /* margin-left: 14px; */
+        overflow: hidden;
+        position: relative;
     }
     .fivecard4{
-        height: 100%;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-        margin-left:14px ;
+        width: 97%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    /* margin-right: 0px; */
+    height: 155vh;
+    /* margin-left: 14px; */
+    overflow: hidden;
+    position: relative;
     }
     .sixcard4{
-        height: 100%;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-        margin-left:14px ;
+        width: 97%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    /* margin-right: 0px; */
+    height: 155vh;
+    /* margin-left: 14px; */
+    overflow: hidden;
+    position: relative;
     }
     .card5-container{
         /* flex-direction: column; */
     }
     .onecard5{
         flex-shrink: 0;
-    /* width: 300px; */
-    width: 78%;
-    margin-right: 10px;
-    padding: 10px;
-    /* border: 1px solid #ccc; */
-    text-align: start;
-    background: none;
+        /* width: 300px; */
+        width: 84%;
+        margin-right: 10px;
+        padding: 9px;
+        /* border: 1px solid #ccc; */
+        text-align: start;
+        background: none;
     }
     .card5-container{
         overflow-x: scroll;
@@ -839,18 +908,27 @@
         /* height: 560px; */
     }
     .card6{
-        height: 545px;
+        height:auto;
+    }
+    .card6h2{
+        font-size: 18px;
     }
     .card3{
-        display: none;
+        /* display: none; */
+        height: 62vh;
     }
     .card6-container{
         flex-direction: column;
     }
     .h2card4{
-    width: 62%;
+    width: 67%;
     /* background-color: aqua; */
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    transform: translate(-8%, -221%);
     text-align: center;
+    /* font-size: 20px; */
     }
     .card6one{
         width: 100%;

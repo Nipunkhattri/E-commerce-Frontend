@@ -34,7 +34,7 @@ const Cardimage = ({route}) => {
     useEffect(()=>{
         dispatch(SingleProduct(id))
         .then((response) => {
-            // console.log(response.payload);
+            console.log(response.payload);
             setitem(response.payload);
         })  
         .catch((err) => {
@@ -167,7 +167,7 @@ const Cardimage = ({route}) => {
             <select className='styleSelect' name='size'
             value={size}
             onChange={(e)=>setsize(e.target.value)}>
-            <option>Select Size</option>
+            <option >Select Size</option>
             <option>XL</option>
             <option>M</option>
             <option>L</option>
@@ -176,12 +176,12 @@ const Cardimage = ({route}) => {
             {
                 loading?
                 <>
-                <button disabled onClick={handleCartItem}  className='btn'>Add to Cart</button>
+                <button disabled onClick={handleCartItem}  className='btn1'>Add to Cart</button>
                 <button disabled onClick={handleCartItem}  className='btn'>Buy Now</button>
                 </>
                 :
                 <>
-                <button onClick={handleCartItem}  className='btn'>Add to Cart</button>
+                <button onClick={handleCartItem}  className='btn1'>Add to Cart</button>
                 <button onClick={handleCartItem}  className='btn'>Buy Now</button>
                 </>
             }
@@ -193,12 +193,15 @@ const Cardimage = ({route}) => {
             </div>
             <br />
             <ul className='ull'>
-                <li>Dress length: 50 inches</li>
-                <li> Handmade in India</li>
-                <li>Relaxed fit</li>
-                <li>Made in Chanderi fabric ( 70% cotton, 30% silk)</li>
-                <li>Hand block printed</li>
-                <li>Round Neck</li>
+                {
+                    item?.headline2?.map((ele,index)=>{
+                        console.log(ele);
+                        // <h3>{ele}</h3>
+                        return(
+                            <li key={index}>{ele}</li>
+                            )
+                    })
+                }
             </ul>
         </div>
       </div>

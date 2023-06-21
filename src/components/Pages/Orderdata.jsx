@@ -38,10 +38,6 @@ const Orderdata = () => {
     },[data])
 
     console.log(pay)
-
-
-
-
     const { BuyData } = useSelector((state) => ({ ...state.Buy }));
     console.log(BuyData)
   return (

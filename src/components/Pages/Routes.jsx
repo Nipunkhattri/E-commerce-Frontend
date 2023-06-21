@@ -26,6 +26,7 @@ import Updateproduct from "./Updateproduct";
 import Email from "./Homepage/Email";
 import Homescreen from "./Homepage/Homescreen";
 import Aminlogin from "./Aminlogin";
+import AboutPage from "./AboutPage";
 
 const RoutesFunc = () => {
   const theme = useTheme();
@@ -50,7 +51,7 @@ const RoutesFunc = () => {
         <Route exact path="/" element={<Homescreen/>} />
         <Route exact path="/store" element={<Store />} />
         <Route exact path="/collection" element={<Collection />} />
-        <Route exact path="/about" element={<About />} />
+        <Route exact path="/about" element={<AboutPage />} />
         <Route exact path="/product" element={<ProductDetails />} />
         <Route exact path="/card" element={<Cardimage />} />
         <Route exact path="/cart" element={<Cart/>} />
