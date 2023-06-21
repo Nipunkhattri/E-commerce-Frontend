@@ -3,6 +3,14 @@
     width: 100%;
     background-color: aqua;
 }
+.breadcrumb{
+  margin: 40px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Inter';
+  letter-spacing: 0px;
+  color: #555555;
+}
 .flex-container1{
     display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -13,7 +21,7 @@
     width: 300px;
   margin: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
+
 }
 
 .imgg1 {
@@ -28,11 +36,20 @@
   /* Additional styles for the text content */
 }
 .headstore1{
-        font-size: 20px;
-    font-weight: 700;
+        font-size:16px;
+    font-weight: 600;
+  font-family: 'Inter';
+  color: #555555;
+  letter-spacing: 1px;
+
 }
 .headstore2{
-    font-size: 15px;
+  font-size:15px;
+  font-weight: 600;
+font-family: 'Inter';
+color: #555555;
+letter-spacing: 1px;
+margin-top: 10px;
 }
 
 @media screen and (max-width: 500px) {

@@ -10,7 +10,7 @@ import VideoPlayer2 from "./Homepage/VideoPlayer2";
 import ProductGrid1 from "./Homepage/ProductGrid1";
 import ProductGrid2 from "./Homepage/ProductGrid2";
 import ProductGrid3 from "./Homepage/ProductGrid3";
-import Carousel from "./Homepage/Carousel";
+
 
 const scrollToTop = () => {
   window.scrollTo(0, 0);
@@ -31,7 +31,7 @@ export default function Homepage() {
         subtitle="HEART IN THE HIGHLANDS"
         buttonLabel="Shop Now"
       />
-      <Carousel></Carousel>
+
       <ImageCollage></ImageCollage>
       <VideoPlayer2
         src={video}

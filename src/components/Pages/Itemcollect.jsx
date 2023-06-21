@@ -69,12 +69,8 @@ const Itemcollect = ({route}) => {
   return (
     <>
     <div class="storecontainer"><div class="rev-homestore"><h3 class="h11">A world of sunlit peaks and white clouds</h3><h2 class="h22">Heart In the Highlands</h2><button class="btn11">SHOP NOW</button></div></div>
-     <h3 style={
-      {
-        "margin":"40px 40px",
-        "fontSize":"22px"
-      }
-     }>Collections/{data} Collection</h3>
+     <h3 className="breadcrumb" >
+     Collections / {data} Collection</h3>
     <div
         className="flex-container1"
       >

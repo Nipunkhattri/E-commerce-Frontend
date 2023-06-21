@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 
 .card{
     height: 700px;
@@ -46,10 +46,10 @@
     text-align: left;
     margin-left: 30px;
     margin-top: 30px;
-    font-size: 19px;
+    font-size: 24px;
     font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
 .img{
     height: 30px;
@@ -63,14 +63,17 @@
 }
 .para{
     margin-top: 13px;
+    font-family: "Inter";
+    letter-spacing: 1px;
 }
 
 .para1{
-    margin: 10px 30px;
-    font-size: 18px;
+    margin: 15px 30px;
+    font-size: 20px;
     color: #555555;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Inter', sans-serif;
+
   }
   
   .styleSelect {
@@ -114,7 +117,7 @@
 }
 
 .dv{
-    margin: 0px 30px;
+    margin: 0px 30px 30px 30px;
 }
 .para2{
     color: grey;
@@ -148,15 +151,18 @@ span{
 }
 
 .ull{
+  margin-top: -10px;
     margin-left: 50px;
     line-height: 1.6;
+    font-size: 18px;
     color: #555555;
-    font-size: 17px;
+    font-weight: 200 !important;
+    font-family: 'Inter', sans-serif;
   }
   
   .ull li{
-    font-weight: 600;
-    line-height: 1.9;
+    font-weight: 400;
+    line-height: 1.7;
     font-family: 'Inter', sans-serif;
 }
 
@@ -304,8 +310,9 @@ span{
       margin-top: 0px;
     }
     .divcon{
-      height: 26%;
+      height: 24%;
       width: 99%;
+      margin-bottom: 10px;
     }
     .head{
       margin-left: 1px;
@@ -323,31 +330,52 @@ span{
     }
     .para1{
       margin-left: 1px;
-    line-height: 1.4;
-    width: 100%;
-    font-weight: 600;
-    font-size: 17px;
+  
     }
     .styleSelect{
       margin-left: 2px;
       color:#000000;
       font-size: 17px;
     }
-    .ull li{
-      font-size: 18px;
-      font-weight: 700;
-    }
+   
     .btn{
       /* margin-left: 1px; */
+      font-size: 14px;
+      font-family: 'Inter';
+      letter-spacing: 1px;
+    }
+    .btn1{
+      /* margin-left: 1px; */
+      font-size: 14px;
+      font-family: 'Inter';
+      letter-spacing: 1px;
+      
     }
     .dv{
-      margin: 0px 0px;
-    }
+      margin: 20px 0px 20px 0px;
+  }
     .btcolor{
       margin-left: 1px;
     }
     .ull{
       margin-left: 13px;
+    }
+
+    .ull{
+      
+      margin-top: -10px;
+       margin-left: 25px;
+        line-height: 1.6;
+        font-size: 15px;
+        color: #555555;
+        font-weight: 200 !important;
+        font-family: 'Inter', sans-serif;
+      }
+      
+      .ull li{
+        font-weight: 400;
+        line-height: 1.7;
+        font-family: 'Inter', sans-serif;
     }
     .mainimg{
       height: 100%;

@@ -7,8 +7,14 @@ import Card3 from './Card3'
 import Card4 from './Card4'
 import Card5 from './Card5'
 import Card6 from './Card6'
+import { useTheme, useMediaQuery, Paper, Typography, Box, MobileStepper} from '@mui/material';
+
+
+import MobileCard2 from './MobileCard2'
 
 const Homescreen = () => {
+  const theme = useTheme();
+  const isScreenSmall = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
     <div className='home'>
@@ -19,8 +25,9 @@ const Homescreen = () => {
         </div>
     </div>
     <Card1/>
-    <Caucard/>
-    <Card2/>
+
+    {isScreenSmall ? <MobileCard2/> :  <Card2></Card2> }
+    
     <Card3/>
     <Card4/>
     <Card5/>
