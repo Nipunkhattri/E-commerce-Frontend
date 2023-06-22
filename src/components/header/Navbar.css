@@ -37,7 +37,7 @@
 .dropdown-menu{
   display: none;
   position: absolute;
-  top: 150%;
+
   left: 0;
   background-color: white;
   min-width: 120px;
@@ -76,10 +76,12 @@
 .navbar-link{
   text-decoration: none;
   color: black;
-  font-size: 13px; 
+  font-size: 12px; 
   font-family: "Inter";
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   font-weight: 500;
+  position: relative;
+  right: 50px;
 }
 .navbar-link:hover{
   color: red;
@@ -95,11 +97,13 @@
 .navbar-link1{
   text-decoration: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
   color: black;
   font-family: "Inter";
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   font-weight: 500;
+  position: relative;
+  right: 50px;
 
 
 }
@@ -278,11 +282,16 @@
   }
   .navbar-link{
     color: #555555;
-    font-size: 22px;
+    font-size: 18px;
+    position: relative;
+  right: 0px;
   }
   .navbar-link1{
     color: #555555;
-    font-size: 22px;
+    font-size: 18px;
+    
+    position: relative;
+  right: 0px;
   }
   .rg{
     margin: 10px 10px;
