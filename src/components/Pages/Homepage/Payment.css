@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 .container{
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     /* background-color: aqua; */
 }
@@ -38,8 +38,9 @@ select{
     /* padding-top: 50px; */
 }
 .cardpayment{
-  width: 43%;
+  width: 50%;
   /* background-color: #45a049; */
+  margin-right: 100px;
 }
 .leftp{
     height: 100%;
@@ -68,6 +69,24 @@ select{
     display: flex;
     justify-content: center;
 }
+.a ul li{
+  font-size: 12px;
+   
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.a ul li b{
+  font-size: 12px;
+   
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    font-family: 'Inter';
+    font-weight: 600;
+}
 .aa{
     height: 77px;
     width: 100%;
@@ -83,7 +102,19 @@ select{
     padding: 5px 45px;
     font-size: 20px;
 }
+.aa{
+  margin-top: 30px;
+}
 
+input::placeholder{
+  font-size: 15px;
+   
+    letter-spacing: 0px;
+
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
 .a ul li{
     list-style-type: none;
     text-decoration: none;
@@ -129,6 +160,9 @@ select{
     width: 90%;
     /* border: 2px solid black; */
     margin: auto;
+    position: relative;
+    bottom:20px;
+    right: 6px;
 }
 label{
   display: none;
@@ -194,15 +228,20 @@ form {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    width: 56%;
+    width: 46%;
     align-items: end;
-    margin-left: 216px;
+    margin-left: 300px;
     font-size:15px;
+    font-size: 12px;
+   
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
   }
   
-  .btnp:hover {
-    background-color: #45a049;
-  }
+ 
   
   .rightp{
     height: 500px;
@@ -236,10 +275,19 @@ form {
     
     .divpay h3{
       margin-top: 30px;
-      margin-left: 16px;
+      margin-left: 26px;
       font-size: 16px;
       font-weight: 800;
       font-family: 'Inter', sans-serif;
+      font-size: 17px;
+   
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-weight: 400;
+    position: relative;
+    left: 15px;
   }
     .divpay h2{
       font-family: 'Inter', sans-serif;
@@ -251,10 +299,45 @@ form {
       color: black;
       /* text-align: end; */
       /* font-size: 19px; */
+      font-size: 17px;
+   
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-weight: 600;
   }
   .Totalpay{
     width: 84%;
     font-size: 19px;
+  }
+  .Totalpay h3{
+    width: 84%;
+    font-size: 19px;
+    font-size: 17px;
+   
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 700;
+    position: relative;
+    left:100px;
+    top:20px;
+  }
+  .Totalpay p{
+    width: 84%;
+    font-size: 19px;
+    font-size: 17px;
+   
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 700;
+    position: relative;
+    left:100px;
+    top:20px;
   }
   .Checkpay{
     align-items: end;

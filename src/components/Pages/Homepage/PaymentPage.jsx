@@ -173,8 +173,8 @@ const PaymentPage = ({route}) => {
         <h2>SHIMONA AGRAWAL</h2>
         <div className='a'>
             <ul>
-                <li>Cart --</li>
-                <li>Information --</li>
+                <li>Cart &nbsp; &#x003E; &nbsp;</li>
+                <li><b>Information  &nbsp; &#x003E; &nbsp;</b></li>
                 <li>Payment </li>
             </ul>
         </div>
@@ -183,10 +183,7 @@ const PaymentPage = ({route}) => {
         <div  className='aa'>
             <label htmlFor="" className='hhhh'>Contact</label>
             <input type="email" placeholder='Email or mobile phone number'  name="email"  value={formData.email} onChange={handleInputChange}/>
-            <div className='ip'>
-                <input type="checkbox" id="vehicle1"/>
-                <label for="vehicle1"  className='hh'> Email me with news and offers</label><br></br>
-            </div>
+           
         </div>
 
         <div className='ship'>
@@ -208,11 +205,11 @@ const PaymentPage = ({route}) => {
       }>
       <div className='fn'>
         <label htmlFor="firstName">First Name:</label>
-        <input type="text" placeholder='FirstName' id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} />
+        <input type="text" placeholder='First Name' id="firstName" name="firstName" value={formData.firstName} onChange={handleInputChange} />
       </div>
       <div className='ln'>
         <label htmlFor="lastName">Last Name:</label>
-        <input type="text"placeholder='LastName' id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} />
+        <input type="text"placeholder='Last Name' id="lastName" name="lastName" value={formData.lastName} onChange={handleInputChange} />
       </div>
       </div>
       <div className='dvv'>
@@ -238,7 +235,7 @@ const PaymentPage = ({route}) => {
       </div>
       <div className='dvv'>
         <label htmlFor="phoneNumber">Phone Number:</label>
-        <input type="text" id="phoneNumber" placeholder='PhoneNumber' name="phoneNumber" value={formData.phoneNumber} onChange={handleInputChange} />
+        <input type="text" id="phoneNumber" placeholder='Phone Number' name="phoneNumber" value={formData.phoneNumber} onChange={handleInputChange} />
       </div>
       <button type="button" className='btnp'  onClick={()=>handleSubmit(price)}>Continue to Payment</button>
     </form>
