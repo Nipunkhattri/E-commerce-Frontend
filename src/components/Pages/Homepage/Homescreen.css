@@ -842,7 +842,7 @@
         margin: 0px 0px;
     }
     .card4{
-        height: 205vh !important;
+        height: 1720px !important;
     }
     .upcard4{
         flex-direction: column;
@@ -1005,8 +1005,8 @@
         
     }
     .card5{
-        height: 77vh;
-        /* height: 560px; */
+       height: 520px;
+      
     }
     .card5h2{
         font-weight: 600 !important;
@@ -1017,7 +1017,9 @@
         letter-spacing: 3px !important;
     }
     .card6{
-        height:auto;
+        height:680px;
+        position: relative;
+        top: 120px;
     }
     .card6h2{
         font-size: 18px;
@@ -1067,5 +1069,19 @@
     }
     .center{
         width: 100%;
+    }
+    .mobcard2h2{
+        text-align: center;
+        position: relative;
+        /* top:32px; */
+        margin-top: 30px;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        word-spacing:inherit;
+        letter-spacing: 5px;
+        /* color: gray; */
+        /* bottom: 20px; */
+        margin-bottom: 0px;
+        font-size: 20px;
     }
 }

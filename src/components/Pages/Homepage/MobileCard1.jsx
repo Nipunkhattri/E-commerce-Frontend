@@ -78,9 +78,9 @@ const MobileCard1 = () => {
         classes={{ dots: classes.dots }} 
         style={{
 
-          color:"black !important",
+          color:"blue !important",
           position:"relative",
-          bottom:"345px",
+          bottom:"325px",
           backgroundColor:"transparent"
          
         

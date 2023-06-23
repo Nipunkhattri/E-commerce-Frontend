@@ -344,7 +344,12 @@
     margin-top: 13px;
 }
 @media screen and (max-width: 500px) {
+  
 
+    .ah2{
+
+        display: none;
+    }
     
     .about1{
         flex-direction: column;
@@ -355,6 +360,13 @@
     .ab1r{
         width: 100%;
         justify-content: center;
+    }
+
+    .ab1ri p{
+        left: 0px;
+    }
+    .ab1ri h2{
+        left: 0px;
     }
     
     .ab1r2{
@@ -443,6 +455,7 @@
         height: 100%;
         width: 3.0;
         /* background-color: aqua; */
+        display: none;
     }
     .oneimg h3{
         position: absolute;
@@ -458,6 +471,7 @@
         height: 100%;
         width: 40%;
         /* background-color: aqua; */
+        display: none;
     }
     .twoimg h3{
         position: absolute;
@@ -473,6 +487,7 @@
         height: 100%;
         width: 40%;
         /* background-color: aqua; */
+        display: none;
     }
     .threeimg h3{
         position: absolute;
@@ -491,13 +506,13 @@
         height:750px;
         width: 100%;
         display: flex;
-        padding: 20px 20px;
+        padding: 0px 20px;
         background-color: black;
         justify-content: center;
         align-items: center;
     }
     .ab4one{
-        width: 33%;
+        width: 200%;
         height: 100%;
         padding: 10px 20px;
         /* background-color: aqua; */
@@ -506,12 +521,12 @@
     .ab4one1{
         margin-left: 30px;
         height: 50%;
-        width: 90%;
+        width: 100%;
         background-color: rgb(0, 0, 0);
     }
     .ab4one1i{
         height:90%;
-        width: 80%;
+        width: 150%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -525,15 +540,22 @@
     .ab4one1i h2{
         letter-spacing: 1px;
         margin-bottom: 20px;
-        font-size: 25px;
+        font-size: 30px;
         text-transform: uppercase;
+        width: 115%;
+        text-align: center;
+        position: relative;
+        left: 150px;
     }
     .ab4one1i p{
         letter-spacing: 1px;
         line-height: 1.4;
         /* font-weight: 600; */
-        font-size: 18px;
-        width: 600%;
+        font-size: 16px;
+        width: 120%;
+        word-wrap: break-word;
+        position: relative;
+        left: 150px;
     }
     .ab4one2{
         height: 50%;
@@ -544,19 +566,22 @@
         display: none;
     }
     .ab4two{
-        width: 10000%;
-        height: 40%;
-        background: url('./mew5.png')no-repeat center center/cover;
+        min-width: 400px !important;
+        width: 100% !important;
+        height: 50%;
+        background: url('./mew6.png')no-repeat cover center !important;
         /* background-color: aqua; */
         position: relative;
         top:150px;
-        right:50px;
+        right: 125px;
+    
     }
     .ab43{
         width: 500%;
         height: 100%;
         /* background-color: aqua; */
         padding: 10px 20px;
+        display: none;
     }
     .ab431{
         height: 50%;
