@@ -19,6 +19,21 @@ export const authlogin = createAsyncThunk(
   }
 )
 
+export const sendemail = createAsyncThunk(
+  'auth/email',
+  async(form)=>{
+    try {
+      const res = await api.sendmail(form);
+      console.log(res);
+      toast.success('mail send successfull')
+      return res.data;
+    } catch (error) {
+      toast.error('Wrong email');
+      console.log(error);
+    }
+  }
+)
+
 const authSlice = createSlice({
   name: "auth",
   initialState: {

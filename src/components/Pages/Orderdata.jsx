@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { singleIdProduct } from '../../redux/features/BuySlice';
 import { useNavigate } from 'react-router-dom';
+import moment from 'moment-timezone'
 
 const Orderdata = () => {
   const navigate = useNavigate();
@@ -63,13 +64,14 @@ const Orderdata = () => {
         </div>
         <div className='dataend'>
         <h3>FIRST NAME - {data.firstname}</h3>
-          <h3>LAST NAME - {data.lastname}</h3>
+          <h3>Product Id - {ele.svj}</h3>
           <h3>PHONE NO. - {data.Phoneno}</h3>
           <h3>EMAIL - {data.email}</h3>
           <h3>CITY - {data.city}</h3>
           <h3>PURCHASED - {data.Purchased}</h3>
           <h3>RAZORPAY PAYMENT ID - {data.razorpay_payment_id}</h3>
           <h3>RAZORPAY ORDER ID  - {data.razorpay_order_id}</h3>
+          <h3>TimeStamp  - {moment.utc(data.timestamp).tz('Asia/Kolkata').format('YYYY-MM-DD HH:mm:ss')}</h3>
         </div>
       </div>
           )

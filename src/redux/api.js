@@ -2,7 +2,8 @@ import axios from "axios"
 
 const Api = axios.create({
     // baseURL:"http://localhost:5000/"
-    baseURL:"https://sore-plum-perch-hem.cyclic.app/"
+    baseURL:"https://cautious-leggings-fish.cyclic.app/"
+    // baseURL:"https://backend-y1ti.onrender.com/"
 })
 //
 export const product = () => Api.get("/api/fetchProduct");
@@ -19,3 +20,4 @@ export const collectdata = (data) => Api.post("/api/collectName",{name : data});
 export const deleteproduct = (id) => Api.post("/api/deleteproductid",{_id : id});
 export const productUpdate = (form) => Api.post("/api/productUpdate",form);
 export const Adminlogin = (data) => Api.post('/api/loginnow',data);
+export const sendmail = (form) => Api.post('/api/send',form);

@@ -88,8 +88,6 @@ export const singleIdProduct = createAsyncThunk(
 //   }
 // )
 
-
-
 const persistedState = localStorage.getItem('item')
   ?  JSON.parse(localStorage.getItem('item')) : null;
 

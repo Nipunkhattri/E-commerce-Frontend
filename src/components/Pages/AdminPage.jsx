@@ -25,6 +25,7 @@ const AdminPage = () => {
         heading2: [],
         price: '',
         collection: '',
+        svj:'',
         images: [],
       });
 
@@ -178,6 +179,13 @@ const AdminPage = () => {
             <input type="text" placeholder="Collection Name" className='priceinput' 
             name="collection"
             value={form.collection}
+            onChange={handleInputChange}/>
+        </div>
+      <div className='newcolect'>
+            <label htmlFor="">ADD NEW COLLECTION NAME</label>
+            <input type="text" placeholder="Product Id" className='priceinput' 
+            name="svj"
+            value={form.svj}
             onChange={handleInputChange}/>
         </div>
       <div className='down'>  

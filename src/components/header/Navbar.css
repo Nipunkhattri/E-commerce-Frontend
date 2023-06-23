@@ -37,7 +37,7 @@
 .dropdown-menu{
   display: none;
   position: absolute;
-  top: 150%;
+  /* top: 150%; */
   left: 0;
   background-color: white;
   min-width: 120px;

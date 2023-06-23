@@ -135,7 +135,7 @@ const PaymentPage = ({route}) => {
       
       const _data = {amount:value}
       console.log(_data);
-      axios.post('https://sore-plum-perch-hem.cyclic.app/api/orders',_data)
+      axios.post('https://cautious-leggings-fish.cyclic.app/api/orders',_data)
       .then(res=>{
           console.log(res.data);
           handleOpenRayzorpay(res.data.data)
