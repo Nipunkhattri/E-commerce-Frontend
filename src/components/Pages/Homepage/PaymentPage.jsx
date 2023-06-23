@@ -37,6 +37,7 @@ const PaymentPage = ({route}) => {
     const sizes = location.state.sizes;
     const quantities = location.state.quantities;
     const value = location.state.value;
+    const [click , setclick] = useState(false);
     const [loading , setloading] = useState(false);
     console.log(Items);
     console.log(sizes);
@@ -113,6 +114,7 @@ const PaymentPage = ({route}) => {
             handler:async function(response){
                 console.log(response,"34");
                 setres(response);
+                setclick(false);
                 // setrazorpay_order_id(response.razorpay_order_id)
                 // setemail(formData.email);
             }
@@ -127,7 +129,9 @@ const PaymentPage = ({route}) => {
     const handleSubmit = async (price) => {
     //   e.preventDefault();
       console.log(formData);
+      setclick(true);
       if(formData.phoneNumber.length != 10 || formData.email == '' || formData.country == '' || formData.firstName == '' || formData.address == '' || formData.city == '' || formData.pincode == '' || formData.state == '' || formData.ItemsArray == ''  || formData.phoneNumber == '' || formData.QuantityArray == '' || formData.SizeArray == ''){
+        setclick(false);
         toast.error("Please Check Again");
         return;
       }
@@ -237,7 +241,12 @@ const PaymentPage = ({route}) => {
         <label htmlFor="phoneNumber">Phone Number:</label>
         <input type="text" id="phoneNumber" placeholder='Phone Number' name="phoneNumber" value={formData.phoneNumber} onChange={handleInputChange} />
       </div>
-      <button type="button" className='btnp'  onClick={()=>handleSubmit(price)}>Continue to Payment</button>
+      {
+        click?
+        <button disabled type="button" className='btnp'  onClick={()=>handleSubmit(price)}>Continue to Payment</button>:
+        <button type="button" className='btnp'  onClick={()=>handleSubmit(price)}>Continue to Payment</button>
+
+      }
     </form>
         </div>
         </div>

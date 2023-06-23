@@ -1,8 +1,8 @@
 import axios from "axios"
 
 const Api = axios.create({
-    // baseURL:"http://localhost:5000/"
-    baseURL:"https://cautious-leggings-fish.cyclic.app/"
+    baseURL:"http://localhost:5000/"
+    // baseURL:"https://cautious-leggings-fish.cyclic.app/"
 })
 //
 export const product = () => Api.get("/api/fetchProduct");

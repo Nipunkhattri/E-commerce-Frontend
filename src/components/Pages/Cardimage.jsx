@@ -187,10 +187,6 @@ const Cardimage = ({route}) => {
             }
             
             <br />
-            <div className='dv'>
-                <p className='para2'><span>Category</span>: Men, Polo, Casual</p>
-                <p className='para2'><span>Tags</span>: Modern, Design, cotton</p>
-            </div>
             <br />
             <ul className='ull'>
                 {

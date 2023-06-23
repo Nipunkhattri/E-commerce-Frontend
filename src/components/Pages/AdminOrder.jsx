@@ -30,9 +30,9 @@ const AdminOrder = () => {
 
   return (
     <div className="order1">
-      
-      {/* <button className='addbtn2' onClick={handlenavigate2}>collection Product </button> */}
-      <div className="containorder">
+      {
+        BuyData?
+        <div className="containorder">
         
         <table className="orderr">
           <tr className="trr">
@@ -66,6 +66,10 @@ const AdminOrder = () => {
           )}
         </table>
       </div>
+        :
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      }
+
     </div>
   );
 };
