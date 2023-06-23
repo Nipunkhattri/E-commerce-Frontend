@@ -1,263 +1,379 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 
-.container{
-    height: 100vh;
-    width: 100%;
-    /* background-color: aqua; */
+.container {
+  height: 100vh;
+  width: 100%;
+  /* background-color: aqua; */
 }
-.uppay{
+.uppay {
   text-align: center;
   margin-top: 20px;
   font-size: 16px;
 }
-input::placeholder{
+input::placeholder {
   font-size: 16px;
 }
-select{
+select {
   font-size: 16px;
   width: 100%;
   padding: 10px;
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   border-radius: 4px;
   height: 6vh;
 }
-.uppay h2{
-  font-family: 'Inter', sans-serif;
+.uppay h2 {
+  font-family: "Inter", sans-serif;
   font-weight: 700;
 }
-.section{
-    /* width: 80%; */
-    height: 900px;
-    display: flex;
-    /* border: 2px solid red; */
-    margin-top: 30px;
-    /* margin: auto; */
-    justify-content: center;
-    /* display: flex; */
-    /* margin: 50px 50px; */
-    /* padding-top: 50px; */
+.section {
+  /* width: 80%; */
+  height: 900px;
+  display: flex;
+  /* border: 2px solid red; */
+  margin-top: 30px;
+  /* margin: auto; */
+  justify-content: center;
+  /* display: flex; */
+  /* margin: 50px 50px; */
+  /* padding-top: 50px; */
 }
-.cardpayment{
+.cardpayment {
   width: 50%;
   /* background-color: #45a049; */
   margin-right: 100px;
 }
-.leftp{
-    height: 100%;
-    width: 90%;
-    margin: auto;
-    display: block;
-    /* background-color: rgb(138, 87, 87); */
+.leftp {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: block;
+  /* background-color: rgb(138, 87, 87); */
 }
-.leftp h2{
-    text-align: center;
-    padding-top: 20px;
+.leftp h2 {
+  text-align: center;
+  padding-top: 20px;
 }
 
-.a{
-    width: 100%;
-    height: 50px;
-    /* text-align: center; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    padding-top: 10px;
-    /* border: 2px solid black; */
+.a {
+  width: 100%;
+  height: 50px;
+  /* text-align: center; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding-top: 10px;
+  /* border: 2px solid black; */
 }
-.a ul{
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.a ul {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.a ul li{
+.a ul li {
   font-size: 12px;
-   
-    letter-spacing: 0px;
-    text-transform: capitalize;
-    margin-top: 0px;
-    font-family: 'Inter';
-    font-weight: 400;
+
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  margin-top: 0px;
+  font-family: "Inter";
+  font-weight: 400;
 }
-.a ul li b{
+.a ul li b {
   font-size: 12px;
-   
-    letter-spacing: 0px;
-    text-transform: capitalize;
-    margin-top: 0px;
-    font-family: 'Inter';
-    font-weight: 600;
+
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  margin-top: 0px;
+  font-family: "Inter";
+  font-weight: 600;
 }
-.aa{
-    height: 77px;
-    width: 100%;
-    /* background-color: antiquewhite */
-    display: flex;
-    margin-bottom: 15px;
-    flex-direction: column;
+.aa {
+  height: 77px;
+  width: 100%;
+  /* background-color: antiquewhite */
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
 }
-.hh{
+.hh {
   display: block;
 }
-.hhhh{
-    padding: 5px 45px;
-    font-size: 20px;
+.hhhh {
+  padding: 5px 45px;
+  font-size: 20px;
 }
-.aa{
+.aa {
   margin-top: 30px;
 }
 
-input::placeholder{
+input::placeholder {
   font-size: 15px;
-   
-    letter-spacing: 0px;
 
-    margin-top: 10px;
-    font-family: 'Inter';
-    font-weight: 400;
-}
-.a ul li{
-    list-style-type: none;
-    text-decoration: none;
-    margin-left: 2px;
-}
+  letter-spacing: 0px;
 
-.aa input{
-    width: 80%;
-    height: 42px;
-    align-items: center;
-    display: block;
-    margin: 0px 40px;
-    background: none;
-    outline: none;
-    border: 2px solid black;
-    border-radius: 5px;
+  margin-top: 10px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+.a ul li {
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 2px;
 }
 
-.ip{
-    display: flex;
-    margin-left: 50px;
-}
-#vehicle1{
+.aa input {
+  width: 80%;
+  height: 42px;
+  align-items: center;
   display: block;
-    height: 15px;
-    margin: 7px 0px;
-    width: 15px;
-}
-.country{
-  border: 1px solid #DFDFDF;
-}
-
-
-.hh{
-    font-size: 15px;
-    margin-left: 8px;
-    margin-top: 5px;
+  margin: 0px 40px;
+  background: none;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-
-.ship{
-    height: 400px;
-    width: 90%;
-    /* border: 2px solid black; */
-    margin: auto;
-    position: relative;
-    bottom:20px;
-    right: 6px;
+.ip {
+  display: flex;
+  margin-left: 50px;
 }
-label{
+#vehicle1 {
+  display: block;
+  height: 15px;
+  margin: 7px 0px;
+  width: 15px;
+}
+.country {
+  border: 1px solid #dfdfdf;
+}
+
+.hh {
+  font-size: 15px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.ship {
+  height: 400px;
+  width: 90%;
+  /* border: 2px solid black; */
+  margin: auto;
+  position: relative;
+  bottom: 20px;
+  right: 6px;
+}
+label {
   display: none;
 }
-.ship h3{
+.ship h3 {
   font-size: 16px;
   font-weight: 800;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 16px 10px;
 }
 
 form {
-    /* max-width: 400px */
-    width: 90%;
-    margin-left: 10px;
-    /* margin: 0 auto; */
-  }
-
-  .fn{
-    width: 50%;
-  }
-  #firstName{
-    /* width: 245px; */
-    /* margin-left: 3px; */
-    /* padding-left: 5px; */
-    border: 1px solid #DFDFDF;
+  /* max-width: 400px */
+  width: 90%;
+  margin-left: 10px;
+  /* margin: 0 auto; */
 }
-.ln{
+
+.fn {
   width: 50%;
 }
-#lastName{
-    /* width: 245px; */
-    margin-left: 3px;
-    border: 1px solid #DFDFDF;
-  }
-  
-   .dvv{
-    margin-bottom: 15px;
-    width: 100%;
-  }
-  
-  label {
-    /* display: block; */
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    /* font-size: 20px; */
-    border: 1px solid #DFDFDF;
-    border-radius: 4px;
-    height: 6vh;
-  }
-  
-  .btnp {
-    background-color: black;
-    color: white;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 46%;
-    align-items: end;
-    margin-left: 300px;
-    font-size:15px;
-    font-size: 12px;
-   
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    font-family: 'Inter';
-    font-weight: 400;
-  }
-  
- 
-  
-  .rightp{
-    height: 500px;
-    width: 33%;
-    /* background-color: #45a049; */
-  }
-  .cont{
-    /* height: 200px; */
-    width: 90%;
-    /* border: 2px solid     black; */
-    display: block;
-    /* margin: 40px auto; */
-    overflow: auto;
-    margin-top: 20px;
+#firstName {
+  /* width: 245px; */
+  /* margin-left: 3px; */
+  /* padding-left: 5px; */
+  border: 1px solid #dfdfdf;
 }
-.divpay{
+.ln {
+  width: 50%;
+}
+#lastName {
+  /* width: 245px; */
+  margin-left: 3px;
+  border: 1px solid #dfdfdf;
+}
+
+.dvv {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+label {
+  /* display: block; */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  /* font-size: 20px; */
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  height: 6vh;
+}
+
+.btnp {
+  background-color: black;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 46%;
+  align-items: end;
+  margin-left: 300px;
+  font-size: 15px;
+  font-size: 12px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.rightp {
+  height: 500px;
+  width: 33%;
+  /* background-color: #45a049; */
+}
+.cont {
+  /* height: 200px; */
+  width: 90%;
+  /* border: 2px solid     black; */
+  display: block;
+  /* margin: 40px auto; */
+  overflow: auto;
+  margin-top: 20px;
+}
+.divpay {
+  height: 105px;
+  display: flex;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(105, 105, 105);
+  /* margin-left: 20px; */
+  /* justify-content: space-around; */
+  width: 100%;
+}
+.imgpay {
+  margin-left: 20px;
+  height: 91px;
+  width: 95px;
+  border-radius: 14px;
+}
+
+.divpay h3 {
+  margin-top: 30px;
+  margin-left: 26px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-family: "Inter";
+  font-weight: 400;
+  position: relative;
+  left: 15px;
+}
+.divpay h2 {
+  font-family: "Inter", sans-serif;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 15px;
+  /* align-items: end; */
+  font-weight: 300;
+  color: black;
+  /* text-align: end; */
+  /* font-size: 19px; */
+  font-size: 17px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-family: "Inter";
+  font-weight: 600;
+}
+.Totalpay {
+  width: 84%;
+  font-size: 19px;
+}
+.Totalpay h3 {
+  width: 84%;
+  font-size: 19px;
+  font-size: 17px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: "Inter";
+  font-weight: 700;
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+.Totalpay p {
+  width: 84%;
+  font-size: 19px;
+  font-size: 17px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: "Inter";
+  font-weight: 700;
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+.Checkpay {
+  align-items: end;
+  text-align: end;
+  line-height: 1.6;
+  /* background-color: #45a049; */
+}
+.emaill {
+  height: 600px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: center;
+  align-items: center;
+}
+.height-order {
+  height: 70px;
+  width: 70px;
+}
+.emaill h3 {
+  font-size: 30px;
+}
+.emaill p {
+  /* width: 100%; */
+  height: 50px;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    height: 1141px;
+  }
+  .section {
+    flex-direction: column;
+    width: 100%;
+    margin: 0px 0px;
+    height: 1235px;
+  }
+  .divpay {
     height: 105px;
     display: flex;
     margin-bottom: 10px;
@@ -265,192 +381,146 @@ form {
     /* margin-left: 20px; */
     /* justify-content: space-around; */
     width: 100%;
-}
-.imgpay{
-  margin-left: 20px;
-  height: 91px;
-  width: 95px;
-  border-radius: 14px;
-    }
-    
-    .divpay h3{
-      margin-top: 30px;
-      margin-left: 26px;
-      font-size: 16px;
-      font-weight: 800;
-      font-family: 'Inter', sans-serif;
-      font-size: 17px;
-   
-    letter-spacing: 1px;
+  }
+  .imgpay {
+    margin-left: 0px;
+    height: 91px;
+    width: 95px;
+    border-radius: 14px;
+  }
+  .divpay h3 {
+    margin-top: 30px;
+    margin-left: 26px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+
+    letter-spacing: 0px;
     text-transform: uppercase;
     margin-top: 30px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 400;
     position: relative;
     left: 15px;
   }
-    .divpay h2{
-      font-family: 'Inter', sans-serif;
-      margin-top: 30px;
-      margin-left: 50px;
-      font-size: 15px;
-      /* align-items: end; */
-      font-weight: 300;
-      color: black;
-      /* text-align: end; */
-      /* font-size: 19px; */
-      font-size: 17px;
-   
+  .divpay h2 {
+    font-family: "Inter", sans-serif;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 15px;
+    /* align-items: end; */
+    font-weight: 300;
+    color: black;
+    /* text-align: end; */
+    /* font-size: 19px; */
+    font-size: 13px;
+
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 30px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 600;
+    position: absolute;
+    right: 20px;
   }
-  .Totalpay{
-    width: 84%;
-    font-size: 19px;
-  }
-  .Totalpay h3{
-    width: 84%;
-    font-size: 19px;
-    font-size: 17px;
-   
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    font-family: 'Inter';
-    font-weight: 700;
-    position: relative;
-    left:100px;
-    top:20px;
-  }
-  .Totalpay p{
-    width: 84%;
-    font-size: 19px;
-    font-size: 17px;
-   
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    font-family: 'Inter';
-    font-weight: 700;
-    position: relative;
-    left:100px;
-    top:20px;
-  }
-  .Checkpay{
-    align-items: end;
-    text-align: end;
-    line-height: 1.6;
-    /* background-color: #45a049; */
-  }
-  .emaill{
-    height: 600px;
+  .Totalpay {
     width: 100%;
-    flex-direction: column;
-    display: flex;
-    /* background-color: aqua; */
-    justify-content: center;
-    align-items: center;
   }
-  .height-order{
-    height: 70px;
-    width: 70px;
+  .cardpayment {
+    width: 100%;
+    height: 61%;
   }
-  .emaill h3{
-    font-size: 30px;
+  .rightp {
+    padding: 1px 12px;
+    width: 100%;
+    /* font-size: 20px; */
   }
-  .emaill p{
-    /* width: 100%; */
-    height: 50px;
-    font-size: 19px;
+  .ship {
+    height: 639px;
+    width: 95%;
+    /* margin: 0px 0px; */
+  }
+  .leftp {
+    width: 100%;
   }
 
-  @media screen and (max-width: 500px) {
-
-    .container{
-      height: 1141px;
-    }
-    .section{
-      flex-direction: column;
-      width: 100%;
-      margin: 0px 0px;
-      height: 1235px;
-    }
-    .divpay h3{
-      font-size: 15px;
-      width: 32%;
-    }
-    .Totalpay{
-      width: 100%;
-    }
-    .cardpayment{
-      width: 100%;
-      height: 61%;
-    }
-    .rightp{
-      padding: 1px 12px;
-      width: 100%;
-      /* font-size: 20px; */
-    }
-    .ship{
-      height: 639px;
-      width: 95%;
-      /* margin: 0px 0px; */
-    }
-    .leftp{
-      width: 100%;
-    }
-      
   input,
   select {
     font-size: 17px;
   }
 
-    .hhhh{
-      padding: 1px 16px;
-      font-size: 25px;
-    }
-    .aa{
-      /* height: 40vh; */
-    }
-    .aa input{
-      margin: 0px 14px;
-      width: 92%;
-    }
-    .shiphead{
-      margin: 10px 0px;
-      font-size: 23px;
-    }
-    .hh{
-      font-size: 18px;
-    }
-    input::placeholder{
-      font-size: 17px;
-    }
-    .ip{
-      margin-left: 16px;
-    }
-    form{
-      width: 100%;
-      margin-left: 0px;
-    }
-    label{
-      font-size: 20px;
-      margin: 0px 0px;
-    }
-    .btnp{
-      margin-left: 0px;
-      width: 100%;
-    }
-    .cont{
-      overflow: initial;
-      width: 100%;
-      font-size: 20px;
-      /* margin: 0px 0px; */
-    }
-    .Checkpay{
-      font-size: 23px;
-    }
+  .hhhh {
+    padding: 1px 16px;
+    font-size: 25px;
   }
+  .aa {
+    /* height: 40vh; */
+  }
+  .aa input {
+    margin: 0px 14px;
+    width: 92%;
+  }
+  .shiphead {
+    margin: 10px 0px;
+    font-size: 23px;
+  }
+  .hh {
+    font-size: 18px;
+  }
+  input::placeholder {
+    font-size: 17px;
+  }
+  .ip {
+    margin-left: 16px;
+  }
+  form {
+    width: 100%;
+    margin-left: 0px;
+  }
+  label {
+    font-size: 20px;
+    margin: 0px 0px;
+  }
+  .btnp {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .cont {
+    overflow: initial;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 0px; */
+  }
+  .Checkpay {
+    font-size: 23px;
+  }
+  .Totalpay h3 {
+    width: 84%;
+    font-size: 19px;
+    font-size: 17px;
+  
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: "Inter";
+    font-weight: 700;
+    position: relative;
+    left: 60px;
+    top: 20px;
+  }
+  .Totalpay p {
+    width: 84%;
+    font-size: 19px;
+    font-size: 17px;
+  
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: "Inter";
+    font-weight: 700;
+    position: relative;
+    left: 60px;
+    top: 20px;
+  }
+}

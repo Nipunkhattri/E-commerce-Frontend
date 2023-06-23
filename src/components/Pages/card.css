@@ -74,6 +74,8 @@
     color: #555555;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+    word-wrap: break-word;
+    width: 100%;
     
 
   }
@@ -332,7 +334,7 @@ span{
     }
     .para1{
       margin-left: 1px;
-      width: 100px;
+      width: 100%;
   
     }
     .styleSelect{
