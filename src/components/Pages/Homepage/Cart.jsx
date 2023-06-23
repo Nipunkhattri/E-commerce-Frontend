@@ -138,7 +138,7 @@ const Cart = ({route}) => {
   {
     (lenght != 0)?
   <div class="slider">
-    <h2 className='hd'>My Cart</h2>
+    <h2 className='hd'>CART</h2>
     {
       Array.isArray(cartdata1) ?
       cartdata1?.map((ele,index)=>{

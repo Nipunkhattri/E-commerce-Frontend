@@ -49,15 +49,15 @@ const AboutPage = () => {
         <div className="ab3r">
           <div className="oneimg">
             <div className="img1"></div>
-            {/* <h3>Effortless Elegance</h3> */}
+            <h3>Effortless Elegance</h3>
           </div>
           <div className="twoimg">
             <div className="img2"></div>
-            {/* <h3>Effortless Elegance</h3> */}
+            <h3>Effortless Elegance</h3>
           </div>
           <div className="threeimg">
             <div className="img3"></div>
-            {/* <h3>Effortless Elegance</h3> */}
+            <h3>Effortless Elegance</h3>
           </div>
         </div>
       </div>

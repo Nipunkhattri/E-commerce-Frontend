@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 
 .about{
     height: 700px;
@@ -59,40 +59,60 @@
 }
 .ab1r h2{
     font-size: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    left: 80px;
 }
 .ab1r p{
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 1px;
     font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    position: relative;
+    left: 80px;
+    top: 10px;
+
 }
 .ab1r2 h2{
     font-size: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    right: 80px;
 }
 .ab1r2 p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     letter-spacing: 1px;
     font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    position: relative;
+    right: 80px;
+    top: 10px;
+
 }
 .ah2{
     text-align: center;
-    font-size: 30px;
-    letter-spacing: 3px;
+    font-size: 24px;
+    letter-spacing: 7px;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    position: relative;
+    top: 20px;
 }
 
 .ab1limg{
-    height: 95%;
+    height: 85%;
     width: 80%;
     background:url('./old.png') no-repeat center center/cover;
     border: 2px solid black ;
@@ -114,11 +134,13 @@
     /* background-color: #383838; */
 }
 .ab3l h3{
-    font-size: 22px;
+    font-size: 16px;
     color: aliceblue;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .ab3limg{
     height: 60%;
@@ -174,7 +196,15 @@
     top: 50%;
     left: 50%;
     font-size: 24px;
-    transform: translate(-240%, 1090%);
+    transform: translate(-184%, 1520%);
+    font-size: 16px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    
 }
 .twoimg{
     height: 100%;
@@ -189,7 +219,14 @@
     top: 50%;
     left: 50%;
     font-size: 24px;
-    transform: translate(-30%, 350%);
+    transform: translate(-39%, 430%);
+    font-size: 16px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .threeimg{
     height: 100%;
@@ -204,16 +241,24 @@
     top: 50%;
     left: 50%;
     font-size: 24px;
-    transform: translate(160%, 1090%);
+    transform: translate(100%, 1530%);
+    font-size: 16px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .about4{
     height:750px;
     width: 100%;
     display: flex;
-    padding: 20px 20px;
+    padding: 20px 0px;
     background-color: black;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .ab4one{
     width: 33%;
@@ -244,12 +289,26 @@
     margin-bottom: 20px;
     font-size: 25px;
     text-transform: uppercase;
+    font-size: 16px;
+    color: aliceblue;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .ab4one1i p{
     letter-spacing: 1px;
     line-height: 1.4;
     /* font-weight: 600; */
     font-size: 18px;
+    font-size: 16px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 300;
 }
 .ab4one2{
     height: 50%;
@@ -259,7 +318,7 @@
     /* background-color: antiquewhite; */
 }
 .ab4two{
-    width: 26%;
+    width: 30%;
     height: 97%;
     background: url('./mew5.png')no-repeat center center/cover;
     /* background-color: aqua; */
@@ -278,10 +337,11 @@
     margin-bottom: 5px;
 }
 .ab432{
-    height: 49%;
+    height: 48%;
     background: url('./mew8.png') no-repeat center center/cover; 
     margin-left: 18px;
     width: 90%;
+    margin-top: 13px;
 }
 @media screen and (max-width: 500px) {
 

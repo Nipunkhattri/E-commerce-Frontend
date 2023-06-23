@@ -9,7 +9,7 @@ import Card5 from './Card5'
 import Card6 from './Card6'
 import { useTheme, useMediaQuery, Paper, Typography, Box, MobileStepper} from '@mui/material';
 
-
+import Card1Carousel from './Card1Carousel'
 import MobileCard2 from './MobileCard2'
 import MobileCard1 from './MobileCard1'
 
@@ -26,7 +26,7 @@ const Homescreen = () => {
         </div>
     </div>
 
-    {isScreenSmall ? <MobileCard1/> :  <Card1></Card1> }
+    {isScreenSmall ? <MobileCard1/> :  <Card1Carousel></Card1Carousel> }
    
     {isScreenSmall ? <MobileCard2/> :  <Card2></Card2> }
     

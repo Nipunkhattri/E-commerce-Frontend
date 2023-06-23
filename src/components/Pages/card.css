@@ -65,6 +65,7 @@
     margin-top: 13px;
     font-family: "Inter";
     letter-spacing: 1px;
+    
 }
 
 .para1{
@@ -73,6 +74,7 @@
     color: #555555;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+    
 
   }
   
@@ -330,6 +332,7 @@ span{
     }
     .para1{
       margin-left: 1px;
+      width: 100px;
   
     }
     .styleSelect{
