@@ -363,7 +363,7 @@ input {
   font-size: 19px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
   .container {
     height: 1141px;
   }

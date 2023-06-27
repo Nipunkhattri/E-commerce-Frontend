@@ -163,7 +163,7 @@ const Navbar = () => {
                         return(
                         //  <h2 key={index} onClick={handlestoredata(item)}>{index+1}.{item}</h2>
                         // </div>
-                        <li className='list' key={index} onClick={()=>handlestoredata(item)}>{index+1}.{item}</li>
+                        <li className='list' key={index} onClick={()=>handlestoredata(item)}>{item}</li>
                          )
                         })
                       :<></>

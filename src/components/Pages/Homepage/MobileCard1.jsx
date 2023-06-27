@@ -41,7 +41,7 @@ const MobileCard1 = () => {
   const classes = useStyles();
 
   return (
-    <div style={{ display: isMobile ? 'block' : 'none' , height:"165vw" }}>
+    <div style={{ display: isMobile ? 'block' : 'none' , height:"650px" }}>
       <AutoPlaySwipeableViews
         index={activeStep}
         onChangeIndex={setActiveStep}

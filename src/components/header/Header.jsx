@@ -52,7 +52,7 @@ function Header() {
   }, []);
 
 
-  const isMobile = useMediaQuery('(max-width: 600px)');
+  const isMobile = useMediaQuery('(max-width: 780px)');
 
   return (
     <div className={classes.root} style={

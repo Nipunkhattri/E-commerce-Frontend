@@ -50,7 +50,7 @@
     color: rgb(72, 72, 207);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
     .orderr{
         width: 100%;
         margin: 10px 10px;
