@@ -52,7 +52,7 @@
     margin: 20px 30px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
     .datacontainer{
         height: 930px;
         display: block;

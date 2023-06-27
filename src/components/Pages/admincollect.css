@@ -78,7 +78,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
     .flex1-container{
         flex-direction: column;
     }

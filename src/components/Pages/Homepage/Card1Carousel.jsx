@@ -41,7 +41,7 @@ const Card1Carousel = () => {
   const classes = useStyles();
 
   return (
-    <div style={{height:"65.5vw" }}>
+    <div style={{height:"880px" }}>
       <AutoPlaySwipeableViews
         index={activeStep}
         onChangeIndex={setActiveStep}

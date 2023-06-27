@@ -19,7 +19,7 @@
 }
 .itemdiv1 {
   width: 300px;
-  margin: 20px;
+  margin: 20px 0px 20px 35px;
   padding: 10px;
 }
 
@@ -50,7 +50,7 @@
   margin-top: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
   .flex-container1 {
     grid-template-columns: repeat(2, 1fr);
   }
