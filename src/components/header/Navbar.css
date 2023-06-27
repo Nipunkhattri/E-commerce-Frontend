@@ -41,8 +41,9 @@
  
   background-color: white;
   min-width: 120px;
+  height: auto;
   padding: 10px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 .dropdown-menu li{
   display: block;
@@ -249,7 +250,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-left: 9px;
     margin-top: 0px;
     margin-bottom: 5px;
-    height: 500px;
+    height: auto;
    
   }
 
@@ -299,6 +300,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
     margin-left: -15px;
     margin-top: 30px;
+    
 }
   .dropdown-menu li{
     margin: 20px 0px;
@@ -307,11 +309,13 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: 400;
     text-decoration: none;
     color: black;
-    font-size: 12px; 
+    font-size: 16px; 
     font-family: "Inter";
     letter-spacing: 3px;
     font-weight: 500;
     position: relative !important;
+    text-align: left;
+    top: -30px;
   }
   .dropdown-menu h1:hover{
     color: red;
@@ -329,11 +333,23 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .navbar-link1{
     color: #555555;
-    font-size: 18px;
     
-    position: relative;
-  right: 0px;
-  }
+    
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+      
+      font-family: "Inter";
+      letter-spacing: 3px;
+      font-weight: 500;
+      position: relative;
+      right: 0px;
+    top: 2px;
+    
+    }
+    
+   
+  
   .rg{
     margin: 10px 10px;
     display: flex;
