@@ -1,11 +1,18 @@
 import axios from "axios"
 
 const Api = axios.create({
-    baseURL:"http://localhost:5000/"
+    // baseURL:"http://localhost:5000/"
+    baseURL:"https://backend-y1ti.onrender.com"
+    // baseURL:"https://fierce-red-catfish.cyclic.app"
     // baseURL:"https://cautious-leggings-fish.cyclic.app/"
+    
 })
 //
-export const product = () => Api.get("/api/fetchProduct");
+export const product = () => Api.get("/api/fetchProduct",{
+    headers: {
+        "Access-Control-Allow-Origin": "http://localhost:5173/",
+      },
+});
 export const productAdd = (form) => Api.post("/api/addProduct",form);
 export const productId = (id) => Api.get(`/api/GetProductId/${id}`);
 export const buyItemP = (formdata) => Api.post("/api/Paycart",formdata);

@@ -101,7 +101,7 @@ const ProductSlice = createSlice({
       },
       [Product.fulfilled]: (state, action) => {
         state.loading = false;
-        localStorage.setItem("Product", JSON.stringify([ ...action.payload ]));
+        // localStorage.setItem("Product", JSON.stringify([ ...action.payload ]));
         state.Product1 = action.payload;
       },
       [Product.rejected]: (state, action) => {

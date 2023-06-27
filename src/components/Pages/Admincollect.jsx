@@ -13,7 +13,7 @@ import {
     ListItemText,
   } from "@material-ui/core";
   import { useSelector } from "react-redux";
-  import { getBycollection } from '../../redux/features/ProductSlice';
+  import { Product, getBycollection } from '../../redux/features/ProductSlice';
   import { useDispatch } from 'react-redux';
   import { useNavigate } from 'react-router-dom';
   import Box from '@mui/material/Box';
@@ -64,6 +64,11 @@ const Admincollect = () => {
     let value;
     const { Product1 } = useSelector((state) => ({ ...state.Prod }));
   console.log(Product1);
+
+  useEffect(()=>{
+    dispatch(Product())
+  },[])
+
   const [ name,setname] = useState(null)
   const handleproduct = async ()=>{
     value = await Product1?.map((element) => element.collect);
@@ -95,7 +100,9 @@ const Admincollect = () => {
     dispatch(deleteitem(id)) 
     .then((response) => {
         console.log(response.payload);
+        console.log("hii")
         setloading(false);
+        dispatch(Product())
         setitem(response.payload);
     })  
     .catch((err) => {
@@ -186,7 +193,7 @@ const Admincollect = () => {
         collection?.map((ele, index) => {
           return (
             <>
-            <div className="itemdiv1" key={index} onClick={()=>handleupdateproduct(ele._id)}>
+            <div className="itemdiv1" key={index} >
             <button className='deleteadmin' onClick={() => handledeletecollect(ele._id)}>Delete</button>
               {/* <div
                 className={classes.media}
@@ -195,6 +202,7 @@ const Admincollect = () => {
               <img
         component="img"
         className="imgg1"
+        onClick={()=>handleupdateproduct(ele._id)}
         alt="The house from the offer."
         src={ele.images[0]}
       />
