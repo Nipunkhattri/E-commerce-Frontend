@@ -96,7 +96,7 @@
     height: 40px;
     margin: 26px 10px;
     font-family: 'Inter', sans-serif;
-    width: 180px;
+    width: 160px;
     border: none;
     background-color: black;
     color: aliceblue;
@@ -113,7 +113,7 @@
     text-transform: uppercase;
     border: none;
     /* margin:0px 0px; */
-    width: 180px;
+    width: 160px;
     background-color: black;
     color: aliceblue;
     font-size: 12px;
@@ -125,6 +125,7 @@
 }
 .para2{
     color: grey;
+    display: none;
 }
 span{
     color: black !important;
@@ -197,8 +198,8 @@ span{
     position: relative;
     width: 80px;
     height: 80px;
-    top: 150px;
-    left: 200px;
+    top: 106px;
+    left: 100px;
   }
   .lds-roller1 div {
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -279,7 +280,7 @@ span{
       transform: rotate(360deg);
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 780px) {
     .card{
       flex-direction: column;
       height: 1100px;

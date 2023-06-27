@@ -167,7 +167,7 @@ align-items: flex-end;
     text-align: end;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
   .textt{
     font-size: 17px;
   }
@@ -195,7 +195,8 @@ align-items: flex-end;
     width: 330px;
   } */
   .lds-roller{
-    left: 68% !important;
+    left: 82% !important;
+    top: 20px;
   }
   .storecontainer{
     height: 43vh;
