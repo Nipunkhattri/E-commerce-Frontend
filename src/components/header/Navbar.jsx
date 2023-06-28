@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import lg from './logo.png';
 import cartIcon from '../assets/cart.png';
+import igIcon from '../assets/igIcon.png';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -132,7 +133,7 @@ const Navbar = () => {
       </button>
       <div className='rg'>
       <img src={lg} className='logoimg' alt="" />
-      <h1 className='absolute top-5 left-4 text-2xl text-white text font-semibold logotxt' >SHIMONA AGARWAL</h1>
+      <h1 className='absolute top-5 left-4 text-2xl text-white text font-semibold logotxt' >SHIMONA AGRAWAL</h1>
       <div  className="navbar-link2" >
                 <img onClick={handlenavigate3} src={cartIcon} alt="" style={{ height: '20px'}} />
               </div>
@@ -178,8 +179,11 @@ const Navbar = () => {
           </ul>
      </nav>
     </div>
-    <div className="third" onClick={handleCart}>
-      <img src={cartIcon} alt="" style={{ height: '20px' }} />
+    <div className="third"  style={{ position :"relative", right:"0px"
+    }} >
+     <a href="https://wa.me/9919101106"> <img src={cartIcon} alt="" style={{ height: '20px' }} /></a>
+      <a href="https://www.instagram.com/label_s.a/"><img src={igIcon} alt="" style={{ height: '25px' , margin:"0px 25px 0px 25px" }} /></a>
+      <img src={cartIcon} alt="" onClick={handleCart} style={{ height: '20px' }} />
     </div>
      </div>
   );

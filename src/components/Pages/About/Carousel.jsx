@@ -147,7 +147,7 @@ const Carousel = () => {
       heading2: "MOONSTONE",
       productImageSrc: c1b1,
       productName: "MOONSTONE GREY SHIRT",
-      productAmount: "RS. 18700.00",
+      productAmount: "INR.  18700.00",
     },
    
     {
@@ -156,7 +156,7 @@ const Carousel = () => {
       heading2: "MOONSTONE",
       productImageSrc: c1b1,
       productName: "MOONSTONE GREY SHIRT",
-      productAmount: "RS. 18700.00",
+      productAmount: "INR.  18700.00",
     },
    
     {
@@ -165,7 +165,7 @@ const Carousel = () => {
       heading2: "MOONSTONE",
       productImageSrc: c1b1,
       productName: "MOONSTONE GREY SHIRT",
-      productAmount: "RS. 18700.00",
+      productAmount: "INR.  18700.00",
     },
    
     {
@@ -174,7 +174,7 @@ const Carousel = () => {
       heading2: "MOONSTONE",
       productImageSrc: c1b1,
       productName: "MOONSTONE GREY SHIRT",
-      productAmount: "RS. 18700.00",
+      productAmount: "INR.  18700.00",
     },
    
     {
@@ -183,7 +183,7 @@ const Carousel = () => {
       heading2: "MOONSTONE",
       productImageSrc: c1b1,
       productName: "MOONSTONE GREY SHIRT",
-      productAmount: "RS. 18700.00",
+      productAmount: "INR.  18700.00",
     },
    
     // Add more frames as needed
