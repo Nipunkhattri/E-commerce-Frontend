@@ -160,7 +160,7 @@ const Cardimage = ({route}) => {
         <div className="right">
             <h1 className='head'>{item?.headline}</h1>
             <img src={star} className='img' alt="" /><br />
-            <p className='para'> <ins className='inss'>RS. {item?.Price}</ins></p>
+            <p className='para'> <ins className='inss'>INR.  {item?.Price}</ins></p>
             <p className='para1'>
                 {item?.headline1}
             {/* A classic t-shirt never goes out of style. This is our most premium collection of shirt. This plain white shirt is made up of pure cotton and has a premium finish. */}

@@ -151,7 +151,7 @@ const Cart = ({route}) => {
           <div className='one2'>
             <h3>{ele.Name}</h3>
             <p>Size: {ele.size}</p>
-            <h4>RS. {ele.Price}</h4>
+            <h4>INR.  {ele.Price}</h4>
           </div>
           </div>
         </div>
@@ -162,7 +162,7 @@ const Cart = ({route}) => {
       </div>
         <div className='three'>
           {/* {console.log(quantityInput?.value)} */}
-          <p>Price : RS. {ele.Price * ele.Quantity}</p>
+          <p>Price : INR.  {ele.Price * ele.Quantity}</p>
         </div>
           {/* <button>Delete</button> */}
       </div>
@@ -177,7 +177,7 @@ const Cart = ({route}) => {
     }
     <div className='Checkout'>
     <div className='chk'>
-      <h3>ToTal : Rs. {calculateTotalPrice()}</h3>
+      <h3>ToTal : INR.  {calculateTotalPrice()}</h3>
       <p>Price includes all charges</p>
         <button className='chbtn' onClick={handlePayment}>Checkout</button>
     </div>

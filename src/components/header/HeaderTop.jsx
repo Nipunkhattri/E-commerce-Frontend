@@ -63,6 +63,8 @@ const HeaderTop = () => {
       </div>
       <div onClick={handlecart} color="black" className='third'>
         <img src={cartIcon} alt="" style={{ height: "20px" }} />
+        <img src={cartIcon} alt="" style={{ height: "30px" }} />
+        <img src={cartIcon} alt="" style={{ height: "20px" }} />
     </div>
     </div>
   )
