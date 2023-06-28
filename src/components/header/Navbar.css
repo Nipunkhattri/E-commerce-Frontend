@@ -39,11 +39,14 @@
  
 
  
-  background-color: whitesmoke;
+  background-color: white;
   min-width: 120px;
   height: auto;
   padding: 10px;
   z-index: 999;
+  position: relative;
+  left: 7px;
+
 
 }
 .dropdown-menu li{
