@@ -5,8 +5,9 @@
     height: 800px;
     overflow: auto;
     /* background-color: #f74a4a; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     /* overflow: hidden; */
+    z-index: -1;
   }
   .textcart{
     font-weight: 900;
