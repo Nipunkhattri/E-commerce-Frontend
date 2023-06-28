@@ -5,24 +5,27 @@ import lg from './logo.png';
 import cartIcon from '../assets/cart.png';
 import igIcon from '../assets/igIcon.png';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Product } from '../../redux/features/ProductSlice';
 
 const Navbar = ({ cartItems }) => {
     const { Product1 } = useSelector((state) => ({ ...state.Prod }));
+    const dispatch =useDispatch();
+    useEffect(()=>{
+      dispatch(Product())
+    },[])
+    
     console.log(Product1);
     const navigate = useNavigate();
   let value;
-  const [ name,setname] = useState(null)
-  useEffect(()=>{
-    value = Product1?.map((element) => element.collect);
-    console.log(value)
-    setname(value);
-  },[Product1])
-  
+  const [name, setName] = useState([]);
 
-
+useEffect(() => {
+  const uniqueCollectValues = [...new Set(Product1?.map(element => element.collect))];
+  setName(uniqueCollectValues);
+}, [Product1]);
 
   console.log(name)
 
@@ -184,8 +187,11 @@ const Navbar = ({ cartItems }) => {
     </div>
     <div className="third"  style={{ position :"relative", right:"0px"
     }} >
-     <a href="https://wa.me/9919101106"> <img src={cartIcon} alt="" style={{ height: '20px' }} /></a>
+     {/* <a href="https://wa.me/9919101106"> <img src={cartIcon} alt="" style={{ height: '20px' }} /></a> */}
       <a href="https://www.instagram.com/label_s.a/"><img src={igIcon} alt="" style={{ height: '25px' , margin:"0px 25px 0px 25px" }} /></a>
+      <div className='cartq'>
+       <h2>{cartItems}</h2>
+      </div>
       <img src={cartIcon} alt="" onClick={handleCart} style={{ height: '20px' }} />
     </div>
      </div>

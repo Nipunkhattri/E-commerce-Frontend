@@ -125,6 +125,24 @@ const PaymentPage = ({route}) => {
         // console.log(rzp);
         rzp.open();
     }
+
+    const [paymentUrl, setPaymentUrl] = useState('');
+    const initiatePayment = async () => {
+      try {
+        // Make an API call to your backend to initiate the payment request
+        const response = await axios.post('http://localhost:5000/initiatePayment', {
+          amount:value
+        });
+  
+        // Extract the payment URL from the response
+        const { paymentUrl } = response.data;
+  
+        // Set the payment URL to redirect the user
+        setPaymentUrl(paymentUrl);
+      } catch (error) {
+        console.error('Error initiating payment:', error.message);
+      }
+    };
   
     const handleSubmit = async (price) => {
     //   e.preventDefault();
@@ -135,18 +153,20 @@ const PaymentPage = ({route}) => {
         toast.error("Please Check Again");
         return;
       }
+      initiatePayment();
+      
       // await dispatch(buyItem(formData));
       
-      const _data = {amount:value}
-      console.log(_data);
-      axios.post('https://backend-y1ti.onrender.com/api/orders',_data)
-      .then(res=>{
-          console.log(res.data);
-          handleOpenRayzorpay(res.data.data)
-      })
-      .catch(err=>{
-          console.log(err)
-      })
+      // const _data = {amount:value}
+      // console.log(_data);
+      // axios.post('https://backend-y1ti.onrender.com/api/orders',_data)
+      // .then(res=>{
+      //     console.log(res.data);
+      //     handleOpenRayzorpay(res.data.data)
+      // })
+      // .catch(err=>{
+      //     console.log(err)
+      // })
       // You can perform further actions with the form data, like sending it to the backend
     };
 
@@ -195,12 +215,7 @@ const PaymentPage = ({route}) => {
         <form>
       <div className='dvv'>
         <label htmlFor="country">Country:</label>
-        <select id="country" name="country" value={formData.country} onChange={handleInputChange}>
-          <option value="">Select a country</option>
-          <option value="India">India</option>
-          <option value="Canada">Canada</option>
-          <option value="UK">UK</option>
-        </select>
+        <input type='text' id="country" name="country" placeholder='country' value={formData.country} onChange={handleInputChange}/>
       </div>
       <div className='dvv' style={
         {
@@ -230,12 +245,7 @@ const PaymentPage = ({route}) => {
       </div>
       <div className='dvv'>
         <label htmlFor="state">State:</label>
-        <select id="state" name="state" value={formData.state} onChange={handleInputChange}>
-          <option value="">Select a state</option>
-          <option value="UttarPradesh">Uttar Pradesh</option>
-          <option value="New York">New York</option>
-          <option value="Texas">Texas</option>
-        </select>
+        <input type='text' placeholder='state' id="state" name="state" value={formData.state} onChange={handleInputChange}/>
       </div>
       <div className='dvv'>
         <label htmlFor="phoneNumber">Phone Number:</label>
@@ -245,8 +255,9 @@ const PaymentPage = ({route}) => {
         click?
         <button disabled type="button" className='btnp'  onClick={()=>handleSubmit(price)}>Continue to Payment</button>:
         <button type="button" className='btnp'  onClick={()=>handleSubmit(price)}>Continue to Payment</button>
-
       }
+      {paymentUrl && <a href={paymentUrl}>Click here to proceed with PhonePe payment</a>}
+
     </form>
         </div>
         </div>

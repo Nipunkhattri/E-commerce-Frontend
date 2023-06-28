@@ -207,7 +207,9 @@
   width: 22px;
   border-radius: 50%;
   position: absolute;
-  top: 49px;
+  top: -10px;
+  left: 285px;
+  /* right: 60px; */
   font-size: 13px;
   color: #666;
   right: 13px;

@@ -1,8 +1,8 @@
 import axios from "axios"
 
 const Api = axios.create({
-    // baseURL:"http://localhost:5000/"
-    baseURL:"https://backend-y1ti.onrender.com"
+    baseURL:"http://localhost:5000/"
+    // baseURL:"https://backend-y1ti.onrender.com"
     // baseURL:"https://fierce-red-catfish.cyclic.app"
     // baseURL:"https://cautious-leggings-fish.cyclic.app/"
 })
