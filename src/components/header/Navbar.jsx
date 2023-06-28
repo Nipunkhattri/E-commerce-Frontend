@@ -4,6 +4,7 @@ import './Navbar.css';
 import lg from './logo.png';
 import cartIcon from '../assets/cart.png';
 import igIcon from '../assets/igIcon.png';
+import wttspIcon from '../assets/wttspIcon.png';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -181,7 +182,7 @@ const Navbar = () => {
     </div>
     <div className="third"  style={{ position :"relative", right:"0px"
     }} >
-     <a href="https://wa.me/9919101106"> <img src={cartIcon} alt="" style={{ height: '20px' }} /></a>
+     <a href="https://wa.me/9919101106"> <img src={wttspIcon} alt="" style={{ height: '25px' }} /></a>
       <a href="https://www.instagram.com/label_s.a/"><img src={igIcon} alt="" style={{ height: '25px' , margin:"0px 25px 0px 25px" }} /></a>
       <img src={cartIcon} alt="" onClick={handleCart} style={{ height: '20px' }} />
     </div>
