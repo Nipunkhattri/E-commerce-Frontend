@@ -212,7 +212,7 @@ const Admincollect = () => {
                   {ele.headline}
                 </div>
                 <div variant="body1" className="headstore2">
-                  RS. {ele.Price} 
+                  INR.  {ele.Price} 
                 </div>
               </div>
             </div>

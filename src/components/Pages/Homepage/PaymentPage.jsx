@@ -261,7 +261,7 @@ const PaymentPage = ({route}) => {
                             <div className='divpay'>
                                 <img src={ele.Image} className='imgpay' alt="Item 1"/>
                                 <h3>{ele.Name}</h3>
-                                <h2>Rs. {ele.Price}</h2>
+                                <h2>INR.  {ele.Price}</h2>
                             </div>
                             </>
                         )
@@ -270,7 +270,7 @@ const PaymentPage = ({route}) => {
             </div>
             <div className='Checkpay'>
     <div className='Totalpay'>
-      <h3>ToTal : Rs. {value}</h3>
+      <h3>ToTal : INR.  {value}</h3>
       <p>Price includes all charges</p>
       {/* <button className='chbtn'>Checkout</button> */}
     </div>

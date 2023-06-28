@@ -96,7 +96,7 @@ const Itemcollect = ({route}) => {
                   {item.headline}
                 </div>
                 <div variant="body1" className='headstore2'>
-                  RS. {item.Price} 
+                  INR.  {item.Price} 
                 </div>
               </div>
             </div>
