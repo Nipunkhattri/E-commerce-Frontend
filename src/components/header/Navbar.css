@@ -202,7 +202,20 @@
   border: none;
   cursor: pointer;
 }
-
+.cartq{
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  position: absolute;
+  top: 49px;
+  font-size: 13px;
+  color: #666;
+  right: 13px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #bec1c5;
+}
 
 @media screen and (max-width: 780px) {
 .navbar{

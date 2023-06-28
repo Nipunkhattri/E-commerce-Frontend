@@ -115,17 +115,15 @@ const Cart = ({route}) => {
 
   const handledelete = (id) =>{
     console.log(id)
-    dispatch(deleteById({id,navigate}))
-    .then((response) => {
-      console.log(response);
-      setres(response);
-      let CartDatanew = JSON.parse(localStorage.getItem('myArray'));
-      setcartdata1(CartDatanew);
-  })  
-  .catch((err) => {
-      console.log(err);
-      // setError(error);
-  });
+    const updatedCartItems = cartdata1?.filter(item =>
+    // console.log(item)
+    item._id !== id
+     );
+     console.log(updatedCartItems)
+    setcartdata1(updatedCartItems);
+    // Update localStorage with updated cart items
+    localStorage.setItem('myArray', JSON.stringify(updatedCartItems));
+    navigate('/cart')
   }
   
   // const [total,setTotal] = useState(null)

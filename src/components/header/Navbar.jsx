@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
+const Navbar = ({ cartItems }) => {
     const { Product1 } = useSelector((state) => ({ ...state.Prod }));
     console.log(Product1);
     const navigate = useNavigate();
@@ -20,6 +20,9 @@ const Navbar = () => {
     setname(value);
   },[Product1])
   
+
+
+
   console.log(name)
 
   const handlestoredata = (item) =>{
@@ -179,6 +182,10 @@ const Navbar = () => {
      </nav>
     </div>
     <div className="third" onClick={handleCart}>
+      {/* <>{cartItems}</> */}
+      <div className='cartq'>
+       <h2>{cartItems}</h2>
+      </div>
       <img src={cartIcon} alt="" style={{ height: '20px' }} />
     </div>
      </div>

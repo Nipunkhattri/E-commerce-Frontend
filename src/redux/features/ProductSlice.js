@@ -19,11 +19,13 @@ export const addProduct = createAsyncThunk(
     'auth/addProduct',
    async (form)=>{
     try{
-      toast.success("Loading...");
       const response = await api.productAdd(form);
-        console.log(response)
+      console.log(response)
+      if(response){
+        // toast.success("Loading...");
         toast.success("Product Added ...");
-        return response.data;
+      }
+      return response.data;
     }catch(e){
       console.log(e);
     }

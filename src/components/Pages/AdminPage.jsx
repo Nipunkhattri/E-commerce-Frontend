@@ -11,11 +11,14 @@ const AdminPage = () => {
     const[loading , setloading ] = useState(false);
     const navigate = useNavigate();
     const { isAuthenticated } = useSelector((state)=> ({...state.auth}));
+    const { Product1 } = useSelector((state) => ({ ...state.Prod }));
     useEffect(()=>{
       if(isAuthenticated == false){
         navigate('/adminlogin');
       }
     })
+
+
 
     const [currentLine, setCurrentLine] = useState('');
 
@@ -80,6 +83,7 @@ const AdminPage = () => {
       const handleSubmit = () => {
         // e.preventDefault();
         setloading(true);
+        console.log(form.images[4]);
         dispatch(addProduct(form)).then(()=>{
           setloading(false);
         })
@@ -91,7 +95,7 @@ const AdminPage = () => {
     <div className='admin'>
       {
         loading?
-        toast.success("Loading...")
+        <div class="loader"></div>
         :
         <></>
       }
@@ -213,9 +217,22 @@ const AdminPage = () => {
         value={form.collection}
         onChange={handleInputChange}>
         <option value="">Select a Collection</option>
-        <option value="Gray">Gray</option>
+        {/* <option value="Gray">Gray</option>
         <option value="Wine Red">Wine Red</option>
-        <option value="MoonBlack">MoonBlack</option>
+      */}
+         {
+           Array.isArray(Product1) ?
+           Product1?.map((item,index)=>{
+             console.log(item)
+             return(
+               //  <h2 key={index} onClick={handlestoredata(item)}>{index+1}.{item}</h2>
+               // </div>
+               <option key={index} value={item.collect}>{item.collect}</option>
+            // <li className='list' key={index} onClick={()=>handlestoredata(item)}>{item}</li>
+             )
+            })
+          :<></>
+         }
       </select>
         } 
         </div>

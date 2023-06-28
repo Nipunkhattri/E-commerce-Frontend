@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import FooterMob from "./components/footerMob";
 import FooterFoot from "./components/FooterFoot";
 import { ToastContainer } from 'react-toastify';
-
+import React,{useState ,useEffect} from 'react'
 import RoutesFunc from "./components/Pages/Routes";
 import 'react-toastify/dist/ReactToastify.css';
 import { useMediaQuery } from "@material-ui/core";
@@ -21,11 +21,20 @@ function App() {
   const isScreenSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const location = useLocation();
 
+  const [cartItems, setCartItems] = useState(0);
+
+  const storedCartItems = JSON.parse(localStorage.getItem('myArray'));
+  useEffect(() => {
+    if (storedCartItems) {
+      setCartItems(storedCartItems?.length);
+    }
+  }, [storedCartItems]);
+
   return (
     <>
     <Header></Header>
     {/* <HeaderTop/> */}
-    <Navbar/>
+    <Navbar cartItems={cartItems}/>
     {/* <MainHeader></MainHeader> */}
     {/* <Cart/> */}
     <ToastContainer/>

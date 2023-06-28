@@ -114,6 +114,7 @@ const Cardimage = ({route}) => {
             await dispatch(setCartItem({id,index,size}))
             .then((res)=>{
                 setloading(false);
+                navigate('/cart')
             });
         }
     }

@@ -139,7 +139,7 @@ const PaymentPage = ({route}) => {
       
       const _data = {amount:value}
       console.log(_data);
-      axios.post('https://fierce-red-catfish.cyclic.app/api/orders',_data)
+      axios.post('https://backend-y1ti.onrender.com/api/orders',_data)
       .then(res=>{
           console.log(res.data);
           handleOpenRayzorpay(res.data.data)
