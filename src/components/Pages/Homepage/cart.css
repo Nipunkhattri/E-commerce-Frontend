@@ -62,7 +62,7 @@
   font-family: 'Inter';
   font-weight: 560;
   position: relative;
-  right: 40px;
+  right: 0px;
 }
 
 .card1{
@@ -73,7 +73,7 @@
   display: flex;
   margin: auto;
   margin-left: 00px;
-  padding: 40px 30px;
+  padding: 29px 30px;
 }
 
 .card1 img{
@@ -81,6 +81,8 @@
   width: 130px;
   position: relative;
   right: 30px;
+  object-fit: cover;
+  
 }
 .all{
   height: 93px;
@@ -98,8 +100,8 @@
   /* background-color: #f74a4a; */
 }
 .one2{
-  margin-left: 55px;
-  margin-top: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
   /* background-color: #000000; */
   width: 70%;
   font-family: 'Inter', sans-serif;
@@ -168,7 +170,7 @@
   font-family: 'Inter';
   font-weight: 460;
   position: relative;
-  left: 100px;
+  left: 150px;
 
 }
 
@@ -182,13 +184,13 @@
   font-family: 'Inter';
   font-weight: 460;
   position: relative;
-  left: 100px;
+  left: 150px;
 
 }
 
 .chbtn{
   position: relative;
-  left: 100px;
+  left: 150px;
   font-size: 16px !important;
    
   letter-spacing: 1px;
