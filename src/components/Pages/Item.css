@@ -15,19 +15,35 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* justify-content: center; */
-  /* margin-left: 20px; */
+  margin-left: 40px;
+  margin-top: 40px;
 }
 .itemdiv1 {
-  width: 300px;
-  margin: 20px 0px 20px 35px;
-  padding: 10px;
-}
+  width: 320px;
+  margin: 0px 0px 20px 7px;
+  padding: 0px;
+  overflow: hidden;
 
+}
+.storeImgContainer{
+  height: 80%;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
 .imgg1 {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
+  transition: 0.5s;
   /* Additional styles for the image */
+}
+
+.imgg1:hover{
+  transform: scale(1.25);
+
 }
 
 .text-store1 {
@@ -35,25 +51,57 @@
   /* Additional styles for the text content */
 }
 .headstore1 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   font-family: "Inter";
   color: #474747;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
 }
 .headstore2 {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   font-family: "Inter";
   color: #474747;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
   margin-top: 10px;
 }
 
 @media screen and (max-width: 780px) {
   .flex-container1 {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
   }
+  .itemdiv1 {
+    width: 270px;
+    margin: 0px 0px 0px 7px;
+    padding: 0px;
+    overflow: hidden;
+  
+  }
+  .storeImgContainer{
+    height: 72.5%;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+     object-fit: contain;
+  }
+  .imgg1 {
+    width: 100%;
+    height: 110%;
+    transition: 0.5s;
+    object-fit: cover;
+    /* Additional styles for the image */
+    /* object-fit: contain; */
+   
+
+  }
+  
   .headstore1 {
     font-size: 14px !important;
     font-weight: 600 !important;
@@ -66,11 +114,11 @@
   }
   .itemdiv1 {
     width: auto;
-    margin: 5px;
+    margin: 5px 5px -10px 5px;
     padding: 5px;
   }
   .imgg1 {
-    height: 180px;
+    height: 250px;
   }
 
   .breadcrumb {
@@ -80,5 +128,8 @@
     font-family: "Inter";
     letter-spacing: 0px;
     color: #474747;
+  }
+  .flex-container1{
+    margin-top: 20px;
   }
 }
