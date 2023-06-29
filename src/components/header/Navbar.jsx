@@ -188,8 +188,8 @@ useEffect(() => {
     </div>
     <div className="third"  style={{ position :"relative", right:"0px"
     }} >
-     <a href="https://wa.me/9919101106"> <img src={cartIcon} alt="" style={{ height: '20px' }} /></a>
-      <a href="https://www.instagram.com/label_s.a/"><img src={igIcon} alt="" style={{ height: '25px' , margin:"0px 25px 0px 25px" }} /></a>
+     <a href="https://wa.me/9919101106"> <img src={wttspIcon} alt="" style={{ height: '27px' }} /></a>
+      <a href="https://www.instagram.com/label_s.a/"><img src={igIcon} alt="" style={{ height: '25px' , margin:"0px 23px 0px 23px" }} /></a>
       <div className='cartq'>
        <h2>{cartItems}</h2>
       </div>
