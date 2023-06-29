@@ -92,7 +92,7 @@ const MobileCard2 = () => {
 
           color:"black !important",
           position:"relative",
-          bottom:"225px",
+          bottom:"228px",
           backgroundColor:"transparent"
         
         

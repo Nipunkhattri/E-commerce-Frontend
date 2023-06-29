@@ -21,6 +21,8 @@
     width: 24%;
     /* background-color: rgb(187, 59, 59); */
     margin-top: 1px;
+    position: relative;
+    left: 50px;
 }
 
 .main{
@@ -177,6 +179,7 @@ span{
     /* margin-top: 20px */
     /* padding-top:20px; */
     /* margin-top: 12px; */
+    object-fit: contain;
 }
 .loader {
     border: 12px solid #f3f3f3; /* Light grey */
@@ -313,7 +316,17 @@ span{
       width: 30% !important;
       padding: 0px 8px !important;
       margin-top: 0px;
+      left: -15px;
     }
+    
+.main{
+  height: 100%;
+  width: 77%;
+  /* background: url("./Store/assets/Rectangle.png") no-repeat center center/cover; */
+  /* background-color: blueviolet; */
+  position: relative;
+  right: 15px;
+}
     .divcon{
       height: 24%;
       width: 99%;
@@ -336,6 +349,8 @@ span{
     .para1{
       margin-left: 1px;
       width: 100%;
+    font-size: 16px;
+
   
     }
     .styleSelect{

@@ -139,7 +139,7 @@
     width: 100%;
     /* background-color: aqua; */
     position: relative;
-    top: 50px;
+    top: 0px;
 }
 .Card2-container{
     /* margin: auto; */
@@ -1098,5 +1098,14 @@ overflow-x: hidden;    }
         /* bottom: 20px; */
         margin-bottom: 0px;
         font-size: 20px;
+    }
+    .card6onecard{
+        height: 100%;
+        width: 50%;
+        /* padding: 5px 5px; */
+        margin-right: 10px;
+        margin-left: 12px;
+        /* background-color: #1E1E1E; */
+        background: url('./image8.png') no-repeat center center/cover;
     }
 }

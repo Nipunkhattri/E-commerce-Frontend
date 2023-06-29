@@ -82,12 +82,15 @@ const StoreGrid = () => {
                 className={classes.media}
                 style={{ backgroundImage: `url(${item.Image})` }}
               /> */}
+
+              <div className="storeImgContainer">
               <img
         component="img"
         className="imgg1"
         alt="The house from the offer."
         src={item.images[0]}
       />
+      </div>
               {/* <img src={imgg1} className="imgg" alt="Product Image" /> */}
               <div className="text-store1">
                 <div variant="h6" className='headstore1'>
@@ -100,7 +103,7 @@ const StoreGrid = () => {
             </div>
           );
         })
-        :<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        :<div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
         }        {/* <Grid item xs={3}>
          <ProductCard1

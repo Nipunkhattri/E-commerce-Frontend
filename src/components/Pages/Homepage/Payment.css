@@ -27,6 +27,8 @@ select {
 .uppay h2 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  position: relative;
+  right: 35px;
 }
 .section {
   /* width: 80%; */
@@ -58,7 +60,7 @@ select {
 }
 
 .a {
-  width: 100%;
+  width: 90%;
   height: 50px;
   /* text-align: center; */
   /* display: flex; */
@@ -269,7 +271,8 @@ input {
   margin-left: 20px;
   height: 91px;
   width: 95px;
-  border-radius: 14px;
+
+  object-fit: cover;
 }
 
 .divpay h3 {
@@ -305,6 +308,8 @@ input {
   margin-top: 30px;
   font-family: "Inter";
   font-weight: 600;
+  position: absolute;
+  right: 9%;
 }
 .Totalpay {
   width: 84%;
@@ -390,6 +395,7 @@ input {
     height: 91px;
     width: 95px;
     border-radius: 14px;
+    object-fit: cover;
   }
   .divpay h3 {
     margin-top: 30px;
