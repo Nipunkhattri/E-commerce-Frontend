@@ -135,11 +135,11 @@
     font-size: 15px; 
 }
 .card2{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     /* background-color: aqua; */
     position: relative;
-    top: 0px;
+    top: 20px;
 }
 .Card2-container{
     /* margin: auto; */
@@ -743,6 +743,7 @@
     .card2{
         height: auto;
         /* background-color: aqua; */
+        top: 0;
     }
     .card2div2up div h1{
         font-size: 20px;

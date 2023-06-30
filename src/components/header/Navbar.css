@@ -209,11 +209,11 @@
   border-radius: 50%;
   position: absolute;
   top: 12px;
-  left: 289px;
+right: 30px;
   /* right: 60px; */
   font-size: 8px;
   color: white;
-  right: 13px;
+  right: -10px;
   align-items: center;
   justify-content: center;
   display: flex;
