@@ -25,7 +25,8 @@ import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
 import "./store.css";
 import Box from '@mui/material/Box';
-import imgg1 from "./assets/Rectangle.png"
+import imgg1 from "./assets/Rectangle.png";
+import Loader from "../Loader";
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -103,7 +104,7 @@ const StoreGrid = () => {
             </div>
           );
         })
-        :<div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        :<Loader></Loader>
 
         }        {/* <Grid item xs={3}>
          <ProductCard1

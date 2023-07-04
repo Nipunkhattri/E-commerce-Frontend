@@ -22,7 +22,7 @@
     /* background-color: rgb(187, 59, 59); */
     margin-top: 1px;
     position: relative;
-    left: 50px;
+    left: 0px;
 }
 
 .main{
@@ -175,11 +175,11 @@ span{
 
 .mainimg{
     height: 90%;
-    width: 100%;
+    width: 90%;
     /* margin-top: 20px */
     /* padding-top:20px; */
     /* margin-top: 12px; */
-    object-fit: contain;
+    object-fit: cover;
 }
 .loader {
     border: 12px solid #f3f3f3; /* Light grey */
@@ -317,6 +317,7 @@ span{
       padding: 0px 8px !important;
       margin-top: 0px;
       left: -15px;
+      margin-left: 15px;
     }
     
 .main{
@@ -400,5 +401,6 @@ span{
     }
     .mainimg{
       height: 100%;
+      width: 100%;
     }
   }
