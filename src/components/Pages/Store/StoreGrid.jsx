@@ -104,7 +104,7 @@ const StoreGrid = () => {
             </div>
           );
         })
-        :<Loader></Loader>
+        :<div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
         }        {/* <Grid item xs={3}>
          <ProductCard1
