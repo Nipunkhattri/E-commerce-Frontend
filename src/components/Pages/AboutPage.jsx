@@ -6,19 +6,33 @@ const AboutPage = () => {
     <>
       <div className="about"></div>
       <div className="about11">
-        <h2 className="ah2">EFFORTLESS ELEGANCE</h2>
+        <h2 className="ah2">CLASSIC & CHIC</h2>
         <div className="about1">
           <div className="ab1l">
             <div className="ab1limg"></div>
           </div>
           <div className="ab1r">
             <div className="ab1ri">
-              <h2>Our Vision</h2>
+              <h2>FOUNDER</h2>
               <p>
-                Buna embodies a slow way of life that is rooted in culture,
-                craft and of breath-ability, light and airiness that it wants
-                its wearers to be part of. of breath-ability, light and airiness
-                that it wants its wearers to be part of. Buna{" "}
+                Shimona Agrawal, the founder of the label, has always been an
+                admirer in the world of fashion. A NIFT (National Institute of
+                Fashion Technology) graduate with dedication, hard-work and keen
+                eye, she embarked on her entrepreneurial journey with a mission
+                to empower women through her creations.
+              </p>
+              <p>
+                She believes that fashion had the ability to enhance a woman’s
+                self-esteem and make her feel confident, powerful- ready to
+                conquer the world. In a world often driven by fast fashion, she
+                believes in the importance of creating garments that are meant
+                to be cherished, not discarded.
+              </p>
+              <p>
+                She set out to create a brand that catered to discerning
+                individuals who valued quality over quantity. Her vision was to
+                build a fashion label that celebrated the artistry of design and
+                embraced the essence of timelessness.
               </p>
             </div>
           </div>
@@ -28,17 +42,43 @@ const AboutPage = () => {
       <div className="about2">
         <div className="ab1r2">
           <div className="ab1ri">
-            <h2>Our Mission</h2>
+            <h2>OUR MISSION & VISION</h2>
             <p>
-              Buna embodies a slow way of life that is rooted in culture, craft
-              and of breath-ability, light and airiness that it wants its
-              wearers to be part of. of breath-ability, light and airiness that
-              it wants its wearers to be part of. Buna{" "}
+              To create high-quality, fashionable clothing that celebrates the
+              unique beauty of our customers, while providing them with the
+              highest level of quality, comfort, and style.
+            </p>
+            <p>
+              To be the leading fashion label that inspires people to look and
+              feel their best, regardless of their shape/size or their personal
+              style.
+            </p>
+            <p>
+            We want every women to be able to say it out loud “ I am
+              confident, stylish and ready to take on the world“
+            </p>
+            <p
+              style={{
+                textAlign: "center",
+                textTransform: "uppercase",
+                fontSize: "14px",
+                width: "85%",
+                lineHeight: "25px",
+                wordSpacing: "1px",
+                letterSpacing: "3px",
+                position:"relative",
+                top:"30px",
+                left:"15px"
+              }}
+              className="quote"
+            >
+              We want every women to be able to say it out loud “ I am
+              confident, stylish and ready to take on the world“.
             </p>
           </div>
         </div>
         <div className="ab1l">
-          <div className="ab1limg"></div>
+          <div className="ab2limg"></div>
         </div>
       </div>
       <div className="about3">

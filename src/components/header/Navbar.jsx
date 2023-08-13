@@ -138,7 +138,7 @@ useEffect(() => {
         {/* <h1>hello</h1> */}
         <FontAwesomeIcon icon={isOpen ? faTimes : faBars}/>
       </button>
-      <div className='rg'>
+      <div className='rg' onClick={handlenavigate1} style={{pointer:"cursor"}}>
       <img src={lg} className='logoimg' alt="" />
       <h1 className='absolute top-5 left-4 text-2xl text-white text font-semibold logotxt' >SHIMONA AGRAWAL</h1>
       <div  className="navbar-link2" >

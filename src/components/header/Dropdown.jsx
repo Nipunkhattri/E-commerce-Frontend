@@ -58,6 +58,7 @@ const SmallDropdown = ({ options }) => {
             key={option}
             selected={index === selectedIndex}
             onClick={(event) => handleMenuItemClick(event, index)}
+         
           >
             {option}
           </MenuItem>

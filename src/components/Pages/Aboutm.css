@@ -11,6 +11,8 @@
     width: 100%;
     /* background-color: antiquewhite; */
     display: flex;
+    position: relative;
+    top: 20px;
 }
 .about2{
     height: 700px;
@@ -50,7 +52,7 @@
 }
 .ab1ri{
     /* border: 2px solid black; */
-    width: 80%;
+    width: 90%;
     height: 60%;
     display: flex;
     justify-content: center;
@@ -58,35 +60,36 @@
     flex-direction: column;
 }
 .ab1r h2{
-    font-size: 30px;
+    font-size: 22px;
     letter-spacing: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: bold;
     position: relative;
-    left: 80px;
+    left: -20px;
 }
 .ab1r p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     letter-spacing: 1px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     position: relative;
-    left: 80px;
+    left: -20px;
     top: 10px;
+    margin-top: 20px;
 
 }
 .ab1r2 h2{
-    font-size: 30px;
+    font-size: 22px;
     letter-spacing: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: bold;
     position: relative;
-    right: 80px;
+    left: -12px;
 }
 .ab1r2 p{
     font-size: 18px;
@@ -95,8 +98,10 @@
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     position: relative;
-    right: 80px;
+    left: -12px;
     top: 10px;
+    margin-top: 20px;
+
 
 }
 .ah2{
@@ -114,9 +119,16 @@
 .ab1limg{
     height: 85%;
     width: 80%;
-    background:url('./old.png') no-repeat center center/cover;
+    background:url('./aboutPageFounder.png') no-repeat center center/cover;
     border: 2px solid black ;
-}.about3{
+}
+.ab2limg{
+    height: 75%;
+    width: 55%;
+    background:url('./mew1.png') no-repeat center center/cover;
+    border: 2px solid black ;
+}
+.about3{
     height: 700px;
     width: 100%;
     display: flex;
@@ -346,8 +358,68 @@
 @media screen and (max-width: 780px) {
   
 
-    .ah2{
+    .ab1limg{
+        height: 200px;
+    }
+    .ab1ri{
+        /* border: 2px solid black; */
+        width: 90%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        
+    }
+    .ab1r h2{
+        font-size: 20px;
+        letter-spacing: 4px;
+        margin-bottom: 0px;
+        font-family: 'Inter', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        left: -20px;
+    }
+    .ab1r p{
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        position: relative;
+        left: -20px;
+        
+        margin-top: 15px;
+    
+    }
+    .ab1r2{
+        height: 112%;
+    }
+    .ab1r2 h2{
+        font-size: 20px;
+        letter-spacing: 4px;
+        margin-bottom: 0px;
+        font-family: 'Inter', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        left: -20px;
+    }
+    .ab1r2 p{
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        position: relative;
+        left: -20px;
+        
+        margin-top: 15px;
+    
+    }
 
+    .quote{
         display: none;
     }
     

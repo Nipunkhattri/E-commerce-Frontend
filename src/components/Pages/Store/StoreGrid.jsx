@@ -98,7 +98,7 @@ const StoreGrid = () => {
                   {item.headline}
                 </div>
                 <div variant="body1" className='headstore2'>
-                  INR.  {item.Price} /-
+                  	&#8377;  {item.Price} /-
                 </div>
               </div>
             </div>
