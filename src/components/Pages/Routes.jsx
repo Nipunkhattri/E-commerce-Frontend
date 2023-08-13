@@ -27,7 +27,9 @@ import Email from "./Homepage/Email";
 import Homescreen from "./Homepage/Homescreen";
 import Aminlogin from "./Aminlogin";
 import AboutPage from "./AboutPage";
-
+import PrivacyPolicyPage from "./Privacy";
+import TandCPage from "./TandC";
+import ReturnPage from "./Return";
 const RoutesFunc = () => {
   const theme = useTheme();
   const isScreenSmall = useMediaQuery(theme.breakpoints.down("sm"));
@@ -63,6 +65,9 @@ const RoutesFunc = () => {
         {/* <Route exact path="/adminlogin" element={<Aminlogin setIsAuthenticated={setIsAuthenticated} />} /> */}
         <Route exact path="/updateproduct" element={<Updateproduct/>} />
         <Route exact path="/email" element={<Email/>} />
+        <Route exact path="/privacy" element={<PrivacyPolicyPage/>} />
+        <Route exact path="/tandc" element={<TandCPage/>} />
+        <Route exact path="/return" element={<ReturnPage/>} />
         <Route exact path="/adminlogin" element={<Aminlogin setIsAuthenticated={setIsAuthenticated} />} />
       </Routes>
     </>

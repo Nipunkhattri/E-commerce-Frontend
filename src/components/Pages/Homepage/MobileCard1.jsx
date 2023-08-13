@@ -62,7 +62,7 @@ const MobileCard1 = () => {
                <h3 className='mew1'>MOONSTONE</h3>
                <img src={suit} alt="" />
                <h3 className='mew'>MOONSTONE GREY SHIRT</h3>
-               <h4>INR.  18700</h4>
+               <h4>	&#8377;  18700</h4>
                <button className='cardbtn'>VIEW THIS PRODUCT</button>
              </div>
          </div>

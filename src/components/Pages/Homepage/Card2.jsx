@@ -11,7 +11,7 @@ const Card2 = () => {
             <h2>The Grey collection</h2>
             <h3>MOONSTONE</h3>
             <p>Buna embodies a slow way of life that is rooted in culture, craft and of breath-ability, light and airiness that it wants its wearers to be part of. of breath-ability,</p>
-            <button className='card2-btn'>View this product</button>
+            <button className='card2-btn'>Coming Soon!</button>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 
 
 .card{
-    height: 700px;
+    height: 876px;
     width: 90%;
     display: flex;
     margin: 30px auto;
@@ -283,7 +283,14 @@ span{
       transform: rotate(360deg);
     }
   }
+  /* .sizeChart{
+    position: absolute;
+    right: 450px;
+    bottom: 165px;
+    text-decoration: underline;
+  } */
   @media screen and (max-width: 780px) {
+
     .card{
       flex-direction: column;
       height: 1100px;
