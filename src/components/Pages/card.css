@@ -31,6 +31,10 @@
     /* background: url("./Store/assets/Rectangle.png") no-repeat center center/cover; */
     /* background-color: blueviolet; */
 }
+
+.main div img{
+  min-height: 790px;
+}
 .divcon{
     height: 23.95%;
     width:90%;
@@ -51,7 +55,7 @@
     font-size: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
 .img{
     height: 30px;
@@ -72,12 +76,13 @@
 
 .para1{
     margin: 15px 30px;
-    font-size: 20px;
+    font-size: 16px;
     color: #555555;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     word-wrap: break-word;
     width: 100%;
+    letter-spacing: 1px;
     
 
   }
@@ -161,7 +166,7 @@ span{
   margin-top: -10px;
     margin-left: 50px;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 16px;
     color: #555555;
     font-weight: 200 !important;
     font-family: 'Inter', sans-serif;
@@ -410,4 +415,8 @@ span{
       height: 100%;
       width: 100%;
     }
+    
+.main div img{
+  min-height: 395px;
+}
   }

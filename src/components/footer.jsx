@@ -76,7 +76,7 @@ const Footer = () => {
   const elements = [
     {
       heading: "Company Info",
-      options: ["Site Map", "Catalouge", "We Are Hiring", "Blog"],
+      options: ["Privacy", "Terms and Conditions", "Return Policy", "Blog"],
     },
     {
       heading: "Legal",
@@ -117,9 +117,9 @@ const Footer = () => {
               <Box className={classes.links}>
                 {element.options.map((option, index) => (
                   <Box>
-                    {option === "Site Map" ? (
+                    {option === "Privacy" ? (
                       <Link
-                        to="/sitemap"
+                        to="/privacy"
                         className={classes.Link}
 
                       >
@@ -131,9 +131,23 @@ const Footer = () => {
                           {option}
                         </Typography>
                       </Link>
-                    ) : option === "Catalouge" ? (
+                    ) : option === "Terms and Conditions" ? (
                       <Link
-                      to="/catalouge"
+                      to="/tandc"
+                      className={classes.Link}
+
+                    >
+                      <Typography
+                        key={index}
+                        onClick={handleClick(index)}
+                        className={classes.link}
+                      >
+                        {option}
+                      </Typography>
+                    </Link>
+                    ) : option === "Return Policy" ? (
+                      <Link
+                      to="/return"
                       className={classes.Link}
 
                     >
