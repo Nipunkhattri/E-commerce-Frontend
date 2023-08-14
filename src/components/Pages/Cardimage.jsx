@@ -183,6 +183,7 @@ const Cardimage = ({ route }) => {
                 magnifierSize="30%" // Adjust the magnifier size as needed
                 square={false} // Set to true for a square magnifier
                 dragToMove={true} // Enable drag to move the magnifier
+                className="mainImage"
               />
             ) : (<div class="loader"></div>)}
           </div>

@@ -81,26 +81,6 @@ const AboutPage = () => {
           <div className="ab2limg"></div>
         </div>
       </div>
-      <div className="about3">
-        <div className="ab3l">
-          <div className="ab3limg"></div>
-          <h3>Effortless Elegance</h3>
-        </div>
-        <div className="ab3r">
-          <div className="oneimg">
-            <div className="img1"></div>
-            <h3>Effortless Elegance</h3>
-          </div>
-          <div className="twoimg">
-            <div className="img2"></div>
-            <h3>Effortless Elegance</h3>
-          </div>
-          <div className="threeimg">
-            <div className="img3"></div>
-            <h3>Effortless Elegance</h3>
-          </div>
-        </div>
-      </div>
       <div className="about4">
         <div className="ab4one">
           <div className="ab4one1">
@@ -120,6 +100,27 @@ const AboutPage = () => {
         <div className="ab43">
           <div className="ab431"></div>
           <div className="ab432"></div>
+        </div>
+      </div>
+     
+      <div className="about3">
+        <div className="ab3l">
+          <div className="ab3limg"></div>
+          <h3>Effortless Elegance</h3>
+        </div>
+        <div className="ab3r">
+          <div className="oneimg">
+            <div className="img1"></div>
+            <h3>Effortless Elegance</h3>
+          </div>
+          <div className="twoimg">
+            <div className="img2"></div>
+            <h3>Effortless Elegance</h3>
+          </div>
+          <div className="threeimg">
+            <div className="img3"></div>
+            <h3>Effortless Elegance</h3>
+          </div>
         </div>
       </div>
       {/* </div> */}

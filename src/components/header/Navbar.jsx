@@ -138,11 +138,11 @@ useEffect(() => {
         {/* <h1>hello</h1> */}
         <FontAwesomeIcon icon={isOpen ? faTimes : faBars}/>
       </button>
-      <div className='rg' onClick={handlenavigate1} style={{pointer:"cursor"}}>
-      <img src={lg} className='logoimg' alt="" />
-      <h1 className='absolute top-5 left-4 text-2xl text-white text font-semibold logotxt' >SHIMONA AGRAWAL</h1>
-      <div  className="navbar-link2" >
-                <img onClick={handlenavigate3} src={cartIcon} alt="" style={{ height: '20px'}} />
+      <div className='rg'  style={{pointer:"cursor"}}>
+      <img src={lg} className='logoimg' alt="" onClick={handlenavigate1}/>
+      <h1 className='absolute top-5 left-4 text-2xl text-white text font-semibold logotxt' onClick={handlenavigate1}>SHIMONA AGRAWAL</h1>
+      <div  className="navbar-link2" style={{zIndex:"99999999"}} >
+                <img onClick={handlenavigate3} src={cartIcon} alt="" style={{ height: '20px' , zIndex:"99999999"}} />
               </div>
       </div>
     </div>
