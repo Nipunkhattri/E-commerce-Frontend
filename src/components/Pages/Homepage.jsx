@@ -24,8 +24,8 @@ export default function Homepage() {
     <>
       <VideoPlayer
         src={video}
-        title="A WORLD OF SUNLIT PEAKS AND WHITE CLOUDS"
-        subtitle="HEART IN THE HIGHLANDS"
+        title="CURATED ELEGANCE , DEFINED BY TIMELESSNESS"
+        subtitle="CLASS & CHIC"
         buttonLabel="Shop Now"
       />
 

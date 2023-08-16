@@ -18,8 +18,8 @@ const Homescreen = () => {
     <>
     <div className='home'>
         <div className='rev-home'>
-      <h3 className='h11' style={{color:"white !important"}}>Curated Elegance defined by timelessness</h3>
-      <h2 className='h22' style={{color:"white !important"}}>HEART IN THE HIGHLANDS</h2>
+      <h3 className='h11' style={{color:"white !important"}}>CURATED ELEGANCE , DEFINED BY TIMELESSNESS</h3>
+      <h2 className='h22' style={{color:"white !important"}}>CLASS & CHIC</h2>
       <button className='btn11'>SHOP NOW</button>
         </div>
     </div>

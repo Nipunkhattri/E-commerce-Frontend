@@ -68,7 +68,7 @@ const Itemcollect = ({route}) => {
 
   return (
     <>
-    <div class="storecontainer1"><div class="rev-homestore"><h3 class="h11">A world of sunlit peaks and white clouds</h3><h2 class="h22">Heart In the Highlands</h2><button class="btn11">SHOP NOW</button></div></div>
+    <div class="storecontainer1"><div class="rev-homestore"><h3 class="h11">CURATED ELEGANCE , DEFINED BY TIMELESSNESS</h3><h2 class="h22">CLASS & CHIC</h2><button class="btn11">SHOP NOW</button></div></div>
      <h3 className="breadcrumb" style={{left:"7px" , position:"relative"}} >
       {data} COLLECTION</h3>
     <div

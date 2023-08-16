@@ -22,8 +22,8 @@ export default function Store() {
     <>
     <div className="storecontainer">
     <div className='rev-homestore'>
-      <h3 className='h11'>A world of sunlit peaks and white clouds</h3>
-      <h2 className='h22'>Heart In the Highlands</h2>
+      <h3 className='h11'>CURATED ELEGANCE , DEFINED BY TIMELESSNESS</h3>
+      <h2 className='h22'>CLASS & CHIC</h2>
       <button className='btn11'>SHOP NOW</button>
         </div>
     </div>
