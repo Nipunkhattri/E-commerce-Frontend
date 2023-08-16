@@ -132,7 +132,13 @@
     height: 700px;
     width: 100%;
     display: flex;
-    /* background-color: aqua; */background: url('./dummy.png') no-repeat center center/cover;
+    
+    background: url('./dummy.png') no-repeat center center/cover;
+    /* margin-bottom: 20px; */
+}
+.blackStrip{
+    background-color:#000000 !important ;
+     height:40px;
 }
 .ab3l{
     height: 100%;

@@ -7,14 +7,14 @@ import { useTheme } from "@material-ui/core/styles";
 
 import StoreGrid from "./Store/StoreGrid";
 
-const scrollToTop = () => {
-  window.scrollTo(0, 0);
-};
+// const scrollToTop = () => {
+//   window.scrollTo(0, 0);
+// };
 
 export default function Store() {
-  useEffect(() => {
-    scrollToTop();
-  }, []);
+  // useEffect(() => {
+  //   scrollToTop();
+  // }, []);
 
   const theme = useTheme();
   const isScreenSmall = useMediaQuery(theme.breakpoints.down("sm"));

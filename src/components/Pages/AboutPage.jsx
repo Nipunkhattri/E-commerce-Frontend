@@ -128,6 +128,8 @@ const AboutPage = () => {
         </div> */}
       </div>
       {/* </div> */}
+    <div className="blackStrip" >
+      </div>
     </>
   );
 };

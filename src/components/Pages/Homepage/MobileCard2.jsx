@@ -73,7 +73,7 @@ const MobileCard2 = () => {
           <div className='card2div2up'>
               <div>
               <h1>Our Aesthetic</h1>
-              <p>Buna embodies a slow way of life that is rooted in culture, craft and of breath-ability, light and airiness that it wants its wearers to be part of. of breath-ability,</p>
+              <p>Discover Effortless Elegance in our Scarf Collection, blending chic aesthetics and timeless charm. An opulent colour palette caters to refined tastes, while each motif balances creativity and refinement. Experience wearable masterpieces that fuse classical beauty with modern flair.</p>
               </div>
           </div>
           <div className='card2div2down'></div>
@@ -92,7 +92,7 @@ const MobileCard2 = () => {
 
           color:"black !important",
           position:"relative",
-          bottom:"228px",
+          bottom:"280px",
           backgroundColor:"transparent"
         
         
