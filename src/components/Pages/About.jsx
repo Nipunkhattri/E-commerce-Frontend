@@ -5,10 +5,8 @@ import video from "../assets/video.mp4";
 import { useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import VideoPlayer from "./About/VideoPlayer";
-import ImageCollage from "./About/ImageCollage";
-import VideoPlayer2 from "./About/VideoPlayer2";
+
 import ProductGrid1 from "./About/ProductGrid1";
-import ProductGrid2 from "./About/ProductGrid2";
 import ProductGrid3 from "./About/ProductGrid3";
 import ProductGrid4 from "./About/ProductGrid4";
 import ProductGrid5 from "./About/ProductGrid5";

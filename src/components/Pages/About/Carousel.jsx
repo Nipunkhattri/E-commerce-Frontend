@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Typography, Button } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
-import c1a1 from "./assets/c1a1.png";
-import c1b1 from "./assets/c1b1.png";
+// import c1a1 from "./assets/c1a1.png";
+// import c1b1 from "./assets/c1b1.png";
 import rightIcon from "./assets/rightIcon.png";
 import leftIcon from "./assets/leftIcon.png";
 

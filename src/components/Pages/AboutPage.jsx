@@ -1,7 +1,12 @@
 import React from "react";
 import "./Aboutm.css";
-
+import section from "./dummy1.png"
+import section1 from "./dummy4.png"
+import { useMediaQuery } from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
 const AboutPage = () => {
+  const theme = useTheme();
+  const isScreenSmall = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
       <div className="about"></div>
@@ -53,10 +58,7 @@ const AboutPage = () => {
               feel their best, regardless of their shape/size or their personal
               style.
             </p>
-            <p>
-            We want every women to be able to say it out loud “ I am
-              confident, stylish and ready to take on the world“
-            </p>
+      
             <p
               style={{
                 textAlign: "center",
@@ -82,7 +84,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="about4">
-        <div className="ab4one">
+        {/* <div className="ab4one">
           <div className="ab4one1">
             <div className="ab4one1i">
               <h2>Our aesthetic</h2>
@@ -100,11 +102,13 @@ const AboutPage = () => {
         <div className="ab43">
           <div className="ab431"></div>
           <div className="ab432"></div>
-        </div>
+        </div> */}
+
+        {isScreenSmall ?    <img src={section1} alt="" />:    <img src={section} alt="" />}
       </div>
      
       <div className="about3">
-        <div className="ab3l">
+        {/* <div className="ab3l">
           <div className="ab3limg"></div>
           <h3>Effortless Elegance</h3>
         </div>
@@ -121,7 +125,7 @@ const AboutPage = () => {
             <div className="img3"></div>
             <h3>Effortless Elegance</h3>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* </div> */}
     </>

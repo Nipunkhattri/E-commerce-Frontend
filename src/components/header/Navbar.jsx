@@ -161,7 +161,7 @@ useEffect(() => {
              </li>
              <li className="navbar-item1">
                <li className="navbar-link1" >
-                 COLLECTION
+                 COLLECTIONS
                </li>
                <div className="dropdown-menu">
                      {
@@ -190,10 +190,10 @@ useEffect(() => {
     }} >
      <a href="https://wa.me/9919101106"> <img src={wttspIcon} alt="" style={{ height: '27px' }} /></a>
       <a href="https://www.instagram.com/label_s.a/"><img src={igIcon} alt="" style={{ height: '25px' , margin:"0px 23px 0px 23px" }} /></a>
-      <div className='cartq'>
+      {/* <div className='cartq'>
        <h2>{cartItems}</h2>
       </div>
-      <img src={cartIcon} alt="" onClick={handleCart} style={{ height: '20px' }} />
+      <img src={cartIcon} alt="" onClick={handleCart} style={{ height: '20px' }} /> */}
     </div>
      </div>
   );

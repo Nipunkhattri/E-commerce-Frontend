@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import imgg from "../Store/assets/Rectangle.png"
 import { buyItem } from '../../../redux/features/BuySlice';
 import axios from 'axios';
 import { updatepay } from '../../../redux/features/BuySlice';

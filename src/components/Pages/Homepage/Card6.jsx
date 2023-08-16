@@ -20,7 +20,7 @@ const Card6 = () => {
         <div className='card6two'>
             <div className='center'>
            <h2>OUR AESTHETIC</h2>
-           <p>Buna embodies a slow way of life that is rooted in culture, craft and of breath-ability, light and airiness that it wants its wearers to be part of. of breath-ability, light and airiness that it wants its wearers to be part of. Buna </p> 
+           <p>Label - SHIMONA AGRAWAL, aesthetics embody a harmonious blend of a collection that effortlessly blends chic designs with timeless allure, offering you a wardrobe that transcends seasons. From sophisticated silhouettes to elegant details, our designs exude a sense of refined luxury that is truly unparalleled.</p> 
             </div>
         </div>
       </div>

@@ -4,12 +4,7 @@ import video from "../assets/video.mp4";
 
 import { useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
-import VideoPlayer from "./Store/VideoPlayer";
-import ImageCollage from "./Homepage/ImageCollage";
-import VideoPlayer2 from "./Homepage/VideoPlayer2";
-import ProductGrid1 from "./Homepage/ProductGrid1";
-import ProductGrid2 from "./Homepage/ProductGrid2";
-import ProductGrid3 from "./Homepage/ProductGrid3";
+
 
 import StoreGrid from "./Store/StoreGrid";
 

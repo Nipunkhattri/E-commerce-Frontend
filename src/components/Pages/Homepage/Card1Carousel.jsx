@@ -7,6 +7,14 @@ import next from "./assets/nextIcon.png"
 import prev from "./assets/prevIcon.png"
 
 import suit from './suit.png' 
+import car1 from "./car1.png"
+import car11 from "./car11.png"
+import car2 from "./car2.png"
+import car22 from "./car22.png"
+import car3 from "./car3.png"
+import car33 from "./car33.png"
+import car4 from "./car4.png"
+import car44 from "./car44.png"
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const useStyles = makeStyles((theme) => ({
     dots: {
@@ -24,6 +32,42 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 const Card1Carousel = () => {
+  const carouselData = [
+    {
+      collection: 'MOONSTONE GREY',
+      name: 'COLLECTION',
+      image: car1,
+      description: 'The Stylish Starlet- SHIRT',
+      price: (18900).toLocaleString("EN-IN"),
+      image2: car11
+    },
+    {
+      collection: 'PISTACHIO PERFECTION',
+      name: 'COLLECTION',
+      image: car2,
+      description: 'The Classic Button-Down - SHIRT',
+      price: (14500).toLocaleString("EN-IN"),
+      image2: car22
+    },
+    {
+      collection: 'GARNET WINE',
+      name: 'COLLECTION',
+      image: car3,
+      description: 'The Stylish Starlet- SHIRT',
+      price: (18900).toLocaleString("EN-IN"),
+      image2: car33
+    },
+    {
+      collection: 'BRONZE ALLURE',
+      name: 'COLLECTION',
+      image: car4,
+      description: 'The Stylish Flair - SHIRT',
+      price: (18900).toLocaleString("EN-IN"),
+      image2: car44
+    },
+    
+    // Add more items as needed
+  ];
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [activeStep, setActiveStep] = useState(0);
@@ -49,25 +93,24 @@ const Card1Carousel = () => {
         interval={5000}
         style={{ overflow: 'hidden' }}
       >
-        {backgrounds.map((background, index) => (
-        <div className='card1c'>
-        <div className='imgcard1left'>
-          <div className='iggmm'>
-  
-          </div>
-        </div>
-        <div className='card1Right'>
-            <div className='cardimgp'>
-              <h2>THE GREY COLLECTION</h2>
-              <h3 className='mew1'>MOONSTONE</h3>
-              <img src={suit} alt="" />
-              <h3 className='mew'>MOONSTONE GREY SHIRT</h3>
-              <h4>	&#8377;  18700</h4>
-              <button className='cardbtn'>VIEW THIS PRODUCT</button>
-            </div>
-        </div>
+       {carouselData.map((item, index) => (
+  <div key={index} className='card1c'>
+    <div className='imgcard1left'>
+    <img src={item.image} alt="" />
+
+    </div>
+    <div className='card1Right'>
+      <div className='cardimgp'>
+        <h2>{item.collection}</h2>
+        <h3 className='mew1'>{item.name}</h3>
+        <img src={item.image2} alt="" />
+        <h3 className='mew'>{item.description}</h3>
+        <h4>&#8377; {item.price}</h4>
+        <button className='cardbtn'>VIEW THIS PRODUCT</button>
       </div>
-        ))}
+    </div>
+  </div>
+))}
       </AutoPlaySwipeableViews>
 
       <MobileStepper

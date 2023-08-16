@@ -4,7 +4,6 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-import img7 from "./assets/productScreen.png";
 
 const useStyles = makeStyles({
   root: {
