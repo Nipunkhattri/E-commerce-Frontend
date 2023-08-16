@@ -76,30 +76,24 @@ const Footer = () => {
   const elements = [
     {
       heading: "Company Info",
-      options: ["Privacy", "Terms and Conditions", "Return Policy", "Blog"],
+      options: ["Privacy", "Terms and Conditions", "Return Policy"],
     },
-    {
-      heading: "Legal",
-      options: ["We Are Hiring", "Career", "Blog", "About Us"],
-    },
+   
     {
       heading: "Features",
       options: [
-        "Buisness Marketing",
-        "User Analytics",
-        "Live Chat",
-        "Unlimited Support",
+        "Home",
+        "Store",
+        "Collections",
+        "About Us",
       ],
     },
-    {
-      heading: "Resources",
-      options: ["IOS & Android", "Watch A Demo", "Customers", "API"],
-    },
+  
     {
       heading: "Get In Touch",
       options: [
-        "(480) 555-0103",
-        "4517 Washington Ave. Manchester, Kentucky 39495",
+        "+91 919101106",
+        "D 59/71 -A-1, Rathyatra Mahmoorganj Road, Varanasi, Varanasi, Uttar Pradesh, 221010",
         "debra.holt@example.com ",
       ],
     },
@@ -108,7 +102,7 @@ const Footer = () => {
   return (
     <footer className={classes.root}>
       <Container>
-        <Grid container spacing={4}>
+        <Grid container spacing={6}>
           {elements.map((element, index) => (
             <Grid item xs={!isScreenSmall ? 10 : 6} sm={2} key={index}>
               <Typography className={classes.heading}>
@@ -159,7 +153,63 @@ const Footer = () => {
                         {option}
                       </Typography>
                     </Link>
-                    ) : (
+                    ) : option === "Home" ? (
+                      <Link
+                      to="/"
+                      className={classes.Link}
+
+                    >
+                      <Typography
+                        key={index}
+                        onClick={handleClick(index)}
+                        className={classes.link}
+                      >
+                        {option}
+                      </Typography>
+                    </Link>
+                    ) : option === "Store" ? (
+                      <Link
+                      to="/store"
+                      className={classes.Link}
+
+                    >
+                      <Typography
+                        key={index}
+                        onClick={handleClick(index)}
+                        className={classes.link}
+                      >
+                        {option}
+                      </Typography>
+                    </Link>
+                    ) : option === "Collections" ? (
+                      <Link
+                      to="/store"
+                      className={classes.Link}
+
+                    >
+                      <Typography
+                        key={index}
+                        onClick={handleClick(index)}
+                        className={classes.link}
+                      >
+                        {option}
+                      </Typography>
+                    </Link>
+                    ) : option === "About Us" ? (
+                      <Link
+                      to="/about"
+                      className={classes.Link}
+
+                    >
+                      <Typography
+                        key={index}
+                        onClick={handleClick(index)}
+                        className={classes.link}
+                      >
+                        {option}
+                      </Typography>
+                    </Link>
+                    ) :(
                       <Typography
                         href="#"
                         key={index}

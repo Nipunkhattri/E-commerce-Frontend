@@ -61,7 +61,7 @@ function Header() {
       <AppBar className={classes.appBar}>
         <Toolbar>
           <Typography variant="body1" className={classes.title}>
-            SHIPPING WORLDWIDE. FREE INTERNATIONAL SHIPPING FOR ORDERS ABOVE INR 40000/USD 500.
+            PAN INDIA DELIVERY FREE. CONTACT FOR INTERNATIONAL SHIPPING.
           </Typography>
         </Toolbar>
       </AppBar>
