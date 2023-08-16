@@ -2,7 +2,7 @@
     cursor: pointer;
     position: relative;
     left: 20px;
-    text-decoration: underline;
+    top: 5px;
   }
   
   .modal {

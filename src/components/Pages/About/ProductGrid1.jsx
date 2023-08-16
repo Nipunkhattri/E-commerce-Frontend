@@ -1,14 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import img1 from "./assets/p1g1.png";
-import img2 from "./assets/p1g2.png";
-import img3 from "./assets/p1g3.png";
-import img4 from "./assets/p1g4.png";
-import img5 from "./assets/p1g5.png";
-import img6 from "./assets/p1g6.png";
+
 import img7 from "./assets/section2.png";
 
 const useStyles = makeStyles({

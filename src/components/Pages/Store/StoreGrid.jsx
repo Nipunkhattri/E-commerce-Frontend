@@ -1,32 +1,15 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import ProductCard from "../../cards/ProductCard";
-import ProductCard1 from "../../cards/ProductCard1";
-import img1 from "./assets/p1g1.png";
-import img2 from "./assets/p1g2.png";
-import img3 from "./assets/p1g3.png";
-import img4 from "./assets/p1g4.png";
-import img5 from "./assets/p1g5.png";
-import img6 from "./assets/p1g6.png";
-import img7 from "./assets/p1g7.png";
-import img8 from "./assets/p1g8.png";
-import img9 from "./assets/p1g9.png";
-import img10 from "./assets/p1g10.png";
-import img11 from "./assets/p1g11.png";
-import img12 from "./assets/p1g12.png";
+
+
 import { Product } from "../../../redux/features/ProductSlice.js";
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+
 import { makeStyles } from '@material-ui/core/styles';
 import "./store.css";
-import Box from '@mui/material/Box';
-import imgg1 from "./assets/Rectangle.png";
-import Loader from "../Loader";
 
 const useStyles = makeStyles((theme) => ({
   card: {

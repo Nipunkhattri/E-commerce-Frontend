@@ -1,8 +1,6 @@
 import React from 'react'
 import './Homescreen.css'
-import Card1 from './Card1.jsx'
 import Card2 from './Card2'
-import Caucard from './Caucard.jsx'
 import Card3 from './Card3'
 import Card4 from './Card4'
 import Card5 from './Card5'
@@ -20,7 +18,7 @@ const Homescreen = () => {
     <>
     <div className='home'>
         <div className='rev-home'>
-      <h3 className='h11'>A world of sunlit peaks and white clouds</h3>
+      <h3 className='h11'>Curated Elegance defined by timelessness</h3>
       <h2 className='h22'>HEART IN THE HIGHLANDS</h2>
       <button className='btn11'>SHOP NOW</button>
         </div>

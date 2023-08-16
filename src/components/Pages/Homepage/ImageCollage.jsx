@@ -2,11 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Image from './assets/collage1.png';
-import Photo1 from './assets/collage1.png';
-import Photo2 from './assets/collage2.png';
-import Photo3 from './assets/collage3.png';
-import Photo4 from './assets/collage4.png';
+
 import { useMediaQuery } from "@material-ui/core";
 
 
@@ -106,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ImageCollage() {
+export default function () {
   const classes = useStyles();
   const isMobile = useMediaQuery('(max-width: 600px)');
 

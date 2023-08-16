@@ -3,7 +3,7 @@ import { useTheme, useMediaQuery, Paper, Typography, Box, MobileStepper} from '@
 import { makeStyles } from '@material-ui/core';
 import { autoPlay } from 'react-swipeable-views-utils';
 import SwipeableViews from 'react-swipeable-views';
-import image1 from "./assets/c1b1.png"
+// import image1 from "./assets/c1b1.png"
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const useStyles = makeStyles((theme) => ({

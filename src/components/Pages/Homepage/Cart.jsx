@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import "./cart.css"
-import imgg from "../Store/assets/Rectangle.png"
 import {useLocation, useNavigate} from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";

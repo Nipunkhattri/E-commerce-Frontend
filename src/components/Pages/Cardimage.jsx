@@ -7,17 +7,16 @@ import axios from "axios";
 import "./card.css";
 import star from "../assets/stars.png";
 import { buyItem } from "../../redux/features/BuySlice.js";
-import sizeChart from "./sizeChart.png"
+import sizeChart from "./sizeChart.png";
 import {
-    Magnifier,
-    GlassMagnifier,
-    SideBySideMagnifier,
-    PictureInPictureMagnifier,
-    MOUSE_ACTIVATION,
-    TOUCH_ACTIVATION
-  } from "react-image-magnifiers";
+  Magnifier,
+  GlassMagnifier,
+  SideBySideMagnifier,
+  PictureInPictureMagnifier,
+  MOUSE_ACTIVATION,
+  TOUCH_ACTIVATION,
+} from "react-image-magnifiers";
 import TextWithImageModal from "../cards/Sizechart.jsx";
-import image from "./Store/assets/Rectangle.png";
 import { toast } from "react-toastify";
 const loadScript = (src) => {
   return new Promise((resolve, reject) => {
@@ -34,6 +33,31 @@ const loadScript = (src) => {
 };
 
 const Cardimage = ({ route }) => {
+  const handleEnquireNow = () => {
+    const currentURL = window.location.href;
+    const whatsappMessage = `I'm interested in ${item?.headline}. ${currentURL}`;
+
+    const whatsappLink = `https://wa.me/9919101106/?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    window.open(whatsappLink, "_blank");
+  };
+
+  const availableSizes = ["Select Size", "XL", "M", "L"];
+  const handleCopyLink = () => {
+    const currentURL = window.location.href;
+
+    navigator.clipboard
+      .writeText(currentURL)
+      .then(() => {
+        toast.success("Link copied to clipboard!");
+      })
+      .catch((error) => {
+        toast.error("Failed to copy link to clipboard.");
+        console.error("Copy failed:", error);
+      });
+  };
   const [item, setitem] = useState();
   const [loading, setloading] = useState(false);
   const location = useLocation();
@@ -141,7 +165,6 @@ const Cardimage = ({ route }) => {
         <div className="left">
           <div className="one">
             <div className="divcon">
-           
               <img
                 src={item ? item?.images[1] : <div class="loader"></div>}
                 className="mainimg"
@@ -175,7 +198,7 @@ const Cardimage = ({ route }) => {
             </div>
           </div>
           <div className="main">
-             {item ? (
+            {item ? (
               <GlassMagnifier
                 imageSrc={item?.images[index]} // The image to display
                 imageAlt={name} // Alt text for accessibility
@@ -185,7 +208,9 @@ const Cardimage = ({ route }) => {
                 dragToMove={true} // Enable drag to move the magnifier
                 className="mainImage"
               />
-            ) : (<div class="loader"></div>)}
+            ) : (
+              <div class="loader"></div>
+            )}
           </div>
         </div>
         <div className="right">
@@ -200,39 +225,57 @@ const Cardimage = ({ route }) => {
             {item?.headline1}
             {/* A classic t-shirt never goes out of style. This is our most premium collection of shirt. This plain white shirt is made up of pure cotton and has a premium finish. */}
           </p>
-          <div className="sizeChart" style={{display:"flex" , flexDirection:"row" , alignItems:"center" }}>
-          <select
-            className="styleSelect"
-            name="size"
-            value={size}
-            onChange={(e) => setsize(e.target.value)}
+          <div
+            className="sizeChart"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
           >
-            <option>Select Size</option>
-            <option>XL</option>
-            <option>M</option>
-            <option>L</option>
-          </select>
-        
-        <TextWithImageModal text="Size Chart" imageUrl={sizeChart}></TextWithImageModal>
+            <select
+              className="styleSelect"
+              name="size"
+              value={size}
+              onChange={(e) => setsize(e.target.value)}
+            >
+              <option>Select Size</option>
+              <option>XL</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
 
-        </div>
+            <TextWithImageModal
+              text="Size Chart"
+              imageUrl={sizeChart}
+            ></TextWithImageModal>
+          </div>
           <br />
           {loading ? (
             <>
-              <button disabled onClick={handleCartItem} className="btn1">
-                Add to Cart
-              </button>
-              <button disabled onClick={handleCartItem} className="btn">
-                Buy Now
+              
+                <button
+                  onClick={handleCopyLink}
+                  className="btn1"
+                >
+                  Copy Link
+                </button>
+              
+              <button  onClick={handleEnquireNow} className="btn">
+                Enquire Now
               </button>
             </>
           ) : (
             <>
-              <button onClick={handleCartItem} className="btn1">
-                Add to Cart
-              </button>
-              <button onClick={handleCartItem} className="btn">
-                Buy Now
+              <button
+                  onClick={handleCopyLink}
+                  className="btn1"
+                >
+                  Copy Link
+                </button>
+              
+              <button  onClick={handleEnquireNow} className="btn">
+                Enquire Now
               </button>
             </>
           )}
