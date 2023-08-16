@@ -18,7 +18,7 @@
 }
 .h11 {
   font-size: 10px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 600;
   font-family: "Futura";
   margin-bottom: 3%;
@@ -30,7 +30,7 @@
   font-size: 18px;
   /* font-family: 'Futura'; */
   font-weight: 800;
-  color: #000000;
+  color: #ffffff;
   letter-spacing: 5px;
   margin-bottom: 7%;
   font-family: "Inter", sans-serif;
@@ -353,10 +353,11 @@
 
 
 .card3 {
-  height: 900px;
-  
+  height: 700px;
+  margin-top: 85px;
+  margin-bottom: 40px;
   /* background-color: aqua; */
-  /* background: url("./Rectangle12.png") no-repeat center center/cover; */
+  background: url("./bannerMid.webp") no-repeat center center/cover;
 }
 
 .card3 video{
@@ -835,6 +836,8 @@
   }
   .card2div2up div {
     padding: 8% 4%;
+    position: relative;
+    top: 90px;
   }
   .card2div2 {
     width: 100%;
