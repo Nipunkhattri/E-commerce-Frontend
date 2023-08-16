@@ -1,10 +1,5 @@
 import React from 'react'
-import img1 from './pseudo.png'
-import img2 from './pseudo2.png'
-import img3 from './pseudo3.png'
-import img4 from './pseudo4.png'
-import img5 from './pseudo5.png'
-import img6 from './pseudo6.png'
+
 
 const Card4 = () => {
   return (

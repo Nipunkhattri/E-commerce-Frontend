@@ -27,7 +27,7 @@ const MobileCard2 = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [activeStep, setActiveStep] = useState(0);
   const backgrounds = ['background1.jpg', 'background2.jpg', 'background3.jpg', 'background4.jpg'];
-  const images = [image1, image1, image1, image1];
+  // const images = [image1, image1, image1, image1];
   const descriptions = ['Description 1', 'Description 2', 'Description 3', 'Description 4'];
 
   const handleNext = () => {

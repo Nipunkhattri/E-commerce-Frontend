@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 
-import video from "../assets/video.mp4";
 
 import { useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";

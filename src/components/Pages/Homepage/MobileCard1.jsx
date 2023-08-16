@@ -5,15 +5,15 @@ import SwipeableViews from 'react-swipeable-views';
 import { makeStyles } from '@material-ui/core';
 import next from "./assets/nextIcon.png";
 import prev from "./assets/prevIcon.png";
-import suit from './suit.png';
-import car1 from "./car1.png"
-import car11 from "./car11.png"
-import car2 from "./car2.png"
-import car22 from "./car22.png"
-import car3 from "./car3.png"
-import car33 from "./car33.png"
-import car4 from "./car4.png"
-import car44 from "./car44.png"
+import suit from './suit.webp';
+import car1 from "./car1.webp"
+import car11 from "./car11.webp"
+import car2 from "./car2.webp"
+import car22 from "./car22.webp"
+import car3 from "./car3.webp"
+import car33 from "./car33.webp"
+import car4 from "./car4.webp"
+import car44 from "./car44.webp"
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const useStyles = makeStyles((theme) => ({
   dots: {

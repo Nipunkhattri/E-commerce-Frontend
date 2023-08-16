@@ -173,7 +173,7 @@
   display: flex;
 justify-content: flex-end;
 align-items: flex-end;
-  background: url(./women.png)no-repeat center center/cover;
+  background: url(./women.webp)no-repeat center center/cover;
 }
 .storecontainer1{
   /* background-color: aqua; */
@@ -183,7 +183,7 @@ align-items: flex-end;
   display: flex;
 justify-content: flex-end;
 align-items: flex-end;
-  background: url(./women1.png)no-repeat center center/cover;
+  background: url(./women1.webp)no-repeat center center/cover;
 }
 .rev-homestore{
   margin-bottom: 5vh;
@@ -226,7 +226,7 @@ align-items: flex-end;
   }
   .storecontainer{
     height: 43vh;
-    background: url(./women.png)no-repeat center center/cover;
+    background: url(./women.webp)no-repeat center center/cover;
   }
   .rev-homestore{
     margin: 8px 8px;

@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import banner from "../assets/banner4.png";
+import banner from "../assets/banner4.webp";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({

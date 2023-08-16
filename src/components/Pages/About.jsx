@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 
-import video from "../assets/video.mp4";
 
 import { useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
@@ -25,12 +24,6 @@ export default function About() {
   const isScreenSmall = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
-      <VideoPlayer
-        src={video}
-        title="A WORLD OF SUNLIT PEAKS AND WHITE CLOUDS"
-        subtitle="HEART IN THE HIGHLANDS"
-        buttonLabel="Shop Now"
-      />
       <ProductGrid3></ProductGrid3>
       <ProductGrid4></ProductGrid4>
       <ProductGrid1></ProductGrid1>
