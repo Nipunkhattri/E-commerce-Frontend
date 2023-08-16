@@ -22,7 +22,7 @@ const Card5 = () => {
         <div className='threecard5'>
         <img src={img3} className='onecard5img1'  alt="" />
             <h2 className='card5h2'>Twist & Tie - DRESS</h2>
-            <br />
+
             <h6 className='card5h6'>	&#8377;  {(22999).toLocaleString("EN-IN")}</h6>
         </div>
         <div className='fourcard5'>
