@@ -1,8 +1,8 @@
 import React from 'react'
-import img1 from './image1.png'
-import img2 from './imag2.png'
-import img3 from './image3.png'
-import img4 from './image4.png'
+import img1 from './image1.webp'
+import img2 from './imag2.webp'
+import img3 from './image3.webp'
+import img4 from './image4.webp'
 
 const Card5 = () => {
   return (

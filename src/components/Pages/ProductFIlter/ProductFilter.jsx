@@ -21,18 +21,7 @@ import {
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
-import img1 from "./assets/p1g1.png";
-import img2 from "./assets/p1g2.png";
-import img3 from "./assets/p1g3.png";
-import img4 from "./assets/p1g4.png";
-import img5 from "./assets/p1g5.png";
-import img6 from "./assets/p1g6.png";
-import img7 from "./assets/p1g7.png";
-import img8 from "./assets/p1g8.png";
-import img9 from "./assets/p1g9.png";
-import img10 from "./assets/p1g10.png";
-import img11 from "./assets/p1g11.png";
-import img12 from "./assets/p1g12.png";
+
 
 import { useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
